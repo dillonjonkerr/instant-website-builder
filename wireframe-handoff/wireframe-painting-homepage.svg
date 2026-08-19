@@ -1,0 +1,721 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2020" height="8572" viewBox="0 0 2020 8572" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+<defs>
+<pattern id="hatch" width="14" height="14" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+  <rect width="14" height="14" fill="#F0F4F9"/>
+  <line x1="0" y1="0" x2="0" y2="14" stroke="#D3DEEB" stroke-width="5"/>
+</pattern>
+</defs>
+<rect width="2020" height="8572" fill="#FFFFFF"/>
+<text x="40" y="68" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="30" fill="#111827" font-weight="800" text-anchor="start">Painting Contractor Website — Annotated Homepage Wireframe</text>
+<text x="40" y="106" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#6B7280" font-weight="400" text-anchor="start">Hatched boxes = photo slots. Each red IMG tag matches a slide in the Photo Direction deck (full prompt, specs, do/don&#x27;ts, sourcing).</text>
+<text x="40" y="132" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#6B7280" font-weight="400" text-anchor="start">Structure synthesized from the Legacy Painting (flagship) and Pro Vision Painting drafts · Paint &amp; Profits · v1</text>
+<rect x="40" y="156" width="26" height="18" rx="4" fill="url(#hatch)" stroke="#B6C4D6" stroke-width="1"/>
+<text x="74" y="170" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#6B7280" font-weight="600" text-anchor="start">= photo goes here</text>
+<rect x="230" y="155" width="58" height="20" rx="5" fill="#DC2626" stroke="none" stroke-width="1"/>
+<text x="239" y="169" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#FFFFFF" font-weight="800" text-anchor="start">IMG-01</text>
+<text x="296" y="170" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#6B7280" font-weight="600" text-anchor="start">= see matching slide in the deck</text>
+<rect x="40" y="200" width="1440" height="40" rx="0" fill="#1F2937" stroke="none" stroke-width="1"/>
+<text x="760" y="225" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#D1D5DB" font-weight="600" text-anchor="middle">★  0% APR financing available  ·  Satisfaction guaranteed — Call today!  ·  (555) 555-5555</text>
+<rect x="40" y="240" width="1440" height="92" rx="0" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1"/>
+<rect x="100" y="262" width="150" height="48" rx="6" fill="#F3F4F6" stroke="#D1D5DB" stroke-width="1"/>
+<text x="175" y="290" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#6B7280" font-weight="800" text-anchor="middle" letter-spacing="2">LOGO</text>
+<rect x="274" y="286" width="81" height="24" rx="12" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+<text x="288" y="302" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" fill="#9CA3AF" font-weight="700" text-anchor="start" letter-spacing="1">02 · NAV</text>
+<text x="460" y="291" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#111827" font-weight="600" text-anchor="start">Home</text>
+<text x="524" y="291" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#111827" font-weight="600" text-anchor="start">Residential ▾</text>
+<text x="654" y="291" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#111827" font-weight="600" text-anchor="start">Commercial ▾</text>
+<text x="777" y="291" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#111827" font-weight="600" text-anchor="start">Past Work</text>
+<text x="877" y="291" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#111827" font-weight="600" text-anchor="start">About ▾</text>
+<text x="963" y="291" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#111827" font-weight="600" text-anchor="start">Blog</text>
+<text x="1027" y="291" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#111827" font-weight="600" text-anchor="start">Contact</text>
+<rect x="1280" y="264" width="150" height="44" rx="6" fill="#1F2937" stroke="none" stroke-width="1"/>
+<text x="1355" y="290" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#FFFFFF" font-weight="700" text-anchor="middle">☎ (555) 555-5555</text>
+<rect x="40" y="332" width="1440" height="700" rx="8" fill="url(#hatch)" stroke="#B6C4D6" stroke-width="1.5"/>
+<rect x="40" y="332" width="1440" height="700" rx="8" fill="#EDF2F8" stroke="none" stroke-width="1" opacity="0.55"/>
+<g transform="translate(760 674) scale(1.2)" opacity="0.75"><rect x="-21" y="-12" width="42" height="28" rx="5" fill="none" stroke="#8FA3BC" stroke-width="2.5"/><circle cx="0" cy="2" r="7.5" fill="none" stroke="#8FA3BC" stroke-width="2.5"/><rect x="-8" y="-17" width="16" height="7" rx="2.5" fill="#8FA3BC"/></g>
+<rect x="50" y="342" width="66" height="24" rx="6" fill="#DC2626" stroke="none" stroke-width="1"/>
+<text x="60" y="358" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#FFFFFF" font-weight="800" text-anchor="start">IMG-01</text>
+<rect x="40" y="332" width="1440" height="700" rx="0" fill="#1F2937" stroke="none" stroke-width="1" opacity="0.55"/>
+<rect x="54" y="344" width="312" height="24" rx="12" fill="#374151" stroke="none" stroke-width="1"/>
+<text x="68" y="360" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" fill="#D1D5DB" font-weight="700" text-anchor="start" letter-spacing="1">03 · HERO — PHOTO BACKGROUND + DARK OVERLAY</text>
+<text x="1456" y="360" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#D1D5DB" font-weight="600" text-anchor="end">≈55% navy overlay on photo</text>
+<rect x="54" y="380" width="74" height="24" rx="6" fill="#DC2626" stroke="none" stroke-width="1"/>
+<text x="64" y="396" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#FFFFFF" font-weight="800" text-anchor="start">IMG-01</text>
+<text x="104" y="994" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" fill="#E5E7EB" font-weight="700" text-anchor="start">PHOTO: branded crew + wrapped truck in front of a finished home — full spec on slide IMG-01</text>
+<rect x="104" y="452" width="197" height="22" rx="11.0" fill="#B91C1C" stroke="none" stroke-width="1"/>
+<text x="114" y="467" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#FFFFFF" font-weight="600" text-anchor="start">TRANSFORM YOUR [CITY] HOME</text>
+<text x="104" y="534" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="40" fill="#FFFFFF" font-weight="800" text-anchor="start">Trusted House Painters</text>
+<text x="104" y="586" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="40" fill="#FFFFFF" font-weight="800" text-anchor="start">in [City, ST] You</text>
+<text x="104" y="638" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="40" fill="#FFFFFF" font-weight="800" text-anchor="start">Can Trust</text>
+<rect x="104" y="676" width="150" height="22" rx="11.0" fill="#374151" stroke="none" stroke-width="1"/>
+<text x="114" y="691" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#E5E7EB" font-weight="600" text-anchor="start">✓ 3–5 Year Warranty</text>
+<rect x="264" y="676" width="156" height="22" rx="11.0" fill="#374151" stroke="none" stroke-width="1"/>
+<text x="274" y="691" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#E5E7EB" font-weight="600" text-anchor="start">✓ Licensed &amp; Insured</text>
+<rect x="430" y="676" width="122" height="22" rx="11.0" fill="#374151" stroke="none" stroke-width="1"/>
+<text x="440" y="691" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#E5E7EB" font-weight="600" text-anchor="start">✓ Locally Owned</text>
+<rect x="104" y="720" width="300" height="52" rx="8" fill="#FFFFFF" stroke="none" stroke-width="1" opacity="0.95"/>
+<text x="120" y="742" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#111827" font-weight="700" text-anchor="start">G  5.0 ★★★★★</text>
+<text x="120" y="761" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" fill="#6B7280" font-weight="400" text-anchor="start">Read all reviews</text>
+<text x="264" y="742" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#111827" font-weight="700" text-anchor="start">f  5.0 ★★★★★</text>
+<text x="264" y="761" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" fill="#6B7280" font-weight="400" text-anchor="start">Read all reviews</text>
+<rect x="104" y="796" width="220" height="52" rx="6" fill="#1F2937" stroke="none" stroke-width="1"/>
+<text x="214" y="826" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#FFFFFF" font-weight="700" text-anchor="middle">BOOK A FREE ESTIMATE ➜</text>
+<rect x="1050" y="422" width="370" height="520" rx="10" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1"/>
+<rect x="1050" y="422" width="370" height="56" rx="10" fill="#B91C1C" stroke="none" stroke-width="1"/>
+<rect x="1050" y="450" width="370" height="28" rx="0" fill="#B91C1C" stroke="none" stroke-width="1"/>
+<text x="1235" y="456" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#FFFFFF" font-weight="800" text-anchor="middle">GET YOUR FREE PAINTING ESTIMATE</text>
+<rect x="1070" y="498" width="330" height="52" rx="6" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1"/>
+<text x="1082" y="528" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#9AA1AB" font-weight="400" text-anchor="start">First name</text>
+<rect x="1070" y="562" width="330" height="52" rx="6" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1"/>
+<text x="1082" y="592" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#9AA1AB" font-weight="400" text-anchor="start">Last name</text>
+<rect x="1070" y="626" width="330" height="52" rx="6" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1"/>
+<text x="1082" y="656" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#9AA1AB" font-weight="400" text-anchor="start">Phone number</text>
+<rect x="1070" y="690" width="330" height="52" rx="6" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1"/>
+<text x="1082" y="720" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#9AA1AB" font-weight="400" text-anchor="start">Email address</text>
+<rect x="1070" y="754" width="330" height="52" rx="6" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1"/>
+<text x="1082" y="784" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#9AA1AB" font-weight="400" text-anchor="start">Select your service  ▾</text>
+<rect x="1070" y="818" width="330" height="52" rx="6" fill="#DC2626" stroke="none" stroke-width="1"/>
+<text x="1235" y="850" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#FFFFFF" font-weight="800" text-anchor="middle">SUBMIT ➜</text>
+<rect x="40" y="1032" width="1440" height="110" rx="0" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1"/>
+<rect x="54" y="1100" width="173" height="24" rx="12" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+<text x="68" y="1116" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" fill="#9CA3AF" font-weight="700" text-anchor="start" letter-spacing="1">04 · CREDIBILITY STRIP</text>
+<rect x="210" y="1062" width="160" height="50" rx="8" fill="#F3F4F6" stroke="#D1D5DB" stroke-width="1"/>
+<text x="290" y="1092" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#6B7280" font-weight="700" text-anchor="middle" letter-spacing="1">BBB A+</text>
+<rect x="400" y="1062" width="160" height="50" rx="8" fill="#F3F4F6" stroke="#D1D5DB" stroke-width="1"/>
+<text x="480" y="1092" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#6B7280" font-weight="700" text-anchor="middle" letter-spacing="1">GOOGLE ★5.0</text>
+<rect x="590" y="1062" width="160" height="50" rx="8" fill="#F3F4F6" stroke="#D1D5DB" stroke-width="1"/>
+<text x="670" y="1092" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#6B7280" font-weight="700" text-anchor="middle" letter-spacing="1">PCA MEMBER</text>
+<rect x="780" y="1062" width="160" height="50" rx="8" fill="#F3F4F6" stroke="#D1D5DB" stroke-width="1"/>
+<text x="860" y="1092" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#6B7280" font-weight="700" text-anchor="middle" letter-spacing="1">LICENSED+INSURED</text>
+<rect x="970" y="1062" width="160" height="50" rx="8" fill="#F3F4F6" stroke="#D1D5DB" stroke-width="1"/>
+<text x="1050" y="1092" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#6B7280" font-weight="700" text-anchor="middle" letter-spacing="1">OSHA</text>
+<rect x="1160" y="1062" width="160" height="50" rx="8" fill="#F3F4F6" stroke="#D1D5DB" stroke-width="1"/>
+<text x="1240" y="1092" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#6B7280" font-weight="700" text-anchor="middle" letter-spacing="1">HOMEADVISOR</text>
+<rect x="40" y="1142" width="1440" height="400" rx="0" fill="#FAFAFA" stroke="#D1D5DB" stroke-width="1"/>
+<rect x="54" y="1154" width="107" height="24" rx="12" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+<text x="68" y="1170" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" fill="#9CA3AF" font-weight="700" text-anchor="start" letter-spacing="1">05 · REVIEWS</text>
+<text x="760" y="1204" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="26" fill="#111827" font-weight="800" text-anchor="middle">What People Are Saying About Our Painters in [City]</text>
+<text x="760" y="1234" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#6B7280" font-weight="400" text-anchor="middle">Live Google reviews — real names + real avatars (no “Jacob Jones” placeholders in production)</text>
+<rect x="100" y="1272" width="315" height="190" rx="10" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1"/>
+<text x="120" y="1307" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#F59E0B" font-weight="700" text-anchor="start">★★★★★</text>
+<rect x="120" y="1327" width="270" height="10" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<rect x="120" y="1345" width="230" height="10" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<rect x="120" y="1363" width="190" height="10" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<circle cx="134" cy="1418" r="14" fill="#E2E5EA"/>
+<rect x="156" y="1410" width="110" height="10" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<rect x="156" y="1426" width="70" height="8" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<text x="388" y="1424" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#4285F4" font-weight="800" text-anchor="start">G</text>
+<rect x="435" y="1272" width="315" height="190" rx="10" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1"/>
+<text x="455" y="1307" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#F59E0B" font-weight="700" text-anchor="start">★★★★★</text>
+<rect x="455" y="1327" width="270" height="10" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<rect x="455" y="1345" width="230" height="10" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<rect x="455" y="1363" width="190" height="10" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<circle cx="469" cy="1418" r="14" fill="#E2E5EA"/>
+<rect x="491" y="1410" width="110" height="10" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<rect x="491" y="1426" width="70" height="8" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<text x="723" y="1424" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#4285F4" font-weight="800" text-anchor="start">G</text>
+<rect x="770" y="1272" width="315" height="190" rx="10" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1"/>
+<text x="790" y="1307" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#F59E0B" font-weight="700" text-anchor="start">★★★★★</text>
+<rect x="790" y="1327" width="270" height="10" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<rect x="790" y="1345" width="230" height="10" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<rect x="790" y="1363" width="190" height="10" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<circle cx="804" cy="1418" r="14" fill="#E2E5EA"/>
+<rect x="826" y="1410" width="110" height="10" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<rect x="826" y="1426" width="70" height="8" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<text x="1058" y="1424" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#4285F4" font-weight="800" text-anchor="start">G</text>
+<rect x="1105" y="1272" width="315" height="190" rx="10" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1"/>
+<text x="1125" y="1307" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#F59E0B" font-weight="700" text-anchor="start">★★★★★</text>
+<rect x="1125" y="1327" width="270" height="10" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<rect x="1125" y="1345" width="230" height="10" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<rect x="1125" y="1363" width="190" height="10" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<circle cx="1139" cy="1418" r="14" fill="#E2E5EA"/>
+<rect x="1161" y="1410" width="110" height="10" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<rect x="1161" y="1426" width="70" height="8" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<text x="1393" y="1424" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#4285F4" font-weight="800" text-anchor="start">G</text>
+<text x="760" y="1504" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#6B7280" font-weight="600" text-anchor="middle">•  •  •  •        ← →</text>
+<rect x="40" y="1542" width="1440" height="500" rx="0" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1"/>
+<rect x="54" y="1554" width="200" height="24" rx="12" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+<text x="68" y="1570" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" fill="#9CA3AF" font-weight="700" text-anchor="start" letter-spacing="1">06 · ABOUT / MEET THE TEAM</text>
+<rect x="100" y="1612" width="600" height="370" rx="8" fill="url(#hatch)" stroke="#B6C4D6" stroke-width="1.5"/>
+<rect x="100" y="1612" width="600" height="370" rx="8" fill="#EDF2F8" stroke="none" stroke-width="1" opacity="0.55"/>
+<g transform="translate(400 1789) scale(1.2)" opacity="0.75"><rect x="-21" y="-12" width="42" height="28" rx="5" fill="none" stroke="#8FA3BC" stroke-width="2.5"/><circle cx="0" cy="2" r="7.5" fill="none" stroke="#8FA3BC" stroke-width="2.5"/><rect x="-8" y="-17" width="16" height="7" rx="2.5" fill="#8FA3BC"/></g>
+<rect x="110" y="1622" width="66" height="24" rx="6" fill="#DC2626" stroke="none" stroke-width="1"/>
+<text x="120" y="1638" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#FFFFFF" font-weight="800" text-anchor="start">IMG-02</text>
+<circle cx="400" cy="1785" r="40" fill="#B91C1C" opacity="0.92"/>
+<path d="M 388 1768 L 420 1785 L 388 1802 Z" fill="#FFFFFF"/>
+<text x="400" y="1864" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#334155" font-weight="600" text-anchor="middle">Real team photo — branded shirts + truck</text>
+<text x="400" y="1886" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#334155" font-weight="600" text-anchor="middle">▸ optional: company-story video overlay</text>
+<rect x="760" y="1622" width="238" height="22" rx="11.0" fill="#FEE2E2" stroke="none" stroke-width="1"/>
+<text x="770" y="1637" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#B91C1C" font-weight="600" text-anchor="start">TRUSTED LOCAL PAINTERS IN [CITY]</text>
+<text x="760" y="1688" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="28" fill="#111827" font-weight="800" text-anchor="start">Get to Know [Company Name]</text>
+<rect x="760" y="1718" width="620" height="10" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<rect x="760" y="1738" width="560" height="10" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<rect x="760" y="1758" width="500" height="10" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<rect x="760" y="1778" width="620" height="10" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<rect x="760" y="1798" width="560" height="10" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<rect x="760" y="1834" width="600" height="10" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<rect x="760" y="1854" width="510" height="10" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<rect x="760" y="1874" width="600" height="10" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<rect x="760" y="1928" width="210" height="50" rx="6" fill="#1F2937" stroke="none" stroke-width="1"/>
+<text x="865" y="1957" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#FFFFFF" font-weight="700" text-anchor="middle">BOOK A FREE ESTIMATE ➜</text>
+<rect x="990" y="1928" width="160" height="50" rx="6" fill="#FFFFFF" stroke="#9CA3AF" stroke-width="1"/>
+<text x="1070" y="1957" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#111827" font-weight="700" text-anchor="middle">LEARN MORE</text>
+<rect x="40" y="2042" width="1440" height="150" rx="0" fill="#1F2937" stroke="none" stroke-width="1"/>
+<rect x="54" y="2154" width="120" height="24" rx="12" fill="#374151" stroke="none" stroke-width="1"/>
+<text x="68" y="2170" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" fill="#D1D5DB" font-weight="700" text-anchor="start" letter-spacing="1">07 · STATS BAR</text>
+<rect x="145" y="2072" width="280" height="90" rx="10" fill="#273244" stroke="none" stroke-width="1"/>
+<text x="285" y="2114" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="26" fill="#FFFFFF" font-weight="800" text-anchor="middle">100%</text>
+<text x="285" y="2142" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#9CA3AF" font-weight="600" text-anchor="middle">Satisfaction guaranteed</text>
+<rect x="465" y="2072" width="280" height="90" rx="10" fill="#273244" stroke="none" stroke-width="1"/>
+<text x="605" y="2114" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="26" fill="#FFFFFF" font-weight="800" text-anchor="middle">15+ YEARS</text>
+<text x="605" y="2142" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#9CA3AF" font-weight="600" text-anchor="middle">Combined experience</text>
+<rect x="785" y="2072" width="280" height="90" rx="10" fill="#273244" stroke="none" stroke-width="1"/>
+<text x="925" y="2114" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="26" fill="#FFFFFF" font-weight="800" text-anchor="middle">500+</text>
+<text x="925" y="2142" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#9CA3AF" font-weight="600" text-anchor="middle">Projects completed</text>
+<rect x="1105" y="2072" width="280" height="90" rx="10" fill="#273244" stroke="none" stroke-width="1"/>
+<text x="1245" y="2114" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="26" fill="#FFFFFF" font-weight="800" text-anchor="middle">5 STAR</text>
+<text x="1245" y="2142" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#9CA3AF" font-weight="600" text-anchor="middle">Rated service</text>
+<rect x="40" y="2192" width="1440" height="640" rx="0" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1"/>
+<rect x="54" y="2204" width="252" height="24" rx="12" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+<text x="68" y="2220" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" fill="#9CA3AF" font-weight="700" text-anchor="start" letter-spacing="1">08 · SERVICES INTRO + CAPTURE FORM</text>
+<text x="100" y="2272" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="28" fill="#111827" font-weight="800" text-anchor="start">Comprehensive Painting Services for</text>
+<text x="100" y="2308" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="28" fill="#111827" font-weight="800" text-anchor="start">[City] Homes and Businesses</text>
+<rect x="800" y="2252" width="600" height="10" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<rect x="800" y="2272" width="530" height="10" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<rect x="800" y="2292" width="600" height="10" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<rect x="800" y="2312" width="530" height="10" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<rect x="100" y="2362" width="330" height="420" rx="10" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1"/>
+<rect x="100" y="2362" width="330" height="50" rx="10" fill="#3B4A63" stroke="none" stroke-width="1"/>
+<rect x="100" y="2387" width="330" height="25" rx="0" fill="#3B4A63" stroke="none" stroke-width="1"/>
+<text x="265" y="2393" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#FFFFFF" font-weight="800" text-anchor="middle">Ready To Get Started?</text>
+<rect x="118" y="2428" width="294" height="46" rx="6" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1"/>
+<text x="130" y="2455" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#9AA1AB" font-weight="400" text-anchor="start">First name</text>
+<rect x="118" y="2484" width="294" height="46" rx="6" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1"/>
+<text x="130" y="2511" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#9AA1AB" font-weight="400" text-anchor="start">Last name</text>
+<rect x="118" y="2540" width="294" height="46" rx="6" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1"/>
+<text x="130" y="2567" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#9AA1AB" font-weight="400" text-anchor="start">Phone</text>
+<rect x="118" y="2596" width="294" height="46" rx="6" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1"/>
+<text x="130" y="2623" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#9AA1AB" font-weight="400" text-anchor="start">Email</text>
+<rect x="118" y="2652" width="294" height="46" rx="6" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1"/>
+<text x="130" y="2679" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#9AA1AB" font-weight="400" text-anchor="start">Service ▾</text>
+<rect x="118" y="2708" width="294" height="46" rx="6" fill="#DC2626" stroke="none" stroke-width="1"/>
+<text x="265" y="2737" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#FFFFFF" font-weight="800" text-anchor="middle">SUBMIT ➜</text>
+<rect x="470" y="2362" width="950" height="420" rx="8" fill="url(#hatch)" stroke="#B6C4D6" stroke-width="1.5"/>
+<rect x="470" y="2362" width="950" height="420" rx="8" fill="#EDF2F8" stroke="none" stroke-width="1" opacity="0.55"/>
+<g transform="translate(945 2564) scale(1.2)" opacity="0.75"><rect x="-21" y="-12" width="42" height="28" rx="5" fill="none" stroke="#8FA3BC" stroke-width="2.5"/><circle cx="0" cy="2" r="7.5" fill="none" stroke="#8FA3BC" stroke-width="2.5"/><rect x="-8" y="-17" width="16" height="7" rx="2.5" fill="#8FA3BC"/></g>
+<rect x="480" y="2372" width="66" height="24" rx="6" fill="#DC2626" stroke="none" stroke-width="1"/>
+<text x="490" y="2388" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#FFFFFF" font-weight="800" text-anchor="start">IMG-03</text>
+<text x="945" y="2598" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#334155" font-weight="600" text-anchor="middle">Painters on ladders — real exterior job in progress</text>
+<circle cx="510" cy="2808" r="26" fill="#F3F4F6" stroke="#D1D5DB"/>
+<circle cx="670" cy="2808" r="26" fill="#F3F4F6" stroke="#D1D5DB"/>
+<circle cx="830" cy="2808" r="26" fill="#F3F4F6" stroke="#D1D5DB"/>
+<circle cx="990" cy="2808" r="26" fill="#F3F4F6" stroke="#D1D5DB"/>
+<circle cx="1150" cy="2808" r="26" fill="#F3F4F6" stroke="#D1D5DB"/>
+<circle cx="1310" cy="2808" r="26" fill="#F3F4F6" stroke="#D1D5DB"/>
+<text x="1370" y="2814" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#6B7280" font-weight="600" text-anchor="end">← trust badges</text>
+<rect x="40" y="2832" width="1440" height="860" rx="0" fill="#FAFAFA" stroke="#D1D5DB" stroke-width="1"/>
+<rect x="54" y="2844" width="365" height="24" rx="12" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+<text x="68" y="2860" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" fill="#9CA3AF" font-weight="700" text-anchor="start" letter-spacing="1">09 · SERVICE CARDS (EACH LINKS TO ITS SERVICE PAGE)</text>
+<text x="760" y="2898" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="26" fill="#111827" font-weight="800" text-anchor="middle">Professional Interior &amp; Exterior Painting Services in [State]</text>
+<rect x="100" y="2932" width="420" height="330" rx="10" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1"/>
+<rect x="114" y="2946" width="392" height="180" rx="8" fill="url(#hatch)" stroke="#B6C4D6" stroke-width="1.5"/>
+<rect x="114" y="2946" width="392" height="180" rx="8" fill="#EDF2F8" stroke="none" stroke-width="1" opacity="0.55"/>
+<g transform="translate(310 3034) scale(0.8)" opacity="0.75"><rect x="-21" y="-12" width="42" height="28" rx="5" fill="none" stroke="#8FA3BC" stroke-width="2.5"/><circle cx="0" cy="2" r="7.5" fill="none" stroke="#8FA3BC" stroke-width="2.5"/><rect x="-8" y="-17" width="16" height="7" rx="2.5" fill="#8FA3BC"/></g>
+<rect x="124" y="2956" width="66" height="24" rx="6" fill="#DC2626" stroke="none" stroke-width="1"/>
+<text x="134" y="2972" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#FFFFFF" font-weight="800" text-anchor="start">IMG-04</text>
+<text x="310" y="3098" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" fill="#334155" font-weight="600" text-anchor="middle">Bright finished living room</text>
+<text x="120" y="3158" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="17" fill="#111827" font-weight="800" text-anchor="start">Interior Painting</text>
+<rect x="120" y="3176" width="370" height="10" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<rect x="120" y="3194" width="320" height="10" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<text x="120" y="3234" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#DC2626" font-weight="800" text-anchor="start">LEARN MORE  ➜</text>
+<rect x="550" y="2932" width="420" height="330" rx="10" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1"/>
+<rect x="564" y="2946" width="392" height="180" rx="8" fill="url(#hatch)" stroke="#B6C4D6" stroke-width="1.5"/>
+<rect x="564" y="2946" width="392" height="180" rx="8" fill="#EDF2F8" stroke="none" stroke-width="1" opacity="0.55"/>
+<g transform="translate(760 3034) scale(0.8)" opacity="0.75"><rect x="-21" y="-12" width="42" height="28" rx="5" fill="none" stroke="#8FA3BC" stroke-width="2.5"/><circle cx="0" cy="2" r="7.5" fill="none" stroke="#8FA3BC" stroke-width="2.5"/><rect x="-8" y="-17" width="16" height="7" rx="2.5" fill="#8FA3BC"/></g>
+<rect x="574" y="2956" width="66" height="24" rx="6" fill="#DC2626" stroke="none" stroke-width="1"/>
+<text x="584" y="2972" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#FFFFFF" font-weight="800" text-anchor="start">IMG-05</text>
+<text x="760" y="3098" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" fill="#334155" font-weight="600" text-anchor="middle">Full house ‘after’, blue sky</text>
+<text x="570" y="3158" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="17" fill="#111827" font-weight="800" text-anchor="start">Exterior Painting</text>
+<rect x="570" y="3176" width="370" height="10" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<rect x="570" y="3194" width="320" height="10" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<text x="570" y="3234" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#DC2626" font-weight="800" text-anchor="start">LEARN MORE  ➜</text>
+<rect x="1000" y="2932" width="420" height="330" rx="10" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1"/>
+<rect x="1014" y="2946" width="392" height="180" rx="8" fill="url(#hatch)" stroke="#B6C4D6" stroke-width="1.5"/>
+<rect x="1014" y="2946" width="392" height="180" rx="8" fill="#EDF2F8" stroke="none" stroke-width="1" opacity="0.55"/>
+<g transform="translate(1210 3034) scale(0.8)" opacity="0.75"><rect x="-21" y="-12" width="42" height="28" rx="5" fill="none" stroke="#8FA3BC" stroke-width="2.5"/><circle cx="0" cy="2" r="7.5" fill="none" stroke="#8FA3BC" stroke-width="2.5"/><rect x="-8" y="-17" width="16" height="7" rx="2.5" fill="#8FA3BC"/></g>
+<rect x="1024" y="2956" width="66" height="24" rx="6" fill="#DC2626" stroke="none" stroke-width="1"/>
+<text x="1034" y="2972" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#FFFFFF" font-weight="800" text-anchor="start">IMG-06</text>
+<text x="1210" y="3098" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" fill="#334155" font-weight="600" text-anchor="middle">Close-up: cabinets or crisp trim line</text>
+<text x="1020" y="3158" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="17" fill="#111827" font-weight="800" text-anchor="start">Cabinets / Trim &amp; Doors</text>
+<rect x="1020" y="3176" width="370" height="10" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<rect x="1020" y="3194" width="320" height="10" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<text x="1020" y="3234" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#DC2626" font-weight="800" text-anchor="start">LEARN MORE  ➜</text>
+<rect x="100" y="3292" width="420" height="330" rx="10" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1"/>
+<rect x="114" y="3306" width="392" height="180" rx="8" fill="url(#hatch)" stroke="#B6C4D6" stroke-width="1.5"/>
+<rect x="114" y="3306" width="392" height="180" rx="8" fill="#EDF2F8" stroke="none" stroke-width="1" opacity="0.55"/>
+<g transform="translate(310 3394) scale(0.8)" opacity="0.75"><rect x="-21" y="-12" width="42" height="28" rx="5" fill="none" stroke="#8FA3BC" stroke-width="2.5"/><circle cx="0" cy="2" r="7.5" fill="none" stroke="#8FA3BC" stroke-width="2.5"/><rect x="-8" y="-17" width="16" height="7" rx="2.5" fill="#8FA3BC"/></g>
+<rect x="124" y="3316" width="66" height="24" rx="6" fill="#DC2626" stroke="none" stroke-width="1"/>
+<text x="134" y="3332" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#FFFFFF" font-weight="800" text-anchor="start">IMG-07</text>
+<text x="310" y="3458" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" fill="#334155" font-weight="600" text-anchor="middle">Local office / storefront</text>
+<text x="120" y="3518" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="17" fill="#111827" font-weight="800" text-anchor="start">Commercial Painting</text>
+<rect x="120" y="3536" width="370" height="10" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<rect x="120" y="3554" width="320" height="10" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<text x="120" y="3594" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#DC2626" font-weight="800" text-anchor="start">LEARN MORE  ➜</text>
+<rect x="550" y="3292" width="420" height="330" rx="10" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1"/>
+<rect x="564" y="3306" width="392" height="180" rx="8" fill="url(#hatch)" stroke="#B6C4D6" stroke-width="1.5"/>
+<rect x="564" y="3306" width="392" height="180" rx="8" fill="#EDF2F8" stroke="none" stroke-width="1" opacity="0.55"/>
+<g transform="translate(760 3394) scale(0.8)" opacity="0.75"><rect x="-21" y="-12" width="42" height="28" rx="5" fill="none" stroke="#8FA3BC" stroke-width="2.5"/><circle cx="0" cy="2" r="7.5" fill="none" stroke="#8FA3BC" stroke-width="2.5"/><rect x="-8" y="-17" width="16" height="7" rx="2.5" fill="#8FA3BC"/></g>
+<rect x="574" y="3316" width="66" height="24" rx="6" fill="#DC2626" stroke="none" stroke-width="1"/>
+<text x="584" y="3332" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#FFFFFF" font-weight="800" text-anchor="start">IMG-08</text>
+<text x="760" y="3458" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" fill="#334155" font-weight="600" text-anchor="middle">Freshly stained deck</text>
+<text x="570" y="3518" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="17" fill="#111827" font-weight="800" text-anchor="start">Fence &amp; Deck</text>
+<rect x="570" y="3536" width="370" height="10" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<rect x="570" y="3554" width="320" height="10" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<text x="570" y="3594" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#DC2626" font-weight="800" text-anchor="start">LEARN MORE  ➜</text>
+<rect x="1000" y="3292" width="420" height="330" rx="10" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1"/>
+<rect x="1014" y="3306" width="392" height="180" rx="8" fill="url(#hatch)" stroke="#B6C4D6" stroke-width="1.5"/>
+<rect x="1014" y="3306" width="392" height="180" rx="8" fill="#EDF2F8" stroke="none" stroke-width="1" opacity="0.55"/>
+<g transform="translate(1210 3394) scale(0.8)" opacity="0.75"><rect x="-21" y="-12" width="42" height="28" rx="5" fill="none" stroke="#8FA3BC" stroke-width="2.5"/><circle cx="0" cy="2" r="7.5" fill="none" stroke="#8FA3BC" stroke-width="2.5"/><rect x="-8" y="-17" width="16" height="7" rx="2.5" fill="#8FA3BC"/></g>
+<rect x="1024" y="3316" width="66" height="24" rx="6" fill="#DC2626" stroke="none" stroke-width="1"/>
+<text x="1034" y="3332" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#FFFFFF" font-weight="800" text-anchor="start">IMG-09</text>
+<text x="1210" y="3458" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" fill="#334155" font-weight="600" text-anchor="middle">Painted shed, clean lines</text>
+<text x="1020" y="3518" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="17" fill="#111827" font-weight="800" text-anchor="start">Garage &amp; Shed</text>
+<rect x="1020" y="3536" width="370" height="10" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<rect x="1020" y="3554" width="320" height="10" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<text x="1020" y="3594" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#DC2626" font-weight="800" text-anchor="start">LEARN MORE  ➜</text>
+<rect x="40" y="3692" width="1440" height="620" rx="0" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1"/>
+<rect x="54" y="3704" width="213" height="24" rx="12" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+<text x="68" y="3720" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" fill="#9CA3AF" font-weight="700" text-anchor="start" letter-spacing="1">10 · WHY HOMEOWNERS TRUST US</text>
+<rect x="100" y="3742" width="1320" height="520" rx="14" fill="#F7F8FA" stroke="#D1D5DB" stroke-width="1"/>
+<text x="140" y="3800" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="24" fill="#111827" font-weight="800" text-anchor="start">Why [City] Homeowners Trust Our Painting Team</text>
+<rect x="140" y="3822" width="700" height="10" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<rect x="140" y="3840" width="640" height="10" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<rect x="140" y="3872" width="560" height="350" rx="8" fill="url(#hatch)" stroke="#B6C4D6" stroke-width="1.5"/>
+<rect x="140" y="3872" width="560" height="350" rx="8" fill="#EDF2F8" stroke="none" stroke-width="1" opacity="0.55"/>
+<g transform="translate(420 4039) scale(1.2)" opacity="0.75"><rect x="-21" y="-12" width="42" height="28" rx="5" fill="none" stroke="#8FA3BC" stroke-width="2.5"/><circle cx="0" cy="2" r="7.5" fill="none" stroke="#8FA3BC" stroke-width="2.5"/><rect x="-8" y="-17" width="16" height="7" rx="2.5" fill="#8FA3BC"/></g>
+<rect x="150" y="3882" width="66" height="24" rx="6" fill="#DC2626" stroke="none" stroke-width="1"/>
+<text x="160" y="3898" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#FFFFFF" font-weight="800" text-anchor="start">IMG-10</text>
+<text x="420" y="4073" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#334155" font-weight="600" text-anchor="middle">Candid crew shot — branded gear visible</text>
+<rect x="740" y="3872" width="310" height="160" rx="10" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1"/>
+<rect x="758" y="3890" width="34" height="34" rx="8" fill="#FEE2E2" stroke="none" stroke-width="1"/>
+<text x="775" y="3913" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#DC2626" font-weight="800" text-anchor="middle">★</text>
+<text x="758" y="3954" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" fill="#111827" font-weight="800" text-anchor="start">3–5 Year Warranty</text>
+<rect x="758" y="3970" width="260" height="10" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<rect x="758" y="3988" width="220" height="10" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<rect x="1070" y="3872" width="310" height="160" rx="10" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1"/>
+<rect x="1088" y="3890" width="34" height="34" rx="8" fill="#FEE2E2" stroke="none" stroke-width="1"/>
+<text x="1105" y="3913" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#DC2626" font-weight="800" text-anchor="middle">★</text>
+<text x="1088" y="3954" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" fill="#111827" font-weight="800" text-anchor="start">Licensed &amp; Insured</text>
+<rect x="1088" y="3970" width="260" height="10" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<rect x="1088" y="3988" width="220" height="10" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<rect x="740" y="4052" width="310" height="160" rx="10" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1"/>
+<rect x="758" y="4070" width="34" height="34" rx="8" fill="#FEE2E2" stroke="none" stroke-width="1"/>
+<text x="775" y="4093" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#DC2626" font-weight="800" text-anchor="middle">★</text>
+<text x="758" y="4134" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" fill="#111827" font-weight="800" text-anchor="start">Premium Materials</text>
+<rect x="758" y="4150" width="260" height="10" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<rect x="758" y="4168" width="220" height="10" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<rect x="1070" y="4052" width="310" height="160" rx="10" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1"/>
+<rect x="1088" y="4070" width="34" height="34" rx="8" fill="#FEE2E2" stroke="none" stroke-width="1"/>
+<text x="1105" y="4093" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#DC2626" font-weight="800" text-anchor="middle">★</text>
+<text x="1088" y="4134" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" fill="#111827" font-weight="800" text-anchor="start">Meticulous Prep</text>
+<rect x="1088" y="4150" width="260" height="10" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<rect x="1088" y="4168" width="220" height="10" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<rect x="40" y="4312" width="1440" height="340" rx="8" fill="url(#hatch)" stroke="#B6C4D6" stroke-width="1.5"/>
+<rect x="40" y="4312" width="1440" height="340" rx="8" fill="#EDF2F8" stroke="none" stroke-width="1" opacity="0.55"/>
+<g transform="translate(760 4474) scale(1.2)" opacity="0.75"><rect x="-21" y="-12" width="42" height="28" rx="5" fill="none" stroke="#8FA3BC" stroke-width="2.5"/><circle cx="0" cy="2" r="7.5" fill="none" stroke="#8FA3BC" stroke-width="2.5"/><rect x="-8" y="-17" width="16" height="7" rx="2.5" fill="#8FA3BC"/></g>
+<rect x="50" y="4322" width="66" height="24" rx="6" fill="#DC2626" stroke="none" stroke-width="1"/>
+<text x="60" y="4338" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#FFFFFF" font-weight="800" text-anchor="start">IMG-11</text>
+<rect x="40" y="4312" width="893" height="340" rx="0" fill="#1F2937" stroke="none" stroke-width="1"/>
+<polygon points="932.8,4312 1052.8,4312 892.8,4652 772.8,4652" fill="#DC2626" opacity="0.85"/>
+<rect x="54" y="4324" width="186" height="24" rx="12" fill="#374151" stroke="none" stroke-width="1"/>
+<text x="68" y="4340" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" fill="#D1D5DB" font-weight="700" text-anchor="start" letter-spacing="1">11 · MID-PAGE CTA BANNER</text>
+<rect x="104" y="4378" width="163" height="22" rx="11.0" fill="#B91C1C" stroke="none" stroke-width="1"/>
+<text x="114" y="4393" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#FFFFFF" font-weight="600" text-anchor="start">READY TO GET STARTED?</text>
+<text x="104" y="4442" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="30" fill="#FFFFFF" font-weight="800" text-anchor="start">Transform Your [City] Property</text>
+<rect x="104" y="4464" width="560" height="10" rx="5" fill="#4B5563" stroke="none" stroke-width="1"/>
+<rect x="104" y="4482" width="500" height="10" rx="5" fill="#4B5563" stroke="none" stroke-width="1"/>
+<rect x="104" y="4522" width="220" height="50" rx="6" fill="#1F2937" stroke="none" stroke-width="1"/>
+<text x="214" y="4551" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#FFFFFF" font-weight="700" text-anchor="middle">REQUEST CONSULTATION</text>
+<rect x="344" y="4522" width="180" height="50" rx="6" fill="#FFFFFF" stroke="#9CA3AF" stroke-width="1"/>
+<text x="434" y="4551" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#111827" font-weight="700" text-anchor="middle">☎ PHONE</text>
+<text x="1456" y="4632" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" fill="#64748B" font-weight="700" text-anchor="end">photo shows through right side — keep subject right of center</text>
+<rect x="40" y="4652" width="1440" height="900" rx="0" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1"/>
+<rect x="54" y="4664" width="213" height="24" rx="12" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+<text x="68" y="4680" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" fill="#9CA3AF" font-weight="700" text-anchor="start" letter-spacing="1">12 · PROJECTS / SEE OUR WORK</text>
+<rect x="100" y="4710" width="102" height="22" rx="11.0" fill="#FEE2E2" stroke="none" stroke-width="1"/>
+<text x="110" y="4725" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#B91C1C" font-weight="600" text-anchor="start">SEE OUR WORK</text>
+<text x="100" y="4770" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="26" fill="#111827" font-weight="800" text-anchor="start">Quality Results That Speak for Themselves</text>
+<rect x="1200" y="4734" width="220" height="46" rx="6" fill="#1F2937" stroke="none" stroke-width="1"/>
+<text x="1310" y="4761" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#FFFFFF" font-weight="700" text-anchor="middle">REQUEST CONSULTATION</text>
+<rect x="100" y="4812" width="1320" height="200" rx="8" fill="url(#hatch)" stroke="#B6C4D6" stroke-width="1.5"/>
+<rect x="100" y="4812" width="1320" height="200" rx="8" fill="#EDF2F8" stroke="none" stroke-width="1" opacity="0.55"/>
+<g transform="translate(760 4904) scale(1.2)" opacity="0.75"><rect x="-21" y="-12" width="42" height="28" rx="5" fill="none" stroke="#8FA3BC" stroke-width="2.5"/><circle cx="0" cy="2" r="7.5" fill="none" stroke="#8FA3BC" stroke-width="2.5"/><rect x="-8" y="-17" width="16" height="7" rx="2.5" fill="#8FA3BC"/></g>
+<rect x="110" y="4822" width="73" height="24" rx="6" fill="#DC2626" stroke="none" stroke-width="1"/>
+<text x="120" y="4838" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#FFFFFF" font-weight="800" text-anchor="start">IMG-12a</text>
+<rect x="100" y="4952" width="1320" height="60" rx="8" fill="#0B1220" stroke="none" stroke-width="1" opacity="0.55"/>
+<text x="124" y="4984" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" fill="#FFFFFF" font-weight="700" text-anchor="start">Classic Victorian Exterior Repaint — Exterior · Restoration</text>
+<rect x="100" y="5032" width="1320" height="200" rx="8" fill="url(#hatch)" stroke="#B6C4D6" stroke-width="1.5"/>
+<rect x="100" y="5032" width="1320" height="200" rx="8" fill="#EDF2F8" stroke="none" stroke-width="1" opacity="0.55"/>
+<g transform="translate(760 5124) scale(1.2)" opacity="0.75"><rect x="-21" y="-12" width="42" height="28" rx="5" fill="none" stroke="#8FA3BC" stroke-width="2.5"/><circle cx="0" cy="2" r="7.5" fill="none" stroke="#8FA3BC" stroke-width="2.5"/><rect x="-8" y="-17" width="16" height="7" rx="2.5" fill="#8FA3BC"/></g>
+<rect x="110" y="5042" width="73" height="24" rx="6" fill="#DC2626" stroke="none" stroke-width="1"/>
+<text x="120" y="5058" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#FFFFFF" font-weight="800" text-anchor="start">IMG-12b</text>
+<rect x="100" y="5172" width="1320" height="60" rx="8" fill="#0B1220" stroke="none" stroke-width="1" opacity="0.55"/>
+<text x="124" y="5204" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" fill="#FFFFFF" font-weight="700" text-anchor="start">Deck Revival — Power Washing · Stain</text>
+<rect x="100" y="5252" width="1320" height="200" rx="8" fill="url(#hatch)" stroke="#B6C4D6" stroke-width="1.5"/>
+<rect x="100" y="5252" width="1320" height="200" rx="8" fill="#EDF2F8" stroke="none" stroke-width="1" opacity="0.55"/>
+<g transform="translate(760 5344) scale(1.2)" opacity="0.75"><rect x="-21" y="-12" width="42" height="28" rx="5" fill="none" stroke="#8FA3BC" stroke-width="2.5"/><circle cx="0" cy="2" r="7.5" fill="none" stroke="#8FA3BC" stroke-width="2.5"/><rect x="-8" y="-17" width="16" height="7" rx="2.5" fill="#8FA3BC"/></g>
+<rect x="110" y="5262" width="73" height="24" rx="6" fill="#DC2626" stroke="none" stroke-width="1"/>
+<text x="120" y="5278" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#FFFFFF" font-weight="800" text-anchor="start">IMG-12c</text>
+<rect x="100" y="5392" width="1320" height="60" rx="8" fill="#0B1220" stroke="none" stroke-width="1" opacity="0.55"/>
+<text x="124" y="5424" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" fill="#FFFFFF" font-weight="700" text-anchor="start">Apartment Building Exterior — Commercial</text>
+<rect x="670" y="5482" width="180" height="48" rx="6" fill="#1F2937" stroke="none" stroke-width="1"/>
+<text x="760" y="5510" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#FFFFFF" font-weight="700" text-anchor="middle">EXPLORE GALLERY ➜</text>
+<text x="760" y="5564" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#6B7280" font-weight="600" text-anchor="middle">Alt pattern (Pro Vision): BEFORE / AFTER pairs — same angle, same height, same daylight in both frames.</text>
+<rect x="40" y="5552" width="1440" height="400" rx="0" fill="#1F2937" stroke="none" stroke-width="1"/>
+<rect x="54" y="5564" width="279" height="24" rx="12" fill="#374151" stroke="none" stroke-width="1"/>
+<text x="68" y="5580" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" fill="#D1D5DB" font-weight="700" text-anchor="start" letter-spacing="1">13 · PROCESS STEPS (ICONS — NO PHOTOS)</text>
+<text x="760" y="5632" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="26" fill="#FFFFFF" font-weight="800" text-anchor="middle">How We Deliver Outstanding Results</text>
+<line x1="210" y1="5732" x2="1370" y2="5732" stroke="#4B5563" stroke-width="2" stroke-dasharray="6 6"/>
+<rect x="170" y="5700" width="80" height="64" rx="10" fill="#DC2626" stroke="none" stroke-width="1"/>
+<text x="210" y="5738" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="20" fill="#FFFFFF" font-weight="800" text-anchor="middle">01</text>
+<text x="210" y="5798" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" fill="#D1D5DB" font-weight="600" text-anchor="middle">Free consultation &amp;</text>
+<text x="210" y="5816" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" fill="#D1D5DB" font-weight="600" text-anchor="middle">site inspection</text>
+<rect x="460" y="5700" width="80" height="64" rx="10" fill="#3B82F6" stroke="none" stroke-width="1"/>
+<text x="500" y="5738" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="20" fill="#FFFFFF" font-weight="800" text-anchor="middle">02</text>
+<text x="500" y="5798" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" fill="#D1D5DB" font-weight="600" text-anchor="middle">Clear, upfront quote</text>
+<rect x="750" y="5700" width="80" height="64" rx="10" fill="#DC2626" stroke="none" stroke-width="1"/>
+<text x="790" y="5738" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="20" fill="#FFFFFF" font-weight="800" text-anchor="middle">03</text>
+<text x="790" y="5798" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" fill="#D1D5DB" font-weight="600" text-anchor="middle">Prep &amp; protect your</text>
+<text x="790" y="5816" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" fill="#D1D5DB" font-weight="600" text-anchor="middle">space</text>
+<rect x="1040" y="5700" width="80" height="64" rx="10" fill="#3B82F6" stroke="none" stroke-width="1"/>
+<text x="1080" y="5738" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="20" fill="#FFFFFF" font-weight="800" text-anchor="middle">04</text>
+<text x="1080" y="5798" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" fill="#D1D5DB" font-weight="600" text-anchor="middle">Quality application</text>
+<rect x="1330" y="5700" width="80" height="64" rx="10" fill="#DC2626" stroke="none" stroke-width="1"/>
+<text x="1370" y="5738" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="20" fill="#FFFFFF" font-weight="800" text-anchor="middle">05</text>
+<text x="1370" y="5798" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" fill="#D1D5DB" font-weight="600" text-anchor="middle">Final walkthrough &amp;</text>
+<text x="1370" y="5816" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" fill="#D1D5DB" font-weight="600" text-anchor="middle">cleanup</text>
+<rect x="40" y="5952" width="1440" height="560" rx="0" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1"/>
+<rect x="54" y="5964" width="266" height="24" rx="12" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+<text x="68" y="5980" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" fill="#9CA3AF" font-weight="700" text-anchor="start" letter-spacing="1">14 · WHY CHOOSE US (DIFFERENTIATORS)</text>
+<rect x="630" y="6002" width="184" height="22" rx="11.0" fill="#FEE2E2" stroke="none" stroke-width="1"/>
+<text x="640" y="6017" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#B91C1C" font-weight="600" text-anchor="start">THE [COMPANY] DIFFERENCE</text>
+<text x="760" y="6064" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="26" fill="#111827" font-weight="800" text-anchor="middle">Why Choose the Best Painters in [City, ST]</text>
+<rect x="100" y="6122" width="290" height="170" rx="10" fill="#FBFBFC" stroke="#D1D5DB" stroke-width="1"/>
+<text x="245" y="6182" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" fill="#DC2626" font-weight="800" text-anchor="middle">❖</text>
+<text x="245" y="6214" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#111827" font-weight="800" text-anchor="middle">Industry-Leading Warranty</text>
+<rect x="130" y="6234" width="230" height="10" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<rect x="130" y="6252" width="200" height="10" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<rect x="100" y="6312" width="290" height="170" rx="10" fill="#FBFBFC" stroke="#D1D5DB" stroke-width="1"/>
+<text x="245" y="6372" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" fill="#DC2626" font-weight="800" text-anchor="middle">❖</text>
+<text x="245" y="6404" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#111827" font-weight="800" text-anchor="middle">15+ Years Experience</text>
+<rect x="130" y="6424" width="230" height="10" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<rect x="130" y="6442" width="200" height="10" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<rect x="1190" y="6122" width="290" height="170" rx="10" fill="#FBFBFC" stroke="#D1D5DB" stroke-width="1"/>
+<text x="1335" y="6182" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" fill="#DC2626" font-weight="800" text-anchor="middle">❖</text>
+<text x="1335" y="6214" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#111827" font-weight="800" text-anchor="middle">Quality Materials</text>
+<rect x="1220" y="6234" width="230" height="10" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<rect x="1220" y="6252" width="200" height="10" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<rect x="1190" y="6312" width="290" height="170" rx="10" fill="#FBFBFC" stroke="#D1D5DB" stroke-width="1"/>
+<text x="1335" y="6372" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" fill="#DC2626" font-weight="800" text-anchor="middle">❖</text>
+<text x="1335" y="6404" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#111827" font-weight="800" text-anchor="middle">Seamless Experience</text>
+<rect x="1220" y="6424" width="230" height="10" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<rect x="1220" y="6442" width="200" height="10" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<rect x="440" y="6122" width="640" height="360" rx="8" fill="url(#hatch)" stroke="#B6C4D6" stroke-width="1.5"/>
+<rect x="440" y="6122" width="640" height="360" rx="8" fill="#EDF2F8" stroke="none" stroke-width="1" opacity="0.55"/>
+<g transform="translate(760 6294) scale(1.2)" opacity="0.75"><rect x="-21" y="-12" width="42" height="28" rx="5" fill="none" stroke="#8FA3BC" stroke-width="2.5"/><circle cx="0" cy="2" r="7.5" fill="none" stroke="#8FA3BC" stroke-width="2.5"/><rect x="-8" y="-17" width="16" height="7" rx="2.5" fill="#8FA3BC"/></g>
+<rect x="450" y="6132" width="66" height="24" rx="6" fill="#DC2626" stroke="none" stroke-width="1"/>
+<text x="460" y="6148" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#FFFFFF" font-weight="800" text-anchor="start">IMG-13</text>
+<text x="760" y="6328" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#334155" font-weight="600" text-anchor="middle">Painter cutting in / rolling — clean, protected site</text>
+<rect x="40" y="6512" width="1440" height="500" rx="0" fill="#FAFAFA" stroke="#D1D5DB" stroke-width="1"/>
+<rect x="54" y="6524" width="160" height="24" rx="12" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+<text x="68" y="6540" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" fill="#9CA3AF" font-weight="700" text-anchor="start" letter-spacing="1">15 · FAQ (NO PHOTOS)</text>
+<rect x="100" y="6566" width="40" height="22" rx="11.0" fill="#FEE2E2" stroke="none" stroke-width="1"/>
+<text x="110" y="6581" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#B91C1C" font-weight="600" text-anchor="start">FAQ</text>
+<text x="100" y="6624" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="26" fill="#111827" font-weight="800" text-anchor="start">Frequently Asked Questions</text>
+<rect x="1200" y="6588" width="220" height="46" rx="6" fill="#1F2937" stroke="none" stroke-width="1"/>
+<text x="1310" y="6615" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#FFFFFF" font-weight="700" text-anchor="middle">REQUEST CONSULTATION</text>
+<rect x="100" y="6662" width="640" height="64" rx="8" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1"/>
+<rect x="120" y="6689" width="420" height="10" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<text x="706" y="6702" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="20" fill="#DC2626" font-weight="700" text-anchor="start">+</text>
+<rect x="100" y="6742" width="640" height="64" rx="8" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1"/>
+<rect x="120" y="6769" width="420" height="10" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<text x="706" y="6782" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="20" fill="#DC2626" font-weight="700" text-anchor="start">+</text>
+<rect x="100" y="6822" width="640" height="64" rx="8" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1"/>
+<rect x="120" y="6849" width="420" height="10" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<text x="706" y="6862" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="20" fill="#DC2626" font-weight="700" text-anchor="start">+</text>
+<rect x="100" y="6902" width="640" height="64" rx="8" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1"/>
+<rect x="120" y="6929" width="420" height="10" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<text x="706" y="6942" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="20" fill="#DC2626" font-weight="700" text-anchor="start">+</text>
+<rect x="780" y="6662" width="640" height="64" rx="8" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1"/>
+<rect x="800" y="6689" width="420" height="10" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<text x="1386" y="6702" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="20" fill="#DC2626" font-weight="700" text-anchor="start">+</text>
+<rect x="780" y="6742" width="640" height="64" rx="8" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1"/>
+<rect x="800" y="6769" width="420" height="10" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<text x="1386" y="6782" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="20" fill="#DC2626" font-weight="700" text-anchor="start">+</text>
+<rect x="780" y="6822" width="640" height="64" rx="8" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1"/>
+<rect x="800" y="6849" width="420" height="10" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<text x="1386" y="6862" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="20" fill="#DC2626" font-weight="700" text-anchor="start">+</text>
+<rect x="780" y="6902" width="640" height="64" rx="8" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1"/>
+<rect x="800" y="6929" width="420" height="10" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<text x="1386" y="6942" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="20" fill="#DC2626" font-weight="700" text-anchor="start">+</text>
+<text x="760" y="6998" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" fill="#B45309" font-weight="600" text-anchor="middle">⚠ Copy check: FAQ text must name the client&#x27;s real city/state — a draft shipped with “What areas do you serve in Indiana?” on a Florida site.</text>
+<rect x="40" y="7012" width="1440" height="500" rx="0" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1"/>
+<rect x="54" y="7024" width="167" height="24" rx="12" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+<text x="68" y="7040" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" fill="#9CA3AF" font-weight="700" text-anchor="start" letter-spacing="1">16 · BLOG / RESOURCES</text>
+<text x="760" y="7078" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="26" fill="#111827" font-weight="800" text-anchor="middle">Expert Painting Advice for [City] Homeowners</text>
+<rect x="100" y="7112" width="420" height="340" rx="10" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1"/>
+<rect x="114" y="7126" width="392" height="180" rx="8" fill="url(#hatch)" stroke="#B6C4D6" stroke-width="1.5"/>
+<rect x="114" y="7126" width="392" height="180" rx="8" fill="#EDF2F8" stroke="none" stroke-width="1" opacity="0.55"/>
+<g transform="translate(310 7214) scale(0.8)" opacity="0.75"><rect x="-21" y="-12" width="42" height="28" rx="5" fill="none" stroke="#8FA3BC" stroke-width="2.5"/><circle cx="0" cy="2" r="7.5" fill="none" stroke="#8FA3BC" stroke-width="2.5"/><rect x="-8" y="-17" width="16" height="7" rx="2.5" fill="#8FA3BC"/></g>
+<rect x="124" y="7136" width="73" height="24" rx="6" fill="#DC2626" stroke="none" stroke-width="1"/>
+<text x="134" y="7152" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#FFFFFF" font-weight="800" text-anchor="start">IMG-14a</text>
+<text x="310" y="7276" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" fill="#334155" font-weight="600" text-anchor="middle">must match article topic + niche</text>
+<text x="120" y="7334" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#6B7280" font-weight="600" text-anchor="start">Feb 27, 2025</text>
+<rect x="120" y="7350" width="360" height="12" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<rect x="120" y="7372" width="300" height="12" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<rect x="120" y="7396" width="370" height="8" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<rect x="120" y="7412" width="330" height="8" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<text x="120" y="7438" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#DC2626" font-weight="800" text-anchor="start">READ MORE  ➜</text>
+<rect x="550" y="7112" width="420" height="340" rx="10" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1"/>
+<rect x="564" y="7126" width="392" height="180" rx="8" fill="url(#hatch)" stroke="#B6C4D6" stroke-width="1.5"/>
+<rect x="564" y="7126" width="392" height="180" rx="8" fill="#EDF2F8" stroke="none" stroke-width="1" opacity="0.55"/>
+<g transform="translate(760 7214) scale(0.8)" opacity="0.75"><rect x="-21" y="-12" width="42" height="28" rx="5" fill="none" stroke="#8FA3BC" stroke-width="2.5"/><circle cx="0" cy="2" r="7.5" fill="none" stroke="#8FA3BC" stroke-width="2.5"/><rect x="-8" y="-17" width="16" height="7" rx="2.5" fill="#8FA3BC"/></g>
+<rect x="574" y="7136" width="73" height="24" rx="6" fill="#DC2626" stroke="none" stroke-width="1"/>
+<text x="584" y="7152" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#FFFFFF" font-weight="800" text-anchor="start">IMG-14b</text>
+<text x="760" y="7276" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" fill="#334155" font-weight="600" text-anchor="middle">must match article topic + niche</text>
+<text x="570" y="7334" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#6B7280" font-weight="600" text-anchor="start">Feb 27, 2025</text>
+<rect x="570" y="7350" width="360" height="12" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<rect x="570" y="7372" width="300" height="12" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<rect x="570" y="7396" width="370" height="8" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<rect x="570" y="7412" width="330" height="8" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<text x="570" y="7438" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#DC2626" font-weight="800" text-anchor="start">READ MORE  ➜</text>
+<rect x="1000" y="7112" width="420" height="340" rx="10" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1"/>
+<rect x="1014" y="7126" width="392" height="180" rx="8" fill="url(#hatch)" stroke="#B6C4D6" stroke-width="1.5"/>
+<rect x="1014" y="7126" width="392" height="180" rx="8" fill="#EDF2F8" stroke="none" stroke-width="1" opacity="0.55"/>
+<g transform="translate(1210 7214) scale(0.8)" opacity="0.75"><rect x="-21" y="-12" width="42" height="28" rx="5" fill="none" stroke="#8FA3BC" stroke-width="2.5"/><circle cx="0" cy="2" r="7.5" fill="none" stroke="#8FA3BC" stroke-width="2.5"/><rect x="-8" y="-17" width="16" height="7" rx="2.5" fill="#8FA3BC"/></g>
+<rect x="1024" y="7136" width="73" height="24" rx="6" fill="#DC2626" stroke="none" stroke-width="1"/>
+<text x="1034" y="7152" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#FFFFFF" font-weight="800" text-anchor="start">IMG-14c</text>
+<text x="1210" y="7276" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" fill="#334155" font-weight="600" text-anchor="middle">must match article topic + niche</text>
+<text x="1020" y="7334" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#6B7280" font-weight="600" text-anchor="start">Feb 27, 2025</text>
+<rect x="1020" y="7350" width="360" height="12" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<rect x="1020" y="7372" width="300" height="12" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<rect x="1020" y="7396" width="370" height="8" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<rect x="1020" y="7412" width="330" height="8" rx="5" fill="#E2E5EA" stroke="none" stroke-width="1"/>
+<text x="1020" y="7438" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#DC2626" font-weight="800" text-anchor="start">READ MORE  ➜</text>
+<rect x="40" y="7512" width="1440" height="260" rx="0" fill="#1F2937" stroke="none" stroke-width="1"/>
+<rect x="54" y="7524" width="186" height="24" rx="12" fill="#374151" stroke="none" stroke-width="1"/>
+<text x="68" y="7540" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" fill="#D1D5DB" font-weight="700" text-anchor="start" letter-spacing="1">17 · SERVICE AREAS + MAP</text>
+<text x="760" y="7582" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="26" fill="#FFFFFF" font-weight="800" text-anchor="middle">Proudly Serving [City] and Surrounding Areas</text>
+<rect x="160" y="7622" width="94" height="30" rx="15.0" fill="#B91C1C" stroke="none" stroke-width="1"/>
+<text x="170" y="7641" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#FFFFFF" font-weight="600" text-anchor="start">📍 [City 1]</text>
+<rect x="268" y="7622" width="94" height="30" rx="15.0" fill="#B91C1C" stroke="none" stroke-width="1"/>
+<text x="278" y="7641" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#FFFFFF" font-weight="600" text-anchor="start">📍 [City 2]</text>
+<rect x="377" y="7622" width="94" height="30" rx="15.0" fill="#B91C1C" stroke="none" stroke-width="1"/>
+<text x="387" y="7641" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#FFFFFF" font-weight="600" text-anchor="start">📍 [City 3]</text>
+<rect x="485" y="7622" width="94" height="30" rx="15.0" fill="#B91C1C" stroke="none" stroke-width="1"/>
+<text x="495" y="7641" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#FFFFFF" font-weight="600" text-anchor="start">📍 [City 4]</text>
+<rect x="594" y="7622" width="94" height="30" rx="15.0" fill="#B91C1C" stroke="none" stroke-width="1"/>
+<text x="604" y="7641" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#FFFFFF" font-weight="600" text-anchor="start">📍 [City 5]</text>
+<rect x="702" y="7622" width="94" height="30" rx="15.0" fill="#B91C1C" stroke="none" stroke-width="1"/>
+<text x="712" y="7641" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#FFFFFF" font-weight="600" text-anchor="start">📍 [City 6]</text>
+<rect x="810" y="7622" width="94" height="30" rx="15.0" fill="#B91C1C" stroke="none" stroke-width="1"/>
+<text x="820" y="7641" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#FFFFFF" font-weight="600" text-anchor="start">📍 [City 7]</text>
+<rect x="300" y="7664" width="94" height="30" rx="15.0" fill="#B91C1C" stroke="none" stroke-width="1"/>
+<text x="310" y="7683" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#FFFFFF" font-weight="600" text-anchor="start">📍 [City 8]</text>
+<rect x="408" y="7664" width="94" height="30" rx="15.0" fill="#B91C1C" stroke="none" stroke-width="1"/>
+<text x="418" y="7683" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#FFFFFF" font-weight="600" text-anchor="start">📍 [City 9]</text>
+<rect x="517" y="7664" width="102" height="30" rx="15.0" fill="#B91C1C" stroke="none" stroke-width="1"/>
+<text x="527" y="7683" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#FFFFFF" font-weight="600" text-anchor="start">📍 [City 10]</text>
+<rect x="633" y="7664" width="102" height="30" rx="15.0" fill="#B91C1C" stroke="none" stroke-width="1"/>
+<text x="643" y="7683" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#FFFFFF" font-weight="600" text-anchor="start">📍 [City 11]</text>
+<rect x="748" y="7664" width="102" height="30" rx="15.0" fill="#B91C1C" stroke="none" stroke-width="1"/>
+<text x="758" y="7683" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#FFFFFF" font-weight="600" text-anchor="start">📍 [City 12]</text>
+<text x="760" y="7744" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#9CA3AF" font-weight="600" text-anchor="middle">chips = real service towns for THIS client</text>
+<rect x="40" y="7772" width="1440" height="380" rx="8" fill="url(#hatch)" stroke="#B6C4D6" stroke-width="1.5"/>
+<rect x="40" y="7772" width="1440" height="380" rx="8" fill="#EDF2F8" stroke="none" stroke-width="1" opacity="0.55"/>
+<g transform="translate(760 7954) scale(1.2)" opacity="0.75"><rect x="-21" y="-12" width="42" height="28" rx="5" fill="none" stroke="#8FA3BC" stroke-width="2.5"/><circle cx="0" cy="2" r="7.5" fill="none" stroke="#8FA3BC" stroke-width="2.5"/><rect x="-8" y="-17" width="16" height="7" rx="2.5" fill="#8FA3BC"/></g>
+<rect x="50" y="7782" width="66" height="24" rx="6" fill="#DC2626" stroke="none" stroke-width="1"/>
+<text x="60" y="7798" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#FFFFFF" font-weight="800" text-anchor="start">IMG-15</text>
+<text x="760" y="7988" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#334155" font-weight="600" text-anchor="middle">LIVE Google Maps embed — centered on the client&#x27;s actual city</text>
+<rect x="160" y="8052" width="1200" height="80" rx="12" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1"/>
+<text x="180" y="8084" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#111827" font-weight="800" text-anchor="start">Get Your Free Estimate Today</text>
+<rect x="440" y="8068" width="158" height="48" rx="6" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1"/>
+<text x="452" y="8096" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#9AA1AB" font-weight="400" text-anchor="start">First name</text>
+<rect x="610" y="8068" width="158" height="48" rx="6" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1"/>
+<text x="622" y="8096" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#9AA1AB" font-weight="400" text-anchor="start">Last name</text>
+<rect x="780" y="8068" width="158" height="48" rx="6" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1"/>
+<text x="792" y="8096" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#9AA1AB" font-weight="400" text-anchor="start">Phone</text>
+<rect x="950" y="8068" width="158" height="48" rx="6" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1"/>
+<text x="962" y="8096" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#9AA1AB" font-weight="400" text-anchor="start">Email</text>
+<rect x="1130" y="8068" width="200" height="48" rx="6" fill="#DC2626" stroke="none" stroke-width="1"/>
+<text x="1230" y="8098" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#FFFFFF" font-weight="800" text-anchor="middle">SUBMIT ➜</text>
+<rect x="40" y="8152" width="1440" height="360" rx="0" fill="#111826" stroke="none" stroke-width="1"/>
+<rect x="54" y="8164" width="101" height="24" rx="12" fill="#374151" stroke="none" stroke-width="1"/>
+<text x="68" y="8180" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" fill="#D1D5DB" font-weight="700" text-anchor="start" letter-spacing="1">18 · FOOTER</text>
+<rect x="100" y="8202" width="170" height="54" rx="8" fill="#273244" stroke="none" stroke-width="1"/>
+<text x="185" y="8234" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#9CA3AF" font-weight="800" text-anchor="middle" letter-spacing="2">LOGO</text>
+<rect x="100" y="8278" width="240" height="9" rx="5" fill="#374151" stroke="none" stroke-width="1"/>
+<rect x="100" y="8296" width="200" height="9" rx="5" fill="#374151" stroke="none" stroke-width="1"/>
+<text x="460" y="8222" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#9CA3AF" font-weight="800" text-anchor="start" letter-spacing="1">COMPANY</text>
+<rect x="460" y="8240" width="150" height="9" rx="5" fill="#374151" stroke="none" stroke-width="1"/>
+<rect x="460" y="8264" width="120" height="9" rx="5" fill="#374151" stroke="none" stroke-width="1"/>
+<rect x="460" y="8288" width="150" height="9" rx="5" fill="#374151" stroke="none" stroke-width="1"/>
+<rect x="460" y="8312" width="120" height="9" rx="5" fill="#374151" stroke="none" stroke-width="1"/>
+<rect x="460" y="8336" width="150" height="9" rx="5" fill="#374151" stroke="none" stroke-width="1"/>
+<text x="790" y="8222" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#9CA3AF" font-weight="800" text-anchor="start" letter-spacing="1">RESIDENTIAL SERVICES</text>
+<rect x="790" y="8240" width="150" height="9" rx="5" fill="#374151" stroke="none" stroke-width="1"/>
+<rect x="790" y="8264" width="120" height="9" rx="5" fill="#374151" stroke="none" stroke-width="1"/>
+<rect x="790" y="8288" width="150" height="9" rx="5" fill="#374151" stroke="none" stroke-width="1"/>
+<rect x="790" y="8312" width="120" height="9" rx="5" fill="#374151" stroke="none" stroke-width="1"/>
+<rect x="790" y="8336" width="150" height="9" rx="5" fill="#374151" stroke="none" stroke-width="1"/>
+<text x="1120" y="8222" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#9CA3AF" font-weight="800" text-anchor="start" letter-spacing="1">COMMERCIAL SERVICES</text>
+<rect x="1120" y="8240" width="150" height="9" rx="5" fill="#374151" stroke="none" stroke-width="1"/>
+<rect x="1120" y="8264" width="120" height="9" rx="5" fill="#374151" stroke="none" stroke-width="1"/>
+<rect x="1120" y="8288" width="150" height="9" rx="5" fill="#374151" stroke="none" stroke-width="1"/>
+<rect x="1120" y="8312" width="120" height="9" rx="5" fill="#374151" stroke="none" stroke-width="1"/>
+<rect x="1120" y="8336" width="150" height="9" rx="5" fill="#374151" stroke="none" stroke-width="1"/>
+<line x1="100" y1="8392" x2="1420" y2="8392" stroke="#273244" stroke-width="1"/>
+<text x="100" y="8428" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#D1D5DB" font-weight="600" text-anchor="start">☎ (555) 555-5555      ✉ office@[client].com      📍 [Street, City, ST ZIP]</text>
+<rect x="100" y="8452" width="1320" height="1" rx="0" fill="#273244" stroke="none" stroke-width="1"/>
+<text x="100" y="8486" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#6B7280" font-weight="400" text-anchor="start">© 2026 [Company]. All rights reserved.</text>
+<text x="1420" y="8486" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#6B7280" font-weight="400" text-anchor="end">Designed &amp; managed with ♥ by Paint &amp; Profits</text>
+<rect x="1530" y="352" width="450" height="115" rx="10" fill="#FFFFFF" stroke="#E2E5EA" stroke-width="1"/>
+<rect x="1530" y="352" width="4" height="115" rx="2" fill="#DC2626" stroke="none" stroke-width="1"/>
+<rect x="1548" y="366" width="66" height="22" rx="6" fill="#DC2626" stroke="none" stroke-width="1"/>
+<text x="1558" y="381" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" fill="#FFFFFF" font-weight="800" text-anchor="start">IMG-01</text>
+<path d="M 1474 372 C 1540 372, 1470 377, 1530 377" fill="none" stroke="#DC2626" stroke-width="1.2" stroke-dasharray="4 4" opacity="0.5"/>
+<text x="1548" y="408" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#111827" font-weight="800" text-anchor="start">Hero — Hero background photo</text>
+<text x="1548" y="430" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#4B5563" font-weight="500" text-anchor="start">Branded crew + wrapped truck in front of a finished home</text>
+<text x="1548" y="451" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#6B7280" font-weight="600" text-anchor="start">Spec: Landscape 16:9, min 2400x1350px.</text>
+<rect x="1530" y="1632" width="450" height="135" rx="10" fill="#FFFFFF" stroke="#E2E5EA" stroke-width="1"/>
+<rect x="1530" y="1632" width="4" height="135" rx="2" fill="#DC2626" stroke="none" stroke-width="1"/>
+<rect x="1548" y="1646" width="66" height="22" rx="6" fill="#DC2626" stroke="none" stroke-width="1"/>
+<text x="1558" y="1661" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" fill="#FFFFFF" font-weight="800" text-anchor="start">IMG-02</text>
+<path d="M 694 1652 C 760 1652, 1470 1657, 1530 1657" fill="none" stroke="#DC2626" stroke-width="1.2" stroke-dasharray="4 4" opacity="0.5"/>
+<text x="1548" y="1688" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#111827" font-weight="800" text-anchor="start">About / Meet the team — Team or owner photo</text>
+<text x="1548" y="1708" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#111827" font-weight="800" text-anchor="start">(video thumbnail optional)</text>
+<text x="1548" y="1730" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#4B5563" font-weight="500" text-anchor="start">Team group photo in branded shirts, or owner portrait</text>
+<text x="1548" y="1751" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#6B7280" font-weight="600" text-anchor="start">Spec: 4:3 or 3:2 landscape, min 1200x900px.</text>
+<rect x="1530" y="2382" width="450" height="155" rx="10" fill="#FFFFFF" stroke="#E2E5EA" stroke-width="1"/>
+<rect x="1530" y="2382" width="4" height="155" rx="2" fill="#DC2626" stroke="none" stroke-width="1"/>
+<rect x="1548" y="2396" width="66" height="22" rx="6" fill="#DC2626" stroke="none" stroke-width="1"/>
+<text x="1558" y="2411" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" fill="#FFFFFF" font-weight="800" text-anchor="start">IMG-03</text>
+<path d="M 1414 2402 C 1480 2402, 1470 2407, 1530 2407" fill="none" stroke="#DC2626" stroke-width="1.2" stroke-dasharray="4 4" opacity="0.5"/>
+<text x="1548" y="2438" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#111827" font-weight="800" text-anchor="start">Services intro (next to lead form) — Action</text>
+<text x="1548" y="2458" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#111827" font-weight="800" text-anchor="start">photo beside the &#x27;Ready to get started?&#x27;</text>
+<text x="1548" y="2478" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#111827" font-weight="800" text-anchor="start">form</text>
+<text x="1548" y="2500" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#4B5563" font-weight="500" text-anchor="start">Painters on ladders actively working an exterior</text>
+<text x="1548" y="2521" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#6B7280" font-weight="600" text-anchor="start">Spec: Landscape 4:3, min 1600x1200px.</text>
+<rect x="1530" y="2966" width="450" height="150" rx="10" fill="#FFFFFF" stroke="#E2E5EA" stroke-width="1"/>
+<rect x="1530" y="2966" width="4" height="150" rx="2" fill="#DC2626" stroke="none" stroke-width="1"/>
+<rect x="1548" y="2980" width="66" height="22" rx="6" fill="#DC2626" stroke="none" stroke-width="1"/>
+<text x="1558" y="2995" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" fill="#FFFFFF" font-weight="800" text-anchor="start">IMG-04</text>
+<path d="M 500 2986 C 566 2986, 1470 2991, 1530 2991" fill="none" stroke="#DC2626" stroke-width="1.2" stroke-dasharray="4 4" opacity="0.5"/>
+<text x="1548" y="3022" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#111827" font-weight="800" text-anchor="start">Service cards — Interior Painting card</text>
+<text x="1548" y="3044" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#4B5563" font-weight="500" text-anchor="start">Bright finished living room, natural light, neutral</text>
+<text x="1548" y="3062" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#4B5563" font-weight="500" text-anchor="start">walls</text>
+<text x="1548" y="3083" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#6B7280" font-weight="600" text-anchor="start">Spec: Landscape 4:3, min 900x675px (cards render ~430px</text>
+<text x="1548" y="3100" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#6B7280" font-weight="600" text-anchor="start">wide, retina x2)..</text>
+<rect x="1530" y="3132" width="450" height="115" rx="10" fill="#FFFFFF" stroke="#E2E5EA" stroke-width="1"/>
+<rect x="1530" y="3132" width="4" height="115" rx="2" fill="#DC2626" stroke="none" stroke-width="1"/>
+<rect x="1548" y="3146" width="66" height="22" rx="6" fill="#DC2626" stroke="none" stroke-width="1"/>
+<text x="1558" y="3161" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" fill="#FFFFFF" font-weight="800" text-anchor="start">IMG-05</text>
+<path d="M 950 2986 C 1016 2986, 1470 3157, 1530 3157" fill="none" stroke="#DC2626" stroke-width="1.2" stroke-dasharray="4 4" opacity="0.5"/>
+<text x="1548" y="3188" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#111827" font-weight="800" text-anchor="start">Service cards — Exterior Painting card</text>
+<text x="1548" y="3210" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#4B5563" font-weight="500" text-anchor="start">Full house &#x27;after&#x27; with blue sky, curb-appeal angle</text>
+<text x="1548" y="3231" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#6B7280" font-weight="600" text-anchor="start">Spec: Landscape 4:3, min 900x675px.</text>
+<rect x="1530" y="3263" width="450" height="153" rx="10" fill="#FFFFFF" stroke="#E2E5EA" stroke-width="1"/>
+<rect x="1530" y="3263" width="4" height="153" rx="2" fill="#DC2626" stroke="none" stroke-width="1"/>
+<rect x="1548" y="3277" width="66" height="22" rx="6" fill="#DC2626" stroke="none" stroke-width="1"/>
+<text x="1558" y="3292" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" fill="#FFFFFF" font-weight="800" text-anchor="start">IMG-06</text>
+<path d="M 1400 2986 C 1466 2986, 1470 3288, 1530 3288" fill="none" stroke="#DC2626" stroke-width="1.2" stroke-dasharray="4 4" opacity="0.5"/>
+<text x="1548" y="3319" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#111827" font-weight="800" text-anchor="start">Service cards — Cabinets / Doors, Trim &amp;</text>
+<text x="1548" y="3339" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#111827" font-weight="800" text-anchor="start">Railings card</text>
+<text x="1548" y="3361" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#4B5563" font-weight="500" text-anchor="start">Close-up detail: white shaker cabinets or crisp trim</text>
+<text x="1548" y="3379" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#4B5563" font-weight="500" text-anchor="start">line</text>
+<text x="1548" y="3400" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#6B7280" font-weight="600" text-anchor="start">Spec: Landscape 4:3, min 900x675px.</text>
+<rect x="1530" y="3432" width="450" height="115" rx="10" fill="#FFFFFF" stroke="#E2E5EA" stroke-width="1"/>
+<rect x="1530" y="3432" width="4" height="115" rx="2" fill="#DC2626" stroke="none" stroke-width="1"/>
+<rect x="1548" y="3446" width="66" height="22" rx="6" fill="#DC2626" stroke="none" stroke-width="1"/>
+<text x="1558" y="3461" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" fill="#FFFFFF" font-weight="800" text-anchor="start">IMG-07</text>
+<path d="M 500 3346 C 566 3346, 1470 3457, 1530 3457" fill="none" stroke="#DC2626" stroke-width="1.2" stroke-dasharray="4 4" opacity="0.5"/>
+<text x="1548" y="3488" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#111827" font-weight="800" text-anchor="start">Service cards — Commercial Painting card</text>
+<text x="1548" y="3510" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#4B5563" font-weight="500" text-anchor="start">Local commercial building exterior (office / storefront)</text>
+<text x="1548" y="3531" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#6B7280" font-weight="600" text-anchor="start">Spec: Landscape 4:3, min 900x675px..</text>
+<rect x="1530" y="3563" width="450" height="115" rx="10" fill="#FFFFFF" stroke="#E2E5EA" stroke-width="1"/>
+<rect x="1530" y="3563" width="4" height="115" rx="2" fill="#DC2626" stroke="none" stroke-width="1"/>
+<rect x="1548" y="3577" width="66" height="22" rx="6" fill="#DC2626" stroke="none" stroke-width="1"/>
+<text x="1558" y="3592" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" fill="#FFFFFF" font-weight="800" text-anchor="start">IMG-08</text>
+<path d="M 950 3346 C 1016 3346, 1470 3588, 1530 3588" fill="none" stroke="#DC2626" stroke-width="1.2" stroke-dasharray="4 4" opacity="0.5"/>
+<text x="1548" y="3619" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#111827" font-weight="800" text-anchor="start">Service cards — Fence &amp; Deck Painting card</text>
+<text x="1548" y="3641" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#4B5563" font-weight="500" text-anchor="start">Freshly stained deck with rich wet-look wood tone</text>
+<text x="1548" y="3662" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#6B7280" font-weight="600" text-anchor="start">Spec: Landscape 4:3, min 900x675px..</text>
+<rect x="1530" y="3694" width="450" height="115" rx="10" fill="#FFFFFF" stroke="#E2E5EA" stroke-width="1"/>
+<rect x="1530" y="3694" width="4" height="115" rx="2" fill="#DC2626" stroke="none" stroke-width="1"/>
+<rect x="1548" y="3708" width="66" height="22" rx="6" fill="#DC2626" stroke="none" stroke-width="1"/>
+<text x="1558" y="3723" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" fill="#FFFFFF" font-weight="800" text-anchor="start">IMG-09</text>
+<path d="M 1400 3346 C 1466 3346, 1470 3719, 1530 3719" fill="none" stroke="#DC2626" stroke-width="1.2" stroke-dasharray="4 4" opacity="0.5"/>
+<text x="1548" y="3750" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#111827" font-weight="800" text-anchor="start">Service cards — Garage &amp; Shed Painting card</text>
+<text x="1548" y="3772" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#4B5563" font-weight="500" text-anchor="start">Painted shed or garage with clean lines</text>
+<text x="1548" y="3793" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#6B7280" font-weight="600" text-anchor="start">Spec: Landscape 4:3, min 900x675px..</text>
+<rect x="1530" y="3892" width="450" height="152" rx="10" fill="#FFFFFF" stroke="#E2E5EA" stroke-width="1"/>
+<rect x="1530" y="3892" width="4" height="152" rx="2" fill="#DC2626" stroke="none" stroke-width="1"/>
+<rect x="1548" y="3906" width="66" height="22" rx="6" fill="#DC2626" stroke="none" stroke-width="1"/>
+<text x="1558" y="3921" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" fill="#FFFFFF" font-weight="800" text-anchor="start">IMG-10</text>
+<path d="M 694 3912 C 760 3912, 1470 3917, 1530 3917" fill="none" stroke="#DC2626" stroke-width="1.2" stroke-dasharray="4 4" opacity="0.5"/>
+<text x="1548" y="3948" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#111827" font-weight="800" text-anchor="start">Why homeowners trust us — Authentic crew</text>
+<text x="1548" y="3968" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#111827" font-weight="800" text-anchor="start">candid</text>
+<text x="1548" y="3990" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#4B5563" font-weight="500" text-anchor="start">Crew in branded gear working at a front door / prepping</text>
+<text x="1548" y="4011" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#6B7280" font-weight="600" text-anchor="start">Spec: Landscape 4:3 or portrait 3:4, min 1200px on the long</text>
+<text x="1548" y="4028" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#6B7280" font-weight="600" text-anchor="start">edge.</text>
+<rect x="1530" y="4332" width="450" height="135" rx="10" fill="#FFFFFF" stroke="#E2E5EA" stroke-width="1"/>
+<rect x="1530" y="4332" width="4" height="135" rx="2" fill="#DC2626" stroke="none" stroke-width="1"/>
+<rect x="1548" y="4346" width="66" height="22" rx="6" fill="#DC2626" stroke="none" stroke-width="1"/>
+<text x="1558" y="4361" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" fill="#FFFFFF" font-weight="800" text-anchor="start">IMG-11</text>
+<path d="M 1474 4352 C 1540 4352, 1470 4357, 1530 4357" fill="none" stroke="#DC2626" stroke-width="1.2" stroke-dasharray="4 4" opacity="0.5"/>
+<text x="1548" y="4388" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#111827" font-weight="800" text-anchor="start">CTA banner (&#x27;Transform your property&#x27;) —</text>
+<text x="1548" y="4408" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#111827" font-weight="800" text-anchor="start">Banner right-side photo</text>
+<text x="1548" y="4430" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#4B5563" font-weight="500" text-anchor="start">Dramatic exterior action: boom lift or tall ladder work</text>
+<text x="1548" y="4451" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#6B7280" font-weight="600" text-anchor="start">Spec: Landscape, min 1600x900px.</text>
+<rect x="1530" y="4832" width="450" height="170" rx="10" fill="#FFFFFF" stroke="#E2E5EA" stroke-width="1"/>
+<rect x="1530" y="4832" width="4" height="170" rx="2" fill="#DC2626" stroke="none" stroke-width="1"/>
+<rect x="1548" y="4846" width="66" height="22" rx="6" fill="#DC2626" stroke="none" stroke-width="1"/>
+<text x="1558" y="4861" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" fill="#FFFFFF" font-weight="800" text-anchor="start">IMG-12</text>
+<path d="M 1414 4852 C 1480 4852, 1470 4857, 1530 4857" fill="none" stroke="#DC2626" stroke-width="1.2" stroke-dasharray="4 4" opacity="0.5"/>
+<text x="1548" y="4888" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#111827" font-weight="800" text-anchor="start">Projects / See our work — 3 featured project</text>
+<text x="1548" y="4908" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#111827" font-weight="800" text-anchor="start">cards (a, b, c)</text>
+<text x="1548" y="4930" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#4B5563" font-weight="500" text-anchor="start">Three best &#x27;after&#x27; shots: house, deck/interior,</text>
+<text x="1548" y="4948" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#4B5563" font-weight="500" text-anchor="start">commercial</text>
+<text x="1548" y="4969" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#6B7280" font-weight="600" text-anchor="start">Spec: Very wide crop ~21:9, min 2000x900px each - shoot</text>
+<text x="1548" y="4986" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#6B7280" font-weight="600" text-anchor="start">loose so the wide crop doesn&#x27;t decapitate roofs.</text>
+<rect x="1530" y="6142" width="450" height="153" rx="10" fill="#FFFFFF" stroke="#E2E5EA" stroke-width="1"/>
+<rect x="1530" y="6142" width="4" height="153" rx="2" fill="#DC2626" stroke="none" stroke-width="1"/>
+<rect x="1548" y="6156" width="66" height="22" rx="6" fill="#DC2626" stroke="none" stroke-width="1"/>
+<text x="1558" y="6171" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" fill="#FFFFFF" font-weight="800" text-anchor="start">IMG-13</text>
+<path d="M 1074 6162 C 1140 6162, 1470 6167, 1530 6167" fill="none" stroke="#DC2626" stroke-width="1.2" stroke-dasharray="4 4" opacity="0.5"/>
+<text x="1548" y="6198" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#111827" font-weight="800" text-anchor="start">Why choose us (differentiators) — Center</text>
+<text x="1548" y="6218" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#111827" font-weight="800" text-anchor="start">photo between feature cards</text>
+<text x="1548" y="6240" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#4B5563" font-weight="500" text-anchor="start">Interior action: painter cutting in / rolling, clean</text>
+<text x="1548" y="6258" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#4B5563" font-weight="500" text-anchor="start">site</text>
+<text x="1548" y="6279" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#6B7280" font-weight="600" text-anchor="start">Spec: Portrait 3:4 or landscape 4:3, min 1200px long edge..</text>
+<rect x="1530" y="7146" width="450" height="153" rx="10" fill="#FFFFFF" stroke="#E2E5EA" stroke-width="1"/>
+<rect x="1530" y="7146" width="4" height="153" rx="2" fill="#DC2626" stroke="none" stroke-width="1"/>
+<rect x="1548" y="7160" width="66" height="22" rx="6" fill="#DC2626" stroke="none" stroke-width="1"/>
+<text x="1558" y="7175" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" fill="#FFFFFF" font-weight="800" text-anchor="start">IMG-14</text>
+<path d="M 500 7166 C 566 7166, 1470 7171, 1530 7171" fill="none" stroke="#DC2626" stroke-width="1.2" stroke-dasharray="4 4" opacity="0.5"/>
+<text x="1548" y="7202" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#111827" font-weight="800" text-anchor="start">Blog / Resources — 3 article thumbnails (a,</text>
+<text x="1548" y="7222" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#111827" font-weight="800" text-anchor="start">b, c)</text>
+<text x="1548" y="7244" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#4B5563" font-weight="500" text-anchor="start">Topic-matched images - must match the article AND the</text>
+<text x="1548" y="7262" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#4B5563" font-weight="500" text-anchor="start">niche</text>
+<text x="1548" y="7283" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#6B7280" font-weight="600" text-anchor="start">Spec: Landscape 4:3, min 900x675px each..</text>
+<rect x="1530" y="7792" width="450" height="150" rx="10" fill="#FFFFFF" stroke="#E2E5EA" stroke-width="1"/>
+<rect x="1530" y="7792" width="4" height="150" rx="2" fill="#DC2626" stroke="none" stroke-width="1"/>
+<rect x="1548" y="7806" width="66" height="22" rx="6" fill="#DC2626" stroke="none" stroke-width="1"/>
+<text x="1558" y="7821" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" fill="#FFFFFF" font-weight="800" text-anchor="start">IMG-15</text>
+<path d="M 1474 7812 C 1540 7812, 1470 7817, 1530 7817" fill="none" stroke="#DC2626" stroke-width="1.2" stroke-dasharray="4 4" opacity="0.5"/>
+<text x="1548" y="7848" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#111827" font-weight="800" text-anchor="start">Service areas — Map</text>
+<text x="1548" y="7870" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#4B5563" font-weight="500" text-anchor="start">Live Google Maps embed centered on the ACTUAL service</text>
+<text x="1548" y="7888" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#4B5563" font-weight="500" text-anchor="start">city</text>
+<text x="1548" y="7909" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#6B7280" font-weight="600" text-anchor="start">Spec: Full-width embed, ~500-650px tall, desaturated/light</text>
+<text x="1548" y="7926" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#6B7280" font-weight="600" text-anchor="start">map style to match the design..</text>
+</svg>

@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<!--
+  MASTER HOMEPAGE TEMPLATE — mirrors references/wireframe-painting-homepage.svg 1:1.
+  How to use (per company):
+    1. Copy this file to the company's site folder as index/home page.
+    2. Re-theme: swap the :root color vars to the client brand (logo wins conflicts).
+    3. Replace every [Token] and (555) 555-5555 with harvested data (brief.json).
+    4. Cast real photos into each .ph slot per references/photo_slots.json —
+       replace the .ph div with an <img>/background. Slots marked "client photo
+       required" (IMG-01/02/10/12) keep a .ph panel if no genuine photo exists.
+    5. Extras (financing banner, deals, before/after slider) go BETWEEN sections.
+       Never remove a section — the order is Dillon's fixed wireframe.
+    6. Enable the real Google Maps iframe in §17 (re-center on the client's city).
+  This file is fully self-contained (no stylesheet dependency) on purpose: the
+  wireframe travels with its own styles. Sub-pages still use assets/style.css.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>[Company Name] — House Painters in [City, ST]</title>
+<meta name="description" content="Trusted house painters in [City, ST]. Interior & exterior painting, cabinets, decks & more. Licensed & insured. Free estimates.">
+<style>
+:root{
+  --navy:#0F2444; --navy2:#0A1930; --red:#B91C1C; --red-dk:#991B1B;
+  --ink:#111827; --mut:#5B6472; --bg:#FFFFFF; --soft:#F5F7FA; --line:#E5E9F0;
+  --star:#F59E0B; --ok:#16A34A;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+h1,h2,h3{line-height:1.15;letter-spacing:-.01em}
+h2{font-size:clamp(26px,3.4vw,38px);font-weight:800}
+.kick{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--red);margin-bottom:10px}
+.kick.chip{background:var(--red);color:#fff;padding:6px 12px;border-radius:4px}
+.btn{display:inline-block;font-weight:800;font-size:15px;padding:14px 26px;border-radius:6px;cursor:pointer;border:0}
+.btn-red{background:var(--red);color:#fff}
+.btn-red:hover{background:var(--red-dk)}
+.btn-line{border:2px solid var(--navy);color:var(--navy)}
+.btn-wline{border:2px solid rgba(255,255,255,.7);color:#fff}
+.stars{color:var(--star);letter-spacing:2px}
+section{padding:64px 0}
+/* photo-slot placeholder — hatched, matches the wireframe language */
+.ph{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;
+  background:repeating-linear-gradient(45deg,#EDF1F7 0 14px,#E2E8F2 14px 28px);
+  border:2px dashed #B9C4D6;border-radius:10px;color:#64748B;text-align:center;
+  font-size:13px;font-weight:600;min-height:220px;padding:18px}
+.ph .cam{font-size:26px;opacity:.65}
+.ph .slot{font-size:11px;font-weight:800;letter-spacing:.08em;color:var(--red);background:#fff;border:1px solid var(--red);border-radius:4px;padding:2px 8px}
+/* 01 offer bar */
+.obar{background:var(--navy2);color:#DCE4F2;font-size:13.5px;padding:9px 0;text-align:center}
+.obar b{color:#fff}
+.obar .call{color:#FCA5A5;font-weight:700}
+/* 02 nav */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 1px 8px rgba(15,36,68,.06)}
+.nav .row{display:flex;align-items:center;gap:26px;height:72px}
+.logo{font-weight:900;font-size:20px;color:var(--navy);border:2px solid var(--navy);padding:6px 14px;border-radius:4px}
+.menu{display:flex;gap:24px;margin-left:auto;font-weight:600;font-size:15px}
+.menu>div{position:relative;padding:8px 0}
+.menu a:hover{color:var(--red)}
+.dd-menu{display:none;position:absolute;top:100%;left:-14px;min-width:250px;background:#fff;border:1px solid var(--line);border-radius:10px;box-shadow:0 14px 34px rgba(15,36,68,.14);padding:10px}
+.menu>div:hover .dd-menu{display:block}
+.dd-menu a{display:block;padding:10px 12px;border-radius:8px;font-size:14px}
+.dd-menu a:hover{background:var(--soft);color:var(--red)}
+.dd-menu small{display:block;color:var(--mut);font-weight:500}
+.nav .phone{margin-left:6px;background:var(--red);color:#fff;font-weight:800;padding:11px 18px;border-radius:6px;font-size:15px;white-space:nowrap}
+/* 03 hero */
+.hero{position:relative;background:var(--navy);color:#fff;padding:76px 0 86px;overflow:hidden}
+.hero .bgph{position:absolute;inset:0;opacity:.28}
+.hero .bgph .ph{height:100%;border-radius:0;border:0;min-height:100%}
+.hero .grid{position:relative;display:grid;grid-template-columns:1.25fr .85fr;gap:44px;align-items:center}
+.hero h1{font-size:clamp(32px,4.6vw,52px);font-weight:900;margin:14px 0 18px}
+.pills{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:18px}
+.pill{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);padding:7px 13px;border-radius:999px;font-size:13.5px;font-weight:700}
+.pill b{color:#7CE0A3}
+.badges{display:flex;gap:26px;margin:20px 0 26px;flex-wrap:wrap}
+.badge .src{font-weight:800;font-size:15px}
+.badge small{display:block;color:#B7C3D8;font-size:12px}
+.qcard{background:#fff;color:var(--ink);border-radius:12px;padding:26px;box-shadow:0 22px 55px rgba(0,0,0,.35)}
+.qcard h3{color:var(--navy);font-size:19px;text-transform:uppercase;letter-spacing:.03em;margin-bottom:16px;text-align:center}
+.qcard input,.qcard select,.qcard textarea{width:100%;padding:12px 13px;margin-bottom:11px;border:1.5px solid var(--line);border-radius:7px;font-size:14.5px;font-family:inherit;background:var(--soft)}
+.qcard .two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.qcard .btn{width:100%}
+/* 04 credibility strip */
+.cred{background:var(--soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:22px 0}
+.cred .row{display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap}
+.cbadge{font-weight:800;font-size:13.5px;color:var(--navy);border:1.5px solid #C9D3E2;background:#fff;border-radius:8px;padding:10px 16px;letter-spacing:.04em}
+/* 05 reviews */
+.revs{background:#fff;text-align:center}
+.revs .sub{color:var(--mut);font-size:14px;margin:10px 0 32px}
+.rgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;text-align:left}
+.rcard{background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:20px}
+.rcard .top{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+.rcard .g{font-weight:900;color:#4285F4;background:#fff;border:1px solid var(--line);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center}
+.rcard p{font-size:14px;color:#374151;margin-bottom:12px}
+.rcard .who{font-weight:700;font-size:13.5px}
+.rcard .tag{color:var(--mut);font-size:12.5px}
+/* 06 about */
+.about{background:var(--soft)}
+.about .grid{display:grid;grid-template-columns:1.05fr .95fr;gap:46px;align-items:center}
+.about .vid{position:relative}
+.about .play{position:absolute;inset:0;margin:auto;width:74px;height:74px;border-radius:50%;background:var(--red);color:#fff;display:flex;align-items:center;justify-content:center;font-size:26px;box-shadow:0 10px 30px rgba(185,28,28,.45)}
+.about p{color:var(--mut);margin:14px 0}
+.about .ctas{display:flex;gap:14px;margin-top:20px}
+/* 07 stats */
+.statsbar{background:var(--navy);color:#fff;padding:44px 0}
+.statsbar .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;text-align:center}
+.stat b{display:block;font-size:clamp(26px,3vw,38px);font-weight:900;color:#FCA5A5}
+.stat span{color:#B7C3D8;font-size:14px;font-weight:600}
+/* 08 services intro + form */
+.svcintro .grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:stretch;margin-top:34px}
+.mini{background:var(--navy);color:#fff;border-radius:12px;padding:26px}
+.mini h3{font-size:20px;margin-bottom:14px}
+.mini input,.mini select{width:100%;padding:11px 12px;margin-bottom:10px;border:0;border-radius:7px;font-size:14px;font-family:inherit}
+.mini .btn{width:100%}
+/* 09 service cards */
+.svc6{background:var(--soft)}
+.svc6 h2{text-align:center;margin-bottom:36px}
+.sgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.scard{background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden;display:flex;flex-direction:column}
+.scard .ph{border-radius:0;border:0;border-bottom:2px dashed #B9C4D6;min-height:190px}
+.scard .body{padding:18px 20px 20px}
+.scard h3{font-size:18px;margin-bottom:8px}
+.scard a.more{color:var(--red);font-weight:800;font-size:13.5px;letter-spacing:.04em}
+/* 10 why trust */
+.whytrust h2{text-align:center;margin-bottom:36px}
+.tgrid{display:grid;grid-template-columns:1fr 1.2fr 1fr;gap:22px;align-items:center}
+.tcol{display:grid;gap:22px}
+.tcard{background:#fff;border:1px solid var(--line);border-radius:12px;padding:22px;box-shadow:0 4px 14px rgba(15,36,68,.05)}
+.tcard .ico{color:var(--red);font-size:20px}
+.tcard h3{font-size:16.5px;margin:8px 0 6px}
+.tcard p{font-size:13.5px;color:var(--mut)}
+/* 11 mid cta */
+.midcta{position:relative;background:var(--navy2);color:#fff;padding:0;overflow:hidden}
+.midcta .grid{display:grid;grid-template-columns:1.05fr .95fr;min-height:300px}
+.midcta .txt{padding:64px 40px 64px 0;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:16px}
+.midcta .photo{position:relative;clip-path:polygon(18% 0,100% 0,100% 100%,0 100%)}
+.midcta .photo::before{content:"";position:absolute;left:6%;top:-10%;bottom:-10%;width:26px;background:var(--red);transform:rotate(8deg);z-index:2}
+.midcta .photo .ph{height:100%;min-height:100%;border-radius:0;border:0}
+.midcta .ctas{display:flex;gap:14px}
+/* 12 projects */
+.projects .head{display:flex;justify-content:space-between;align-items:end;margin-bottom:30px;gap:18px;flex-wrap:wrap}
+.pgrid{display:grid;gap:20px}
+.pcard{position:relative;border-radius:12px;overflow:hidden}
+.pcard .ph{min-height:230px;border-radius:12px}
+.pcard .cap{position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent,rgba(10,25,48,.92));color:#fff;padding:34px 22px 16px;font-weight:800}
+.pcard .cap small{display:block;font-weight:600;color:#C7D2E4}
+.projects .foot{text-align:center;margin-top:28px}
+/* 13 process */
+.process{background:var(--navy);color:#fff}
+.process h2{text-align:center;margin-bottom:44px}
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:18px;text-align:center}
+.step .n{width:56px;height:56px;margin:0 auto 12px;border-radius:50%;background:var(--red);color:#fff;font-weight:900;font-size:19px;display:flex;align-items:center;justify-content:center}
+.step:nth-child(even) .n{background:#fff;color:var(--navy)}
+.step p{font-size:14px;color:#C7D2E4;font-weight:600}
+/* 14 differentiators */
+.diff{background:var(--soft)}
+.diff .head{text-align:center;margin-bottom:36px}
+/* 15 faq */
+.faq .head{display:flex;justify-content:space-between;align-items:end;gap:18px;margin-bottom:28px;flex-wrap:wrap}
+.fgrid{display:grid;grid-template-columns:1fr 1fr;gap:14px 22px}
+.faq details{background:var(--soft);border:1px solid var(--line);border-radius:10px;padding:16px 18px}
+.faq summary{font-weight:700;cursor:pointer;font-size:15.5px;list-style:none;display:flex;justify-content:space-between;gap:12px}
+.faq summary::after{content:"+";color:var(--red);font-weight:900;font-size:19px}
+.faq details[open] summary::after{content:"–"}
+.faq details p{margin-top:10px;color:var(--mut);font-size:14.5px}
+/* 16 blog */
+.blog h2{text-align:center;margin-bottom:34px}
+.bgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.bcard{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fff}
+.bcard .ph{border-radius:0;border:0;border-bottom:2px dashed #B9C4D6;min-height:180px}
+.bcard .body{padding:18px 20px}
+.bcard time{font-size:12.5px;color:var(--mut);font-weight:600}
+.bcard h3{font-size:16.5px;margin:8px 0 10px}
+/* 17 areas + map */
+.areasmap{background:var(--navy2);color:#fff;padding-bottom:0}
+.areasmap h2{text-align:center;margin-bottom:28px}
+.chips{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;max-width:900px;margin:0 auto 40px}
+.chip{background:var(--red);color:#fff;font-weight:700;font-size:14px;padding:9px 18px;border-radius:999px}
+.chip:hover{background:var(--red-dk)}
+.mapbox{margin-top:10px}
+.mapbox .ph{border-radius:0;border:0;min-height:420px}
+.leadstrip{background:#fff;border-top:4px solid var(--red)}
+.leadstrip .row{display:flex;gap:12px;align-items:center;padding:26px 0;flex-wrap:wrap}
+.leadstrip b{font-size:19px;color:var(--navy);margin-right:auto}
+.leadstrip input{padding:12px 13px;border:1.5px solid var(--line);border-radius:7px;font-size:14px;min-width:150px;background:var(--soft)}
+/* 18 footer */
+footer{background:var(--navy2);color:#AFBBD1;padding:56px 0 0;font-size:14px}
+.fgrid4{display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:34px;padding-bottom:38px}
+footer h4{color:#fff;font-size:13px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:14px}
+footer li{list-style:none;margin-bottom:9px}
+footer a:hover{color:#fff}
+.fbar{border-top:1px solid rgba(255,255,255,.12);padding:18px 0;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:13px}
+/* 19 mobile call bar */
+.callbar{display:none;position:fixed;bottom:0;left:0;right:0;z-index:60}
+@media(max-width:920px){
+  .menu{display:none}
+  .hero .grid,.about .grid,.svcintro .grid,.midcta .grid{grid-template-columns:1fr}
+  .rgrid,.statsbar .grid,.sgrid,.bgrid,.fgrid,.fgrid4{grid-template-columns:1fr 1fr}
+  .tgrid{grid-template-columns:1fr}
+  .steps{grid-template-columns:repeat(2,1fr)}
+  .midcta .txt{padding:44px 0}
+  .midcta .photo{clip-path:none;min-height:240px}
+  .callbar{display:flex}
+  .callbar a{flex:1;text-align:center;padding:15px;font-weight:800;color:#fff}
+  .callbar .c1{background:var(--navy)}
+  .callbar .c2{background:var(--red)}
+  body{padding-bottom:52px}
+}
+@media(max-width:560px){.rgrid,.sgrid,.bgrid,.fgrid,.steps,.statsbar .grid,.fgrid4{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<!-- 01 · TOP OFFER BAR — swap in the client's real perk; placeholder terms stay labeled -->
+<div class="obar wrap-full">★ <b>0% APR financing available</b> · Satisfaction guaranteed — Call today! · <a class="call" href="tel:+15555555555">(555) 555-5555</a></div>
+
+<!-- 02 · NAV — dropdowns only list pages that exist in this build -->
+<nav class="nav"><div class="wrap row">
+  <a class="logo" href="#">LOGO</a>
+  <div class="menu">
+    <div><a href="#">Home</a></div>
+    <div><a href="#services">Residential ▾</a>
+      <div class="dd-menu">
+        <a href="#"><b>Interior Painting</b><small>Walls, ceilings, trim &amp; more</small></a>
+        <a href="#"><b>Exterior Painting</b><small>Full repaints that last</small></a>
+        <a href="#"><b>Cabinets &amp; Trim</b><small>Factory-smooth refinishing</small></a>
+      </div>
+    </div>
+    <div><a href="#services">Commercial ▾</a>
+      <div class="dd-menu">
+        <a href="#"><b>Commercial Painting</b><small>Offices, storefronts, HOAs</small></a>
+      </div>
+    </div>
+    <div><a href="#work">Past Work</a></div>
+    <div><a href="#areas">Areas ▾</a>
+      <div class="dd-menu">
+        <a href="#"><b>Painters in [City 1]</b><small>Local page</small></a>
+        <a href="#"><b>Painters in [City 2]</b><small>Local page</small></a>
+        <a href="#"><b>Painters in [City 3]</b><small>Local page</small></a>
+      </div>
+    </div>
+    <div><a href="#about">About</a></div>
+    <div><a href="#contact">Contact</a></div>
+  </div>
+  <a class="phone" href="tel:+15555555555">☎ (555) 555-5555</a>
+</div></nav>
+
+<!-- 03 · HERO — IMG-01 as full background w/ ~55% navy overlay in production -->
+<header class="hero">
+  <div class="bgph"><div class="ph"><span class="slot">IMG-01</span><span class="cam">📷</span>Hero background — branded crew + wrapped truck in front of a finished home (16:9, min 2400×1350)</div></div>
+  <div class="wrap grid">
+    <div>
+      <span class="kick chip">Transform Your [City] Home</span>
+      <h1>Trusted House Painters in [City, ST] You Can Trust</h1>
+      <div class="pills"><span class="pill"><b>✓</b> 3–5 Year Warranty</span><span class="pill"><b>✓</b> Licensed &amp; Insured</span><span class="pill"><b>✓</b> Locally Owned</span></div>
+      <div class="badges">
+        <div class="badge"><span class="src">G <span class="stars">★★★★★</span> 5.0</span><small>Read all reviews</small></div>
+        <div class="badge"><span class="src">f <span class="stars">★★★★★</span> 5.0</span><small>Read all reviews</small></div>
+      </div>
+      <a class="btn btn-red" href="#quote">Book a Free Estimate ➜</a>
+    </div>
+    <form class="qcard" id="quote" onsubmit="this.innerHTML='<h3>Request received!</h3><p style=text-align:center>We\'ll reach out shortly to schedule your free estimate.</p>';return false;">
+      <h3>Get Your Free Painting Estimate</h3>
+      <div class="two"><input placeholder="First name" required><input placeholder="Last name" required></div>
+      <input placeholder="Phone number" type="tel" required>
+      <input placeholder="Email address" type="email" required>
+      <select><option>Select your service</option><option>Interior painting</option><option>Exterior painting</option><option>Cabinets / trim</option><option>Commercial</option><option>Other</option></select>
+      <button class="btn btn-red">Submit ➜</button>
+    </form>
+  </div>
+</header>
+
+<!-- 04 · CREDIBILITY STRIP — only badges the client plausibly holds -->
+<div class="cred"><div class="wrap row">
+  <span class="cbadge">BBB A+</span><span class="cbadge">GOOGLE ★5.0</span><span class="cbadge">PCA MEMBER</span><span class="cbadge">LICENSED + INSURED</span><span class="cbadge">OSHA TRAINED</span><span class="cbadge">HOMEADVISOR</span>
+</div></div>
+
+<!-- 05 · REVIEWS — sample reviews for mockups; production = live Google reviews -->
+<section class="revs"><div class="wrap">
+  <h2>What People Are Saying About Our Painters in [City]</h2>
+  <p class="sub">Sample reviews shown for layout — swaps to live Google reviews at launch.</p>
+  <div class="rgrid">
+    <div class="rcard"><div class="top"><span class="stars">★★★★★</span><span class="g">G</span></div><p>"[Two-sentence review in the company's real review voice — specific service, specific result.]"</p><div class="who">[First L.]</div><div class="tag">[Service] · [City]</div></div>
+    <div class="rcard"><div class="top"><span class="stars">★★★★★</span><span class="g">G</span></div><p>"[Review mentioning crew professionalism, clean job site, on-time finish.]"</p><div class="who">[First L.]</div><div class="tag">[Service] · [City]</div></div>
+    <div class="rcard"><div class="top"><span class="stars">★★★★★</span><span class="g">G</span></div><p>"[Review referencing a real neighborhood or housing detail for authenticity.]"</p><div class="who">[First L.]</div><div class="tag">[Service] · [City]</div></div>
+    <div class="rcard"><div class="top"><span class="stars">★★★★★</span><span class="g">G</span></div><p>"[Review about the estimate → walkthrough experience, would recommend.]"</p><div class="who">[First L.]</div><div class="tag">[Service] · [City]</div></div>
+  </div>
+</div></section>
+
+<!-- 06 · ABOUT / MEET THE TEAM — IMG-02 -->
+<section class="about" id="about"><div class="wrap grid">
+  <div class="vid">
+    <div class="ph" style="min-height:340px"><span class="slot">IMG-02</span><span class="cam">📷</span>Team photo — branded shirts + truck (4:3, min 1200×900). Optional company-story video overlay.</div>
+    <div class="play">▶</div>
+  </div>
+  <div>
+    <span class="kick">Trusted Local Painters in [City]</span>
+    <h2>Get to Know [Company Name]</h2>
+    <p>[Their real story from the harvest: years in business, founder, what they specialize in, the promise they make on their own site — in their voice, not template voice.]</p>
+    <p>[Second paragraph: crew, values, guarantee. Pull real claims from brief.json taglines.]</p>
+    <div class="ctas"><a class="btn btn-red" href="#quote">Book a Free Estimate ➜</a><a class="btn btn-line" href="#services">Learn More</a></div>
+  </div>
+</div></section>
+
+<!-- 07 · STATS BAR — real numbers where known, labeled placeholders where not -->
+<div class="statsbar"><div class="wrap grid">
+  <div class="stat"><b>100%</b><span>Satisfaction guaranteed</span></div>
+  <div class="stat"><b>15+ YEARS</b><span>Combined experience</span></div>
+  <div class="stat"><b>500+</b><span>Projects completed</span></div>
+  <div class="stat"><b>5 STAR</b><span>Rated service</span></div>
+</div></div>
+
+<!-- 08 · SERVICES INTRO + CAPTURE FORM — IMG-03 -->
+<section class="svcintro"><div class="wrap">
+  <h2>Comprehensive Painting Services for [City] Homes and Businesses</h2>
+  <div class="grid">
+    <form class="mini" onsubmit="this.innerHTML='<h3>Thanks — talk soon!</h3>';return false;">
+      <h3>Ready To Get Started?</h3>
+      <input placeholder="First name"><input placeholder="Last name"><input placeholder="Phone" type="tel"><input placeholder="Email" type="email">
+      <select><option>Service</option><option>Interior</option><option>Exterior</option><option>Cabinets</option><option>Commercial</option></select>
+      <button class="btn btn-red">Submit ➜</button>
+    </form>
+    <div class="ph"><span class="slot">IMG-03</span><span class="cam">📷</span>Action shot — painters on ladders, real exterior job in progress (4:3, min 1600×1200)</div>
+  </div>
+</div></section>
+
+<!-- 09 · SERVICE CARDS — swap to the client's actual services; keep the 6-card grid -->
+<section class="svc6" id="services"><div class="wrap">
+  <h2>Professional Interior &amp; Exterior Painting Services in [State]</h2>
+  <div class="sgrid">
+    <div class="scard"><div class="ph"><span class="slot">IMG-04</span><span class="cam">📷</span>Bright finished living room</div><div class="body"><h3>Interior Painting</h3><a class="more" href="#">LEARN MORE ➜</a></div></div>
+    <div class="scard"><div class="ph"><span class="slot">IMG-05</span><span class="cam">📷</span>Full house “after”, blue sky</div><div class="body"><h3>Exterior Painting</h3><a class="more" href="#">LEARN MORE ➜</a></div></div>
+    <div class="scard"><div class="ph"><span class="slot">IMG-06</span><span class="cam">📷</span>Close-up: cabinets or crisp trim line</div><div class="body"><h3>Cabinets / Trim &amp; Doors</h3><a class="more" href="#">LEARN MORE ➜</a></div></div>
+    <div class="scard"><div class="ph"><span class="slot">IMG-07</span><span class="cam">📷</span>Local office / storefront</div><div class="body"><h3>Commercial Painting</h3><a class="more" href="#">LEARN MORE ➜</a></div></div>
+    <div class="scard"><div class="ph"><span class="slot">IMG-08</span><span class="cam">📷</span>Freshly stained deck</div><div class="body"><h3>Fence &amp; Deck</h3><a class="more" href="#">LEARN MORE ➜</a></div></div>
+    <div class="scard"><div class="ph"><span class="slot">IMG-09</span><span class="cam">📷</span>Painted shed, clean lines</div><div class="body"><h3>Garage &amp; Shed</h3><a class="more" href="#">LEARN MORE ➜</a></div></div>
+  </div>
+</div></section>
+
+<!-- 10 · WHY HOMEOWNERS TRUST US — IMG-10 center -->
+<section class="whytrust"><div class="wrap">
+  <h2>Why [City] Homeowners Trust Our Painting Team</h2>
+  <div class="tgrid">
+    <div class="tcol">
+      <div class="tcard"><div class="ico">★</div><h3>3–5 Year Warranty</h3><p>[One line: what the warranty actually covers.]</p></div>
+      <div class="tcard"><div class="ico">★</div><h3>Licensed &amp; Insured</h3><p>[License number if harvested — real credentials build trust.]</p></div>
+    </div>
+    <div class="ph" style="min-height:360px"><span class="slot">IMG-10</span><span class="cam">📷</span>Candid crew shot — branded gear visible (client photo required; backs with logos work great)</div>
+    <div class="tcol">
+      <div class="tcard"><div class="ico">★</div><h3>Premium Materials</h3><p>[Real brands they use: Sherwin-Williams, Benjamin Moore…]</p></div>
+      <div class="tcard"><div class="ico">★</div><h3>Meticulous Prep</h3><p>[Their prep promise — masking, repairs, cleanup.]</p></div>
+    </div>
+  </div>
+</div></section>
+
+<!-- 11 · MID-PAGE CTA BANNER — IMG-11 photo right of center behind diagonal slash -->
+<section class="midcta"><div class="wrap grid">
+  <div class="txt">
+    <span class="kick">Ready To Get Started?</span>
+    <h2>Transform Your [City] Property</h2>
+    <div class="ctas"><a class="btn btn-red" href="#quote">Request Consultation</a><a class="btn btn-wline" href="tel:+15555555555">☎ (555) 555-5555</a></div>
+  </div>
+  <div class="photo"><div class="ph"><span class="slot">IMG-11</span><span class="cam">📷</span>Dramatic exterior action — boom lift / tall ladder work (subject in RIGHT half)</div></div>
+</div></section>
+
+<!-- 12 · PROJECTS / SEE OUR WORK — IMG-12 a/b/c. Alt: before/after pairs (.baslider) -->
+<section class="projects" id="work"><div class="wrap">
+  <div class="head"><div><span class="kick">See Our Work</span><h2>Quality Results That Speak for Themselves</h2></div><a class="btn btn-line" href="#quote">Request Consultation</a></div>
+  <div class="pgrid">
+    <div class="pcard"><div class="ph"><span class="slot">IMG-12a</span><span class="cam">📷</span>Featured project — residential exterior (~21:9, min 2000×900)</div><div class="cap">[Project Name] <small>[Category] · [City]</small></div></div>
+    <div class="pcard"><div class="ph"><span class="slot">IMG-12b</span><span class="cam">📷</span>Featured project — deck revival or interior transformation</div><div class="cap">[Project Name] <small>[Category] · [City]</small></div></div>
+    <div class="pcard"><div class="ph"><span class="slot">IMG-12c</span><span class="cam">📷</span>Featured project — commercial / apartment</div><div class="cap">[Project Name] <small>[Category] · [City]</small></div></div>
+  </div>
+  <div class="foot"><a class="btn btn-red" href="#">Explore Gallery ➜</a></div>
+</div></section>
+
+<!-- 13 · PROCESS STEPS — icons only, no photos -->
+<section class="process"><div class="wrap">
+  <h2>How We Deliver Outstanding Results</h2>
+  <div class="steps">
+    <div class="step"><div class="n">01</div><p>Free consultation &amp; site inspection</p></div>
+    <div class="step"><div class="n">02</div><p>Clear, upfront quote</p></div>
+    <div class="step"><div class="n">03</div><p>Prep &amp; protect your space</p></div>
+    <div class="step"><div class="n">04</div><p>Quality application</p></div>
+    <div class="step"><div class="n">05</div><p>Final walkthrough &amp; cleanup</p></div>
+  </div>
+</div></section>
+
+<!-- 14 · WHY CHOOSE US (DIFFERENTIATORS) — IMG-13 center -->
+<section class="diff"><div class="wrap">
+  <div class="head"><span class="kick">The [Company] Difference</span><h2>Why Choose the Best Painters in [City, ST]</h2></div>
+  <div class="tgrid">
+    <div class="tcol">
+      <div class="tcard"><div class="ico">❖</div><h3>Industry-Leading Warranty</h3><p>[Their real differentiator, in their words.]</p></div>
+      <div class="tcard"><div class="ico">❖</div><h3>15+ Years Experience</h3><p>[Real number from the harvest.]</p></div>
+    </div>
+    <div class="ph" style="min-height:360px"><span class="slot">IMG-13</span><span class="cam">📷</span>Interior action — painter cutting in / rolling, clean protected site</div>
+    <div class="tcol">
+      <div class="tcard"><div class="ico">❖</div><h3>Quality Materials</h3><p>[Paint brands / product lines they actually use.]</p></div>
+      <div class="tcard"><div class="ico">❖</div><h3>Seamless Experience</h3><p>[Scheduling, communication, cleanup promise.]</p></div>
+    </div>
+  </div>
+</div></section>
+
+<!-- 15 · FAQ — answers are substantive SEO content; must name THIS client's real city/state -->
+<section class="faq"><div class="wrap">
+  <div class="head"><div><span class="kick">FAQ</span><h2>Frequently Asked Questions</h2></div><a class="btn btn-red" href="#quote">Request Consultation</a></div>
+  <div class="fgrid">
+    <details open><summary>[Top money question, phrased as the literal search query]</summary><p>[200+ words of genuine expertise — climate, materials, local specifics. This doubles as the primary SEO target.]</p></details>
+    <details><summary>How much does professional painting cost in [City]?</summary><p>[Scope factors — never fake dollar prices.]</p></details>
+    <details><summary>What areas do you serve in [State]?</summary><p>[List the REAL cities — copy-check against brief.json.]</p></details>
+    <details><summary>Are you licensed and insured?</summary><p>[Real license/bond info from the harvest.]</p></details>
+    <details><summary>How long does a full exterior repaint take?</summary><p>[Substantive answer.]</p></details>
+    <details><summary>What paint brands do you use?</summary><p>[Their real brands.]</p></details>
+    <details><summary>Do you handle HOA color approvals?</summary><p>[Local-relevant answer.]</p></details>
+    <details><summary>What's included in the free estimate?</summary><p>[Their real process.]</p></details>
+  </div>
+</div></section>
+
+<!-- 16 · BLOG / RESOURCES — thumbnails must match article topic AND the trade -->
+<section class="blog"><div class="wrap">
+  <h2>Expert Painting Advice for [City] Homeowners</h2>
+  <div class="bgrid">
+    <div class="bcard"><div class="ph"><span class="slot">IMG-14a</span><span class="cam">📷</span>Must match article topic + niche</div><div class="body"><time>[Month D, YYYY]</time><h3>[Article title targeting a question keyword]</h3><a class="more" style="color:var(--red);font-weight:800" href="#">READ MORE ➜</a></div></div>
+    <div class="bcard"><div class="ph"><span class="slot">IMG-14b</span><span class="cam">📷</span>Must match article topic + niche</div><div class="body"><time>[Month D, YYYY]</time><h3>[Article title]</h3><a class="more" style="color:var(--red);font-weight:800" href="#">READ MORE ➜</a></div></div>
+    <div class="bcard"><div class="ph"><span class="slot">IMG-14c</span><span class="cam">📷</span>Must match article topic + niche</div><div class="body"><time>[Month D, YYYY]</time><h3>[Article title]</h3><a class="more" style="color:var(--red);font-weight:800" href="#">READ MORE ➜</a></div></div>
+  </div>
+</div></section>
+
+<!-- 17 · SERVICE AREAS + MAP — chips = REAL towns linking to area pages; live map re-centered per client -->
+<section class="areasmap" id="areas"><div class="wrap">
+  <h2>Proudly Serving [City] and Surrounding Areas</h2>
+  <div class="chips">
+    <a class="chip" href="#">📍 [City 1]</a><a class="chip" href="#">📍 [City 2]</a><a class="chip" href="#">📍 [City 3]</a><a class="chip" href="#">📍 [City 4]</a><a class="chip" href="#">📍 [City 5]</a><a class="chip" href="#">📍 [City 6]</a><a class="chip" href="#">📍 [City 7]</a><a class="chip" href="#">📍 [City 8]</a><a class="chip" href="#">📍 [City 9]</a><a class="chip" href="#">📍 [City 10]</a>
+  </div>
+  <div class="mapbox">
+    <!-- Production: replace this .ph with a live embed centered on the client's ACTUAL city:
+         <iframe src="https://www.google.com/maps?q=[City],+[ST]&output=embed" style="width:100%;height:460px;border:0;filter:saturate(.6)" loading="lazy"></iframe> -->
+    <div class="ph"><span class="slot">IMG-15</span><span class="cam">🗺</span>LIVE Google Maps embed — centered on the client's actual city (never another market's map)</div>
+  </div>
+</div>
+<div class="leadstrip"><div class="wrap row" id="contact">
+  <b>Get Your Free Estimate Today</b>
+  <input placeholder="First name"><input placeholder="Last name"><input placeholder="Phone"><input placeholder="Email">
+  <a class="btn btn-red" href="#quote">Submit ➜</a>
+</div></div>
+</section>
+
+<!-- 18 · FOOTER -->
+<footer><div class="wrap">
+  <div class="fgrid4">
+    <div><a class="logo" style="color:#fff;border-color:#fff;display:inline-block;margin-bottom:14px" href="#">LOGO</a>
+      <p>[One-paragraph company summary — real cities, real specialty.]</p></div>
+    <div><h4>Company</h4><ul><li><a href="#about">About</a></li><li><a href="#work">Past Work</a></li><li><a href="#areas">Service Areas</a></li><li><a href="#contact">Contact</a></li></ul></div>
+    <div><h4>Residential Services</h4><ul><li><a href="#">Interior Painting</a></li><li><a href="#">Exterior Painting</a></li><li><a href="#">Cabinets &amp; Trim</a></li><li><a href="#">Fence &amp; Deck</a></li></ul></div>
+    <div><h4>Commercial Services</h4><ul><li><a href="#">Commercial Painting</a></li><li><a href="#">HOA &amp; Multi-Family</a></li><li><a href="#">Offices &amp; Retail</a></li></ul></div>
+  </div>
+  <div class="fbar">
+    <span>☎ (555) 555-5555 &nbsp;·&nbsp; ✉ office@[client].com &nbsp;·&nbsp; 📍 [Street, City, ST ZIP]</span>
+    <span>© [Year] [Company Name]. All rights reserved. — Design mockup. · Designed &amp; managed by Paint &amp; Profits</span>
+  </div>
+</div></footer>
+
+<!-- 19 · MOBILE CALL BAR -->
+<div class="callbar"><a class="c1" href="tel:+15555555555">☎ Call Now</a><a class="c2" href="#quote">Free Quote</a></div>
+
+</body>
+</html>

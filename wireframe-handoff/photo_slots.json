@@ -1,0 +1,164 @@
+{
+  "slots": [
+    {
+      "id": "IMG-01",
+      "section": "Hero",
+      "area": "Hero background photo",
+      "short": "Branded crew + wrapped truck in front of a finished home",
+      "prompt": "Real crew photo: 2-4 painters in branded shirts standing by the company-wrapped truck, parked in front of a freshly painted two-story home. Shot at golden hour or bright overcast. Camera at chest height, wide angle. Fallback if no crew photo exists: a clean exterior 'after' shot of the best local project.",
+      "specs": "Landscape 16:9, min 2400x1350px. Keep the right two-thirds visually calm - headline, trust chips and the quote form sit on top. Site adds a dark navy overlay (40-60%), so avoid photos that are already dark.",
+      "dont": "No stock photos of random American houses that don't match the local housing stock. No busy skies or harsh noon shadows. No photos where faces are cut off.",
+      "search": "Client jobsite photo required (this slot builds trust). Stock is a last resort: 'house painters crew truck exterior'."
+    },
+    {
+      "id": "IMG-02",
+      "section": "About / Meet the team",
+      "area": "Team or owner photo (video thumbnail optional)",
+      "short": "Team group photo in branded shirts, or owner portrait",
+      "prompt": "Whole crew lined up in front of the branded truck on a lawn, matching company shirts, natural smiles (Pro Vision style). Solo operators: professional owner portrait, chest-up, branded polo, soft background (ACS 'David Kuczynski' style). If a company-story video exists, this image becomes the play-button thumbnail.",
+      "specs": "4:3 or 3:2 landscape, min 1200x900px. Faces sharp, evenly lit. Leave breathing room above heads for the play button overlay.",
+      "dont": "No sunglasses hiding eyes, no cluttered backgrounds (dumpsters, competitors' signage), no group shots taken from far away where faces are unrecognizable.",
+      "search": "Client photo required - never stock. People buy from people; a stock 'team' destroys trust."
+    },
+    {
+      "id": "IMG-03",
+      "section": "Services intro (next to lead form)",
+      "area": "Action photo beside the 'Ready to get started?' form",
+      "short": "Painters on ladders actively working an exterior",
+      "prompt": "Mid-action shot: one painter high on an extension ladder cutting in siding or trim, a second painter working lower - shows scale, safety and real work happening (Legacy uses exactly this). Branded shirts visible if possible.",
+      "specs": "Landscape 4:3, min 1600x1200px. Subject slightly right-of-center. Sharp focus on the painters, not the ladder hardware.",
+      "dont": "No posed 'pretending to paint' stock shots, no unsafe ladder positions (dev: this photo signals professionalism - OSHA-sketchy photos cost jobs).",
+      "search": "Client jobsite photo preferred. Stock fallback: 'professional painter extension ladder house siding'."
+    },
+    {
+      "id": "IMG-04",
+      "section": "Service cards",
+      "area": "Interior Painting card",
+      "short": "Bright finished living room, natural light, neutral walls",
+      "prompt": "Finished interior 'after': bright staged living room with freshly painted walls in a warm neutral, big window light, minimal furniture so the WALLS are the hero. Legacy and Pro Vision both use this exact look.",
+      "specs": "Landscape 4:3, min 900x675px (cards render ~430px wide, retina x2).",
+      "dont": "No dark moody interiors, no rooms where furniture hides the walls, no wide-angle distortion bending door frames.",
+      "search": "Client 'after' photo preferred. Stock OK: 'bright living room freshly painted neutral walls natural light'."
+    },
+    {
+      "id": "IMG-05",
+      "section": "Service cards",
+      "area": "Exterior Painting card",
+      "short": "Full house 'after' with blue sky, curb-appeal angle",
+      "prompt": "Complete house exterior after repaint, shot from the front corner at a slight angle (not dead-on), blue sky or bright overcast, lawn mowed. The house style must match the local market (e.g. Virginia colonials for Legacy, Florida stucco/siding for Pro Vision).",
+      "specs": "Landscape 4:3, min 900x675px. Whole house in frame with a little sky above the roofline.",
+      "dont": "No cars blocking the house, no trash bins, no seasonal mismatch (snow photos on a Florida site).",
+      "search": "Client project photo preferred. Stock OK: 'two story home fresh exterior paint blue sky'."
+    },
+    {
+      "id": "IMG-06",
+      "section": "Service cards",
+      "area": "Cabinets / Doors, Trim & Railings card",
+      "short": "Close-up detail: white shaker cabinets or crisp trim line",
+      "prompt": "Detail shot that proves craftsmanship: freshly painted white/light kitchen cabinets (Pro Vision) or a crisp crown-molding / trim paint line against a colored wall (Legacy). This is the 'zoom-in' card among wide shots - keep it tight.",
+      "specs": "Landscape 4:3, min 900x675px. Razor-sharp focus on the paint edge or cabinet doors.",
+      "dont": "No brush-stroke texture visible, no caulk gaps, no cluttered countertops in cabinet shots.",
+      "search": "Client photo preferred. Stock OK: 'white shaker cabinets freshly painted kitchen' or 'crown molding paint line detail'."
+    },
+    {
+      "id": "IMG-07",
+      "section": "Service cards",
+      "area": "Commercial Painting card",
+      "short": "Local commercial building exterior (office / storefront)",
+      "prompt": "A finished commercial job: small office building, storefront or apartment block exterior - clean lines, daytime (Legacy uses an apartment/office building). Signals 'we handle bigger jobs' to business owners.",
+      "specs": "Landscape 4:3, min 900x675px.",
+      "dont": "No skyscrapers or big-city stock that doesn't match the service area - keep it believable for the local market.",
+      "search": "Client project photo preferred. Stock OK: 'small commercial building fresh paint storefront'."
+    },
+    {
+      "id": "IMG-08",
+      "section": "Service cards",
+      "area": "Fence & Deck Painting card",
+      "short": "Freshly stained deck with rich wet-look wood tone",
+      "prompt": "Freshly stained wood deck, rich even color, ideally with railing and stairs visible (both Legacy and Pro Vision use this). Late-afternoon light makes stain glow.",
+      "specs": "Landscape 4:3, min 900x675px.",
+      "dont": "No half-finished decks, no peeling 'before' photos in this slot - this card sells the after.",
+      "search": "Client photo preferred. Stock OK: 'freshly stained wood deck railing backyard'."
+    },
+    {
+      "id": "IMG-09",
+      "section": "Service cards",
+      "area": "Garage & Shed Painting card",
+      "short": "Painted shed or garage with clean lines",
+      "prompt": "A painted garden shed or garage exterior with crisp, uniform color - Legacy uses a dark modern shed with a path leading to it. Any small-structure 'after' with good light works.",
+      "specs": "Landscape 4:3, min 900x675px.",
+      "dont": "No cluttered yards, no vehicles blocking the structure.",
+      "search": "Client photo preferred. Stock OK: 'painted garden shed modern backyard'."
+    },
+    {
+      "id": "IMG-10",
+      "section": "Why homeowners trust us",
+      "area": "Authentic crew candid",
+      "short": "Crew in branded gear working at a front door / prepping",
+      "prompt": "Candid, un-posed shot of two crew members in branded hoodies/shirts working together at a home's entry - taping, prepping or inspecting (Legacy's strongest photo: two painters at a blue door, logos readable on their backs). Authenticity over polish.",
+      "specs": "Landscape 4:3 or portrait 3:4, min 1200px on the long edge. Branding must be legible.",
+      "dont": "No faces required here - backs with logos actually work better. No staged handshakes, no hard-hat stock clichés.",
+      "search": "Client photo required - the branded clothing is the point. Stock cannot fake this."
+    },
+    {
+      "id": "IMG-11",
+      "section": "CTA banner ('Transform your property')",
+      "area": "Banner right-side photo",
+      "short": "Dramatic exterior action: boom lift or tall ladder work",
+      "prompt": "The 'wow' shot: painter(s) on a boom lift or staging working a tall exterior wall (Legacy uses a green boom lift against a blue building). Conveys capability on big jobs. Sits on the right half of a dark navy banner behind a diagonal red paint-stroke crop.",
+      "specs": "Landscape, min 1600x900px. Key subject must live in the RIGHT half - the left half is covered by headline and buttons. Must read well at 50% darkened edges.",
+      "dont": "No tiny distant figures - the lift/ladder should fill the frame. Avoid warm/orange color casts that fight the navy+red brand palette.",
+      "search": "Client photo preferred. Stock fallback: 'painters boom lift building exterior'."
+    },
+    {
+      "id": "IMG-12",
+      "section": "Projects / See our work",
+      "area": "3 featured project cards (a, b, c)",
+      "short": "Three best 'after' shots: house, deck/interior, commercial",
+      "prompt": "Three real, named projects - mirror Legacy's mix: (a) residential exterior repaint, (b) deck revival or interior transformation, (c) commercial/apartment job. Each gets a title + category caption over a dark bottom gradient. Alternative (Pro Vision pattern): before/after pairs - same angle, same height, same daylight for both frames.",
+      "specs": "Very wide crop ~21:9, min 2000x900px each - shoot loose so the wide crop doesn't decapitate roofs. Before/after pairs: min 1000px each, identical framing.",
+      "dont": "No mixing portrait and landscape in the row. Before/after: never different angles or lighting - it reads as fake.",
+      "search": "Client project photos ONLY. This section is the proof - stock here is lying to customers."
+    },
+    {
+      "id": "IMG-13",
+      "section": "Why choose us (differentiators)",
+      "area": "Center photo between feature cards",
+      "short": "Interior action: painter cutting in / rolling, clean site",
+      "prompt": "Painter actively cutting in a ceiling line or rolling a wall INSIDE a home or office, drop cloths visible, tidy workspace (Legacy uses a painter in a glass office interior). Shows care inside customers' homes.",
+      "specs": "Portrait 3:4 or landscape 4:3, min 1200px long edge.",
+      "dont": "No paint mess on floors, no ladders leaning on finished walls - the photo argues 'we respect your home'.",
+      "search": "Client photo preferred. Stock fallback: 'professional painter interior roller drop cloth'."
+    },
+    {
+      "id": "IMG-14",
+      "section": "Blog / Resources",
+      "area": "3 article thumbnails (a, b, c)",
+      "short": "Topic-matched images - must match the article AND the niche",
+      "prompt": "Each thumbnail must literally match its article topic: color-guide article gets a color-swatch or painted-room photo; prep article gets taping/masking; cost article gets an estimator or house exterior. NICHE CHECK: painting articles get painting images, roofing articles get roofs.",
+      "specs": "Landscape 4:3, min 900x675px each.",
+      "dont": "Found in the current drafts: interior living-room and laundry-cabinet photos used on ROOFING blog articles (ACS). Never let the thumbnail contradict the headline.",
+      "search": "Stock is fine here: match keywords to each article title."
+    },
+    {
+      "id": "IMG-15",
+      "section": "Service areas",
+      "area": "Map",
+      "short": "Live Google Maps embed centered on the ACTUAL service city",
+      "prompt": "Use a real Google Maps embed (not a screenshot) centered on the client's actual city with a branded pin. City chips above it must list the client's real service towns.",
+      "specs": "Full-width embed, ~500-650px tall, desaturated/light map style to match the design.",
+      "dont": "Found in the current drafts: the Jacksonville FL site (Pro Vision) shows a map of Mt Clemens, MICHIGAN - copied from the ACS file. Always re-center the embed per client.",
+      "search": "Google Maps embed API - no photo needed."
+    },
+    {
+      "id": "IMG-16",
+      "section": "Hero form / offer banner (roofing variant)",
+      "area": "Roofing-specific swaps",
+      "short": "Roofing sites: truck hero, crew-on-roof action, drone 'after'",
+      "prompt": "For roofing clients (ACS / Superior): hero = branded truck photo (ACS pattern); services action photo = crew installing shingles shot from roof level (ACS uses a great one on a multifamily building); gallery = drone or elevated 'after' shots of completed roofs; about = founder portrait. Same slot system, roofing subjects.",
+      "specs": "Same sizes as the painting equivalents (IMG-01, IMG-03, IMG-12, IMG-02).",
+      "dont": "No interior-design photos anywhere on a roofing site (see IMG-14 note). No stock roofs with architecture that doesn't exist in Michigan.",
+      "search": "Client jobsite + drone photos strongly preferred for roofing - roofs are hard to fake with stock."
+    }
+  ]
+}
