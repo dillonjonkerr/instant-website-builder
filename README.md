@@ -8,6 +8,11 @@ company's real brand — logo, colors, photos, phone, taglines, cities — pulls
 SEO keyword gap, and builds a validated 5-page site on a fixed, proven wireframe.
 Runs inside [Claude Code](https://claude.com/claude-code).
 
+<p align="center">
+  <img src="docs/tpg-home.png" alt="Example build — TPG Paints & Stains homepage" width="720">
+  <br><em>Built by the system from one URL: real logo, real photos, real brand colors, SEO-targeted copy.</em>
+</p>
+
 ## How to use it
 
 Open Claude Code and paste:
@@ -25,6 +30,7 @@ a Semrush PDF path, or notes. Full operator guide: [skill/SOP.md](skill/SOP.md).
 |---|---|
 | [`skill/`](skill/) | **The engine.** The Claude Code skill that runs every build. Live copy installed at `~/.claude/skills/mockup-site/` — this repo is the backup/source of truth. |
 | [`wireframe-handoff/`](wireframe-handoff/) | **The design DNA.** The annotated homepage wireframe (SVG + render), the Photo Direction deck (PDF/PPTX), and `photo_slots.json` — the 16 photo-slot specs every build follows. |
+| [`docs/`](docs/) | Screenshots and visual documentation. |
 | [`examples/tpg-paints-and-stains/`](examples/tpg-paints-and-stains/) | **The worked example.** Complete 5-page build for TPG Paints & Stains (Arizona painter): home, 3 area pages, exterior-painting service page, real harvested assets. |
 
 ## Inside `skill/`
@@ -69,7 +75,16 @@ a Semrush PDF path, or notes. Full operator guide: [skill/SOP.md](skill/SOP.md).
 | Keyword gap (DataForSEO) | ~$0.26 per client (pay-as-you-go, $50 min deposit) |
 | Keyword gap (fallback) | Free — manual Semrush PDF export |
 
+## The wireframe
+
+Every homepage follows this exact 18-section structure (annotated; hatched boxes =
+photo slots matched to the Photo Direction deck):
+
+<p align="center">
+  <img src="wireframe-handoff/wireframe_render.png" alt="Annotated homepage wireframe" width="720">
+</p>
+
 ---
 
 *Wireframe v1 synthesized from the Legacy Painting and Pro Vision Painting drafts.*
-*© Paint & Profits — internal business system, do not distribute.*
+*© Paint & Profits. All rights reserved.*
