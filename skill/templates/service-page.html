@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<!--
+  SERVICE PAGE TEMPLATE — copy to 03-site/services/<service-slug>.html
+  Paths assume this file lives in services/ (one level under the site root).
+  Build ONE page per service shown on the homepage cards — not just a flagship.
+  Scope tiers are labeled illustrative. Never invent dollar prices.
+  Every <img> needs real alt text. Photos live in ../assets/images/.
+  New design templates from Dillon replace this file in place.
+-->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>[Service] in [Metro / ST] | [Secondary Keyword] | [Brand]</title>
+<meta name="description" content="[Service] in [Metro]. [Substrates / specialty]. Licensed &amp; insured. Free estimates.">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<div class="ubar">
+  <div class="wrap">
+    <ul>
+      <li><i class="blip"></i> <b>Licensed, Bonded &amp; Insured</b></li>
+      <li>Free Estimates</li>
+    </ul>
+    <ul><li><b>[Tagline]</b> &mdash; Serving [Metro / State]</li></ul>
+  </div>
+</div>
+
+<nav class="nav">
+  <div class="wrap">
+    <a href="../index.html" class="nav-logo"><img src="../assets/logo.png" alt="[Company Name]"></a>
+    <div class="menu">
+      <div class="dd">
+        <a href="../index.html#services">Services</a>
+        <div class="dd-menu">
+          <a href="[this-file].html">[This Service]<small>[one-liner]</small></a>
+        </div>
+      </div>
+      <div class="dd">
+        <a href="../index.html#areas">Areas</a>
+        <div class="dd-menu">
+          <a href="../areas/[area-slug].html">[Trade] in [City]<small>[one-liner]</small></a>
+        </div>
+      </div>
+      <a href="../index.html#work">Projects</a>
+      <a href="../index.html#why">Why Us</a>
+      <a href="#faq">FAQ</a>
+    </div>
+    <div class="nav-right">
+      <a href="tel:[PhoneTel]" class="nav-ph"><small>Call or Text</small><strong>[PhoneDisplay]</strong></a>
+      <a href="#quote" class="btn btn-red">Free Quote</a>
+    </div>
+  </div>
+</nav>
+
+<div class="crumb"><div class="wrap">
+  <a href="../index.html">Home</a><span>/</span>
+  <a href="../index.html#services">Services</a><span>/</span>
+  <span>[Service]</span>
+</div></div>
+
+<header class="subhero">
+  <img class="hero-img" src="../assets/images/[service-hero.jpg]" alt="[Descriptive alt matching this service]">
+  <div class="hero-scrim"></div>
+  <div class="wrap">
+    <div class="hero-copy">
+      <h1>[Service] In <em>[Metro / ST]</em></h1>
+      <p class="sub">[2–3 sentences: why this service fails locally when done wrong, and how this company does it.]</p>
+      <ul class="hlist">
+        <li>[Included-scope bullet 1]</li>
+        <li>[Included-scope bullet 2]</li>
+        <li>[Included-scope bullet 3]</li>
+      </ul>
+      <div class="hero-act">
+        <a href="#quote" class="btn btn-red">Get My Free Estimate</a>
+        <a href="tel:[PhoneTel]" class="btn btn-ghost">[PhoneDisplay]</a>
+      </div>
+    </div>
+    <div class="quote" id="quote">
+      <div class="quote-hd"><h2>Get In Touch With Us</h2><p>Enter your contact information below</p></div>
+      <form class="quote-bd" id="qform" novalidate>
+        <div class="frow">
+          <div class="fld"><label for="fn">First Name</label><input id="fn" type="text" required></div>
+          <div class="fld"><label for="ln">Last Name</label><input id="ln" type="text" required></div>
+        </div>
+        <div class="frow">
+          <div class="fld"><label for="ph">Phone</label><input id="ph" type="tel" required></div>
+          <div class="fld"><label for="em">Email</label><input id="em" type="email" required></div>
+        </div>
+        <div class="fld"><label for="sv">Select Your Service</label><select id="sv"><option selected>[Service]</option>[OtherServiceOptions]</select></div>
+        <div class="fld"><label for="ct">City</label><select id="ct">[CityOptions]</select></div>
+        <div class="fld"><label for="ds">Project Details</label><textarea id="ds"></textarea></div>
+        <button type="submit" class="btn btn-red btn-block">Get My Free Quote</button>
+        <p class="fine">By submitting you agree to be contacted about your project.</p>
+      </form>
+    </div>
+  </div>
+</header>
+
+<section class="sec">
+  <div class="wrap split">
+    <div class="prose">
+      <div class="eyebrow">[Service]</div>
+      <h2>Why [Service] Fails — And How We Do It</h2>
+      <p>[Paragraph: the usual failure mode in this climate / trade. 80+ words.]</p>
+      <p>[Paragraph: this company's process. Prep, materials, walkthrough.]</p>
+      <h3>What's included</h3>
+      <ul>
+        <li><b>[Scope item 1]</b> — [detail]</li>
+        <li><b>[Scope item 2]</b> — [detail]</li>
+        <li><b>[Scope item 3]</b> — [detail]</li>
+        <li><b>[Scope item 4]</b> — [detail]</li>
+      </ul>
+    </div>
+    <div class="ph">
+      <img src="../assets/images/[service-side.jpg]" alt="[Descriptive alt for this service]">
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-gray">
+  <div class="wrap">
+    <div class="sec-head center">
+      <div class="eyebrow">Where We Use It</div>
+      <h2>[Service] Surfaces We Handle</h2>
+    </div>
+    <div class="lp-grid">
+      <div class="lp"><b>[Substrate 1]</b><p>[How you treat it.]</p></div>
+      <div class="lp"><b>[Substrate 2]</b><p>[How you treat it.]</p></div>
+      <div class="lp"><b>[Substrate 3]</b><p>[How you treat it.]</p></div>
+      <div class="lp"><b>[Substrate 4]</b><p>[How you treat it.]</p></div>
+      <div class="lp"><b>[Substrate 5]</b><p>[How you treat it.]</p></div>
+      <div class="lp"><b>[Substrate 6]</b><p>[How you treat it.]</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head center">
+      <div class="eyebrow">Illustrative Scope</div>
+      <h2>How Jobs Typically Break Down</h2>
+      <p>These tiers describe scope, not price. Final numbers come from an on-site visit.</p>
+    </div>
+    <div class="pricing">
+      <div class="lp"><b>Refresh</b><p>[Smaller scope — labeled illustrative, no dollar amounts.]</p></div>
+      <div class="lp"><b>Standard</b><p>[Typical whole-job scope — labeled illustrative.]</p></div>
+      <div class="lp"><b>Premium</b><p>[Full restoration / extras — labeled illustrative.]</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="faq">
+  <div class="wrap">
+    <div class="sec-head center"><div class="eyebrow">Common Questions</div><h2>[Service] FAQ</h2></div>
+    <div class="faq">
+      <details class="qa" open><summary>[Top search-query question for this service]</summary><p>[200+ words if this is the money keyword; otherwise 80+.]</p></details>
+      <details class="qa"><summary>How long does [service] take in [Metro]?</summary><p>[Answer — no fake prices.]</p></details>
+      <details class="qa"><summary>What prep is included?</summary><p>[Answer.]</p></details>
+      <details class="qa"><summary>Do you work around occupied homes?</summary><p>[Answer.]</p></details>
+      <details class="qa"><summary>What areas do you serve?</summary><p>[Real cities from brief.json.]</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-gray">
+  <div class="wrap">
+    <div class="sec-head center"><div class="eyebrow">Keep Looking</div><h2>Related Pages</h2></div>
+    <div class="rel-grid">
+      <a class="rel" href="[other-service].html"><b>[Other Service]</b><p>[one-liner]</p></a>
+      <a class="rel" href="../areas/[area-slug].html"><b>[Trade] in [City]</b><p>[one-liner]</p></a>
+      <a class="rel" href="../index.html"><b>Back to Home</b><p>Full [Brand] mockup</p></a>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <div><h2>Ready for [Service]?</h2><p>Free estimate from a licensed local crew.</p></div>
+    <div class="cta-act">
+      <a href="#quote" class="btn btn-white">Get My Free Quote</a>
+      <a href="tel:[PhoneTel]" class="btn btn-ghost">[PhoneDisplay]</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <span class="flogo"><img src="../assets/logo.png" alt="[Company Name]"></span>
+        <p class="fabout">[One-paragraph company summary.]</p>
+      </div>
+      <div><h4>Services</h4><div class="flist">
+        <a href="[service-slug].html">[Service]</a>
+      </div></div>
+      <div><h4>Service Areas</h4><div class="flist">
+        <a href="../areas/[area-slug].html">[Trade] in [City]</a>
+      </div></div>
+      <div><h4>Get In Touch</h4>
+        <div class="fcon">
+          <a href="tel:[PhoneTel]"><span><b>[PhoneDisplay]</b></span></a>
+          <a href="mailto:[Email]"><span>[Email]</span></a>
+          <span><span>[Address]</span></span>
+        </div>
+      </div>
+    </div>
+    <div class="fbot">
+      <span>&copy; [Year] [Company Name]. All rights reserved. &mdash; Design mockup.</span>
+      <span>Designed &amp; managed by Paint &amp; Profits</span>
+    </div>
+  </div>
+</footer>
+
+<div class="callbar">
+  <a href="tel:[PhoneTel]" class="btn btn-navy">Call Now</a>
+  <a href="#quote" class="btn btn-red">Free Quote</a>
+</div>
+
+<script>
+document.getElementById('qform').addEventListener('submit', function(e){
+  e.preventDefault();
+  this.style.display = 'none';
+});
+</script>
+</body>
+</html>

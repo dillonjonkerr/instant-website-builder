@@ -1,29 +1,31 @@
-# The Skill — the engine of Instant Website Builder
+# The Skill — Instant Website Builder
 
-This folder is a [Claude Code skill](https://claude.com/claude-code). Installed at
-`~/.claude/skills/mockup-site/`, it triggers automatically whenever you tell Claude
-to build a site for a business.
+This folder is the engine: a [Claude Code](https://claude.com/claude-code) skill
+and the playbook Cursor follows for `/instant-website-builder`.
 
 ## Start here
 
 | Read this | If you are |
 |---|---|
-| [`SOP.md`](SOP.md) | **A human operator** — the 5-phase guide: prep → kickoff → build → review → deliver |
-| [`SKILL.md`](SKILL.md) | **Claude / a developer** — the full playbook: intake, pipeline stages, hard rules |
+| [`SOP.md`](SOP.md) | **A human operator** — kickoff, optional dump, optional photos, review |
+| [`SKILL.md`](SKILL.md) | **The agent** — isolated folders, harvest, stops, build, QA |
+| [`references/build-layout.md`](references/build-layout.md) | **Folder convention** — one company, one tree |
 
 ## Folders
 
 | Folder | Contents |
 |---|---|
-| [`scripts/`](scripts/) | `harvest.py` (URL → brand/photos/contact scraper) · `keyword_gap_dataforseo.py` (SEO gap via API) · `pdf_extract.py` (Semrush PDF reader) · `validate_site.py` (pre-delivery QA) · `example_gen_pages.py` (sub-page generator) |
-| [`templates/`](templates/) | `home-wireframe.html` — the master homepage template every build copies |
-| [`references/`](references/) | The wireframe SVG + photo-slot specs, harvest guide, page anatomy, SEO mapping rules, API setup |
-| [`assets/`](assets/) | Shared stylesheet for sub-pages |
+| [`scripts/`](scripts/) | `new_build.py` · `harvest.py` · `photo_plan.py` · `demo_photos.py` · `validate_site.py` · keyword + enhance tools |
+| [`templates/`](templates/) | Homepage wireframe + area page + service page — replace these in place when new designs land |
+| [`references/`](references/) | Wireframe, photo slots, harvest guide, page anatomy, SEO, layout |
+| [`assets/`](assets/) | Shared stylesheet copied **into each client's** `03-site/assets/` |
 
-## Install on a new machine
+## Install on a new machine (Claude Code)
 
 ```bash
 mkdir -p ~/.claude/skills && cp -r skill ~/.claude/skills/mockup-site
 ```
 
-Then in Claude Code: `Build a mockup site for <company-url>`
+Then: `Build a mockup site for <company-url>` (or a GBP link).
+
+In this repo (Cursor), use `/instant-website-builder` — no copy step needed.

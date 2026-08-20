@@ -1,3 +1,7 @@
 .DS_Store
 *.pyc
 __pycache__/
+
+# Live client mockups — one folder per company, never committed
+builds/*
+!builds/README.md

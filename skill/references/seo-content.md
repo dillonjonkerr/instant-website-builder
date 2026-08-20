@@ -39,6 +39,10 @@ General mapping:
   useful (200+ words of real expertise). Thin answers don't move rankings.
 - **Every FAQ answer is a mini content asset** — write them with real domain knowledge
   (climate, materials, local rules), not filler.
+- **Every page `<title>`** uses the formula `{Head Term} | {Secondary Term} | {Brand}`
+  (area pages: `{Trade} in {City}, {ST} | …`).
+- **Every `<img>`** has specific alt text (service + place + what is shown). SAMPLE
+  photos say they are samples.
 
 ## Generic local-service rules (no keyword data provided)
 

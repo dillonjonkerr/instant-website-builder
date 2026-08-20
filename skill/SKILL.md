@@ -1,126 +1,201 @@
 ---
-name: mockup-site
-description: Build a complete, ready-to-pitch mockup website for a local service business (painter, roofer, landscaper, HVAC, flooring, any local contractor) from as little as a single URL — a bundled harvester scrapes their site for contact info, socials, services, cities, brand colors, and photos automatically. Harvests the company's real logo, photos, phone, taglines and brand colors from their site and socials, rejects watermarked/stock images, applies SEO keyword targets if provided, and generates a validated 5-page site (home + 3 area pages + flagship service page) with quote forms, dropdown nav, review section under the hero, and a before/after slider — then serves it on localhost. Use this skill whenever the user names a business and asks for a mockup, website, landing page, redesign, "build a site for", "same as the others", or pastes a company brief or business URL with intent to build — even if they never say the word "mockup".
+name: instant-website-builder
+description: Build a pitch-ready mockup website for a local service business from a website URL or Google Business Profile. Harvests contact info, photos, services, cities, and brand; asks the operator for an optional info dump and extra photos (Drive, chat, or skip); then builds a wireframe-matching site with home + every service page + every area page, SEO titles, and image alt text — each company in its own isolated folder. Use when the user types /instant-website-builder, /Instant Website Builder, pastes a company URL or GBP link, or asks to build a mockup / example site / instant website for a contractor.
 ---
 
-# Mockup Site Builder
+# Instant Website Builder
 
-Turn a company brief + URLs into a pitch-ready multi-page website mockup that looks
-like the company built it themselves: their logo, their photos, their taglines, their
-brand colors, their cities. The bar is "could be their real site tomorrow", not
-"obviously a template". The worked example is TPG Paints & Stains (Arizona painter) —
-every bundled resource comes from that real build.
+Turn a **website URL or Google Business Profile** into a pitch-ready multi-page
+mockup that looks like the company built it themselves: their logo, their photos,
+their phone, their cities, their brand colors. These are **example sites to show
+clients**, not launch-ready production sites. The bar is "looks like the sites
+we've already built" — same wireframe, their brand.
 
-## Intake — a URL is enough
+The worked example is TPG Paints & Stains (`examples/tpg-paints-and-stains/`).
+Do not copy TPG photos into a new client.
 
-The minimum input is **one URL** (or a company name to find the URL). Start every build
-by running the harvester — it auto-fills the whole intake:
+**Templates:** start from `templates/home-wireframe.html`, `templates/area-page.html`,
+and `templates/service-page.html`. Dillon will drop updated templates into
+`templates/` — always use whatever is there now; do not invent a new layout.
+
+## Skill root
+
+Scripts, templates, and references live next to this file (`scripts/`,
+`templates/`, `references/`, `assets/`). In the git repo that is `skill/`.
+
+Never write a client's files into the skill folder. Every company gets its own
+tree — see `references/build-layout.md`.
+
+| Where you are | Client root |
+|---|---|
+| This repo | `builds/<slug>/` |
+| Claude Code install | `~/Mockups/<slug>/` |
 
 ```bash
-python3 scripts/harvest.py https://COMPANY.com <site-dir>/intake
+python3 scripts/new_build.py --url https://COMPANY.com --name "Company LLC" --out builds
+python3 scripts/new_build.py --gbp "https://maps.app.goo.gl/..." --name "Company LLC" --out builds
 ```
 
-It crawls their site, extracts phone/email/address, social links, services, cities,
-taglines, brand colors, the logo, and downloads every real photo — writing `brief.json`,
-`report.md`, and `photos/raw/` (details + the follow-up judgment steps:
-`references/asset-harvest.md` §0). Treat its `gaps` list as to-dos: WebSearch their
-GMB/FB for whatever it missed; ask the user only if that fails too.
+## Kickoff — URL or GBP is enough
 
-Anything the user supplies directly **overrides** the harvest:
+The operator types `/instant-website-builder` (or "build a mockup for") plus:
 
-```
-Phone / email / address     Socials: FB / IG / GMB      Service areas / cities
-Services                    Notes / taglines / USPs
-Keyword data:               (Semrush connector pull — ask before spending API units —
-                             or a Semrush PDF/CSV path for scripts/pdf_extract.py)
-Extra photos:               (folder path — chat attachments are NOT on disk)
-```
+- a **website URL**, or
+- a **Google Business Profile / Maps** link, or
+- a **business name** (find the URL + GBP yourself)
 
-If something critical is missing after harvesting (no website AND no photos), ask —
-otherwise proceed and flag gaps at the end.
+Then run the pipeline in order. Two steps **stop and wait** for an optional
+reply (`skip` is a valid answer). Do not skip the ask.
+
+Anything already in the kickoff message (notes, extra cities, a photo folder
+path, a Drive link) **overrides harvest** and means you should not ask for that
+item again.
+
+---
 
 ## Pipeline
 
-Run these stages in order. Each stage's detail lives in a reference file — read it
-when you reach that stage, not before.
+### 0. Isolate the client — read `references/build-layout.md`
 
-### 1. Harvest → read `references/asset-harvest.md`
-`scripts/harvest.py` (run at intake) already fetched the site, socials links, contact
-info, brand colors, taglines, and photos. Your job is the judgment layer: **visually
-inspect every image in `photos/raw/`** — reject MLS/ARMLS/stock watermarks (copyright
-liability), catch duplicates, verify before/after pairs are the same building/angle,
-mine truck-wrap slogans. Chase down `gaps` from the report (GMB/FB via WebSearch or the
-Browser pane). Then run `scripts/enhance_photos.py` on the keepers (auto-levels, color
-lift, sharpen, resize, EXIF strip — flags `TOO_SMALL` images that must stay out of
-hero/banner slots; see asset-harvest.md §6), rename by role into `assets/`.
+Run `new_build.py` first. All harvest, photos, and HTML for this company go
+only under that folder. If you are building a second or third website in the
+same session, scaffold a **new** slug. Never reuse `crew-trucks.jpg` (or any
+file) from another client or from the TPG example.
 
-### 2. Brand
-Colors from site-CSS frequency + the logo itself (logo wins conflicts). Check logo
-alpha channel. Map onto the stylesheet's semantic slots and find/replace the hardcoded
-accent hexes — see "Re-theming" in `references/page-structure.md`.
+### 1. Harvest — read `references/asset-harvest.md`
 
-### 3. SEO targets → read `references/seo-content.md`
-Source hierarchy (details + setup in `references/api-integrations.md`): ① DataForSEO
-via `scripts/keyword_gap_dataforseo.py` if `DATAFORSEO_LOGIN`/`PASSWORD` env vars
-exist (~$0.26/client); ② the Semrush MCP connector (units cost money — tell the user
-before pulling, respect a "no"); ③ a Semrush PDF (`scripts/pdf_extract.py`) or CSV;
-④ generic local-service rules. With data in hand: head terms → title/H1/H2s; near-me
-terms → copy phrasing; any keyword the client ranks for but a competitor ranks higher
-→ dedicated section + FAQ.
-
-### 4. Build → read `references/page-structure.md`
-Five pages sharing `assets/style.css` (copy it into the site's `assets/`):
-- **Home** — START FROM `templates/home-wireframe.html`: a validated, self-contained
-  build of THE WIREFRAME (`references/wireframe-painting-homepage.svg`, section-by-
-  section in page-structure.md) with usage steps in its header comment. Copy it, swap
-  the `:root` brand vars, replace every `[Token]`, cast real photos into the labeled
-  IMG-01…IMG-15 placeholder panels per `references/photo_slots.json`. Section order
-  is fixed for every site; extras (financing banners, deals, before/after slider) may
-  be added but sections never removed. Reviews stay directly below the hero (user
-  requirement), fake-but-plausible in the company's real review voice, labeled as
-  samples.
-- **3 area pages** — each with a genuinely different local angle (housing stock, rules,
-  climate). Copy `scripts/example_gen_pages.py` into the build folder and rewrite every
-  content dict; its TPG entries show the quality bar. Never city-swap one template.
-- **1 flagship service page** — scope tiers labeled illustrative, never fake prices.
-
-Site lives in its own folder (default `~/Mockups/<company-slug>/`), never mixed with
-another company. Photos that don't exist get the honest `.noimg` placeholder panel —
-never stock images, never another company's photos.
-
-### 5. QA + deliver
 ```bash
-python3 scripts/validate_site.py <site-dir>     # must print ALL PAGES OK
+python3 scripts/harvest.py <website-or-gbp-url> <client-root>/00-intake
+python3 scripts/photo_plan.py <client-root>
 ```
-Serve via `.claude/launch.json` (`python3 -m http.server <port> --directory <site-dir>`),
-screenshot the home page to confirm rendering, send files with SendUserFile, and give
-the user a table of localhost URLs. Close with: top competitor (if keyword data),
-SEO decisions made, which photo slots still need real photos, and what was fabricated
-(reviews, stats) that must be replaced before any real launch.
+
+The harvester writes `00-intake/brief.json` + `report.md` + `photos/raw/`.
+Treat `gaps` as to-dos: WebSearch their GBP/Facebook for whatever it missed.
+
+If the input was GBP-only, the script tries to find a real website from the
+Maps page. You still chase hours, reviews, extra photos, and a site URL in
+the browser if HTML is a JS shell.
+
+Then **look at every image** in `photos/raw/` — reject MLS/stock watermarks,
+cast keepers into IMG-01…IMG-16 per `references/photo_slots.json`, copy
+keepers into `01-photos/client/` renamed by role, and run
+`scripts/enhance_photos.py` on keepers before they enter `03-site/assets/images/`.
+
+### 2. STOP — optional info dump
+
+Show a short harvest recap (name, phone, email, address, cities, services,
+photo count, gaps). Then ask **once**:
+
+> If you have extra info, paste it — owner name, years in business, warranty,
+> extra cities, USPs, competitors, notes, anything the site doesn't say.
+> Or type **skip**.
+
+Wait. Write their reply (or `skipped`) to `00-intake/operator-dump.md`.
+Their dump overrides `brief.json`.
+
+### 3. STOP — optional extra photos
+
+After classifying harvested photos, ask **once** using the names in
+`01-photos/photo-request.md`:
+
+> I still need photos named like this (Drive folder, chat, or files):
+> `interior-painting`, `exterior-painting`, `team`, `crew-trucks`, …
+> Or type **skip** and I will fill remaining slots with labeled SAMPLE photos.
+
+Wait.
+
+- **Drive link:** try to fetch if it is public; if not, ask them to drop the
+  files into `<client-root>/01-photos/extra/` (or attach in chat). Chat images
+  are only usable once saved as files in `01-photos/extra/`.
+- **Skip:** `python3 scripts/demo_photos.py <client-root> --all-empty`
+  SAMPLE boards are allowed on a pitch mockup. They must stay labeled
+  ("SAMPLE PHOTO — Design mockup") in the image itself and in alt text.
+  Never use another company's photos as "demo".
+- **Client-required slots** (IMG-01, 02, 10, 12): prefer real photos; SAMPLE
+  is OK on skip so the pitch isn't full of empty hatched boxes.
+
+Update `01-photos/manifest.json` with `file`, `source` (`client`|`extra`|`demo`),
+and **alt text** for every slot you use.
+
+### 4. Brand
+
+Colors from site CSS frequency + the logo (logo wins). Map onto `--navy` /
+`--red` in `03-site/assets/style.css` (copy from `assets/style.css` first).
+See "Re-theming" in `references/page-structure.md`.
+
+### 5. SEO — read `references/seo-content.md`
+
+Source hierarchy in `references/api-integrations.md`. Head terms →
+`<title>` / H1 / H2. Near-me phrasing in copy. Area titles:
+`{Trade} in {City}, {ST} | {Secondary} | {Brand}`. Save decisions in
+`02-seo/seo-brief.md`.
+
+### 6. Build — read `references/page-structure.md`
+
+Site lives in `<client-root>/03-site/`:
+
+| Page | Path | Template |
+|---|---|---|
+| Home | `index.html` | `templates/home-wireframe.html` — 18 sections, never removed |
+| Every area | `areas/<trade>-<city>-<st>.html` | `templates/area-page.html` |
+| Every service | `services/<service-slug>.html` | `templates/service-page.html` |
+
+Rules:
+
+- **All service cards on the home page link to a real service page** you built
+  (not just one flagship with the rest as `#services` hashes). Cap 8.
+- **All harvested cities get an area page** with a unique local angle. Cap 8
+  (HQ + strongest remaining). Research housing stock / HOA / climate before
+  writing. Never city-swap.
+- Nav dropdowns only list pages that exist.
+- Every `<img>` has specific alt text (service + city + what is shown).
+  Demo photos say they are samples.
+- Photos are `03-site/assets/images/<role>.jpg` — this client's folder only.
+- Footer: "— Design mockup." Sample reviews stay labeled.
+
+### 7. QA + deliver
+
+```bash
+python3 scripts/validate_site.py <client-root>/03-site --require-alt   # must print ALL PAGES OK
+```
+
+Serve `03-site/` on localhost, screenshot home, give a table of URLs
+(home, each area, each service). Close with: photo slots that are SAMPLE or
+empty, what was fabricated, SEO titles chosen, top competitor if known.
+
+---
 
 ## Hard rules
 
+- **One company, one folder.** No shared `assets/` across clients.
 - **Never ship a watermarked or third-party-copyrighted image.** Delete and say why.
 - **Never invent dollar prices** — scope tiers only, labeled illustrative.
-- **Fabricated content stays labeled**: sample reviews note, "— Design mockup." in the
-  footer copyright, placeholder financing terms marked as placeholder.
-- **Real contact info everywhere**: their actual phone (tel: links), email, cities.
-- **Validate before delivering** — broken links or missing assets kill the pitch.
+- **Fabricated content stays labeled.**
+- **Real contact info everywhere** when harvest found it.
+- **Validate before delivering.**
+- **Do not wait for templates** — use `templates/` as they are; Dillon will
+  replace them later.
 
 ## Bundled resources
 
 | File | What it is |
 |---|---|
-| `scripts/harvest.py` | URL-only intake: scrapes site → brief.json + report.md + photos/raw/ |
-| `assets/style.css` | The complete shared stylesheet (nav, dropdowns, hero, quote form, slider, sub-page components, mobile call bar) |
-| `scripts/example_gen_pages.py` | Worked example generator (TPG) — copy + rewrite per company |
-| `scripts/validate_site.py` | Nesting / links / assets / anchors validator |
-| `scripts/pdf_extract.py` | Zero-dependency Semrush PDF text extractor |
-| `scripts/keyword_gap_dataforseo.py` | Keyword gap via DataForSEO API (~$0.26/client) — needs env credentials |
-| `references/api-integrations.md` | DataForSEO setup, costs, keyword-source hierarchy |
-| `templates/home-wireframe.html` | Build-ready homepage implementing the wireframe — copy per company, swap tokens/photos |
-| `references/wireframe-painting-homepage.svg` | THE canonical homepage wireframe — fixed section order for every build |
-| `references/photo_slots.json` | Photo direction: IMG-01…IMG-16 slot specs (subject, framing, min size, do/don'ts, stock policy) |
-| `references/asset-harvest.md` | Harvest commands, watermark policy, image inspection rules |
-| `references/page-structure.md` | Wireframe section-by-section, sub-page anatomy, re-theming, delivery checklist |
-| `references/seo-content.md` | Keyword-data → copy mapping rules |
+| `scripts/new_build.py` | Scaffolds the isolated client folder |
+| `scripts/harvest.py` | Website or GBP → `brief.json` + photos |
+| `scripts/photo_plan.py` | Photo-request names + empty manifest |
+| `scripts/demo_photos.py` | Labeled SAMPLE fills when operator skips |
+| `scripts/enhance_photos.py` | Auto-level / sharpen / resize keepers |
+| `scripts/validate_site.py` | Nesting / links / assets / alt text |
+| `scripts/keyword_gap_dataforseo.py` | Keyword gap (~$0.26) if env creds exist |
+| `scripts/pdf_extract.py` | Semrush PDF fallback |
+| `scripts/example_gen_pages.py` | TPG quality bar (do not copy its content) |
+| `templates/home-wireframe.html` | Homepage — THE wireframe |
+| `templates/area-page.html` | Area page |
+| `templates/service-page.html` | Service page |
+| `assets/style.css` | Shared stylesheet for sub-pages |
+| `references/build-layout.md` | Folder convention |
+| `references/photo_slots.json` | IMG-01…IMG-16 |
+| `references/page-structure.md` | Section order + re-theming |
+| `references/seo-content.md` | Keyword → copy mapping |
+| `references/asset-harvest.md` | Inspection + watermark rules |
+| `references/api-integrations.md` | DataForSEO / Semrush |

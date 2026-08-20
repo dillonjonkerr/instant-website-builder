@@ -1,20 +1,26 @@
 #!/usr/bin/env python3
 """
-harvest.py — URL-only intake for the mockup-site skill.
+harvest.py — website or Google Business Profile intake for Instant Website Builder.
 
     python3 harvest.py <company-url> <output-dir> [--max-photos 30] [--max-pages 8]
 
-Give it one URL. It fetches the homepage + the most useful internal pages
-(about / services / areas / contact / gallery), and produces:
+Give it a company website OR a Google Business Profile / Maps URL. It fetches
+the homepage + the most useful internal pages (about / services / areas /
+contact / gallery), and produces:
 
     <output-dir>/brief.json      structured company brief (the skill's intake, filled)
     <output-dir>/report.md       human-readable summary of what was found + gaps
     <output-dir>/photos/raw/     every real photo found, downloaded, with dimensions
 
-Zero dependencies: shells out to `curl` (Chrome UA — many builders block default
-agents) and `sips` (macOS) for image dimensions. Everything else is stdlib.
+Zero extra pip deps in the happy path: shells out to `curl` (Chrome UA — many
+builders block default agents). Image dimensions use Pillow when installed,
+then macOS `sips`, then a file-size fallback so Linux boxes still keep photos.
 
-What it does NOT do (Claude does these at build time):
+Accepts a company website OR a Google Business Profile / Maps URL. GBP pages
+are often JS shells — we extract what HTML we can and chase a real website
+link from JSON-LD when one exists.
+
+What it does NOT do (the agent does these at build time):
   - visually classify photos (interior/exterior/team/before-after) and reject
     watermarked images — that needs eyes
   - pull keyword gap / competitors — that's the Semrush connector or a PDF export
@@ -108,8 +114,27 @@ def download(url, path, timeout=30):
         return False
 
 
+GBP_HINTS = ("google.com/maps", "maps.google.", "maps.app.goo.gl", "g.page",
+             "business.google.com", "goo.gl/maps")
+
+
+def is_gbp_url(url):
+    u = (url or "").lower()
+    if any(h in u for h in GBP_HINTS):
+        return True
+    host = urlparse(url or "").netloc.lower().replace("www.", "")
+    return host in ("g.co", "g.page", "maps.app.goo.gl")
+
+
 def img_dims(path):
-    """(width, height) via sips; (0, 0) if unreadable (corrupt/HTML error body)."""
+    """(width, height). Pillow first (Linux/mac), then macOS sips, else (0, 0)."""
+    try:
+        from PIL import Image
+        with Image.open(path) as im:
+            im.load()
+            return im.size
+    except Exception:
+        pass
     try:
         r = subprocess.run(["sips", "-g", "pixelWidth", "-g", "pixelHeight", path],
                            capture_output=True, text=True, timeout=15)
@@ -118,6 +143,38 @@ def img_dims(path):
         return (int(w.group(1)), int(h.group(1))) if w and h else (0, 0)
     except Exception:
         return (0, 0)
+
+
+def find_listed_website(page, gbp_url):
+    """A real .com/.net/… site linked from a GBP/Maps page, not Google itself."""
+    skip_hosts = ("google.", "gstatic.", "g.page", "g.co", "goo.gl", "schema.org",
+                  "facebook.", "instagram.", "yelp.", "youtube.", "apple.com")
+    candidates = []
+    for block in extract_jsonld(page):
+        for key in ("url", "sameAs"):
+            val = block.get(key)
+            items = val if isinstance(val, list) else [val] if val else []
+            for item in items:
+                if isinstance(item, str):
+                    candidates.append(item)
+    for href in extract_links(page, gbp_url):
+        candidates.append(href)
+    seen = set()
+    for item in candidates:
+        item = item.strip()
+        if not item.startswith("http") or item in seen:
+            continue
+        seen.add(item)
+        if is_gbp_url(item):
+            continue
+        host = urlparse(item).netloc.lower()
+        if any(h in host for h in skip_hosts):
+            continue
+        path = urlparse(item).path.lower()
+        if re.search(r"\.(jpg|jpeg|png|webp|css|js)(\?|$)", path):
+            continue
+        return item
+    return None
 
 
 def visible_text(page):
@@ -326,35 +383,57 @@ def main():
 
     photos_dir = os.path.join(outdir, "photos", "raw")
     os.makedirs(photos_dir, exist_ok=True)
-    host = urlparse(url).netloc.replace("www.", "")
 
-    print(f"[1/6] fetching {url}")
+    gbp_url = url if is_gbp_url(url) else None
+    source_type = "gbp" if gbp_url else "website"
+
+    print(f"[1/6] fetching {url}" + (" (Google Business / Maps)" if gbp_url else ""))
     home = fetch(url)
     if not home:
         sys.exit(f"FATAL: could not fetch {url} — check the URL or try again")
     pages = {url: home}
 
+    if gbp_url:
+        listed = find_listed_website(home, gbp_url)
+        if listed:
+            print(f"      GBP listed a website → {listed} (crawling that too)")
+            site_html = fetch(listed)
+            if site_html:
+                url = listed
+                source_type = "gbp+website"
+                home = site_html
+                pages[url] = site_html
+            else:
+                print("      listed website did not fetch — continuing with GBP HTML only")
+        else:
+            print("      no website link on GBP page — extracting what we can from Maps HTML")
+
+    host = urlparse(url).netloc.replace("www.", "")
+
     # pick internal pages worth crawling: hint-matched slugs first, then any other
     # same-domain page (small sites put services at /exterior-painting etc., which
     # no hint list anticipates — if the site is small enough, just crawl it all)
     internal = []
-    for link in extract_links(home, url):
-        p = urlparse(link)
-        if p.netloc.replace("www.", "") != host:
-            continue
-        link = link.split("#")[0].split("?")[0].rstrip("/")
-        if not p.path or p.path == "/" or link in internal:
-            continue
-        if re.search(r"\.(pdf|jpg|png|webp|css|js|xml)$|/(privacy|terms|sitemap)", link, re.I):
-            continue
-        internal.append(link)
-    internal.sort(key=lambda l: min((CRAWL_HINTS.index(h) for h in CRAWL_HINTS
-                                     if h in urlparse(l).path.lower()), default=len(CRAWL_HINTS)))
-    print(f"[2/6] crawling {min(len(internal), max_pages)} internal pages")
-    for link in internal[:max_pages]:
-        page = fetch(link)
-        if page:
-            pages[link] = page
+    if "google." in host or host in ("g.co", "g.page", "maps.app.goo.gl"):
+        print("[2/6] skipping internal crawl of Google hosts")
+    else:
+        for link in extract_links(home, url):
+            p = urlparse(link)
+            if p.netloc.replace("www.", "") != host:
+                continue
+            link = link.split("#")[0].split("?")[0].rstrip("/")
+            if not p.path or p.path == "/" or link in internal:
+                continue
+            if re.search(r"\.(pdf|jpg|png|webp|css|js|xml)$|/(privacy|terms|sitemap)", link, re.I):
+                continue
+            internal.append(link)
+        internal.sort(key=lambda l: min((CRAWL_HINTS.index(h) for h in CRAWL_HINTS
+                                         if h in urlparse(l).path.lower()), default=len(CRAWL_HINTS)))
+        print(f"[2/6] crawling {min(len(internal), max_pages)} internal pages")
+        for link in internal[:max_pages]:
+            page = fetch(link)
+            if page:
+                pages[link] = page
 
     all_html = list(pages.values())
     all_text = " ".join(visible_text(p) for p in all_html)
@@ -434,7 +513,14 @@ def main():
             skipped += 1
             continue
         w, h = img_dims(path)
-        if w < 300 or h < 200:      # icons, spacers, tiny thumbs
+        size = os.path.getsize(path)
+        if w == 0 and h == 0:
+            # No decoder (old sips-only path) — keep real photos by file size.
+            if size < 20_000:
+                os.remove(path)
+                skipped += 1
+                continue
+        elif w < 300 or h < 200:      # icons, spacers, tiny thumbs
             os.remove(path)
             skipped += 1
             continue
@@ -450,13 +536,19 @@ def main():
     if not cities:
         gaps.append("no service cities detected — ask the user or check their GMB")
     if len(photos) < 6:
-        gaps.append(f"only {len(photos)} usable photos — check FB/IG for more")
+        gaps.append(f"only {len(photos)} usable photos — check FB/IG/GBP for more")
     if not trade:
         gaps.append("trade unclear from copy — confirm with the user")
+    if gbp_url and source_type == "gbp":
+        gaps.append("started from Google Business Profile with no crawlable website — "
+                    "agent should search the web / open the GBP in a browser for hours, "
+                    "reviews, photos, and a site URL")
 
     brief = {
         "harvested_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "source_url": url,
+        "source_type": source_type,
+        "gbp_url": gbp_url,
         "pages_crawled": list(pages.keys()),
         "company": {"name": site_name, "trade_guess": trade, "state_guess": state},
         "contact": {"phones": phones, "emails": emails, "address": ld.get("address")},
@@ -477,7 +569,8 @@ def main():
 
     print("[6/6] writing report")
     lines = [f"# Harvest report — {site_name}", "",
-             f"- **URL:** {url}  ·  **Trade:** {trade or '?'}  ·  **State:** {state or '?'}",
+             f"- **URL:** {url}  ·  **Source:** {source_type}  ·  **GBP:** {gbp_url or '—'}",
+             f"- **Trade:** {trade or '?'}  ·  **State:** {state or '?'}",
              f"- **Phones:** {', '.join(phones) or '—'}",
              f"- **Emails:** {', '.join(emails) or '—'}",
              f"- **Address:** {ld.get('address') or '—'}",
