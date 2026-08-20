@@ -1,12 +1,13 @@
 # Instant Website Builder
 
-**Paste one URL → get a pitch-ready 5-page website mockup.**
+**Paste a website URL or Google Business Profile → get a pitch-ready mockup.**
 
-A system by Paint & Profits for building high-converting mockup websites for local
-service businesses (painters, roofers, HVAC, any contractor). It scrapes the
-company's real brand — logo, colors, photos, phone, taglines, cities — pulls their
-SEO keyword gap, and builds a validated 5-page site on a fixed, proven wireframe.
-Runs inside [Claude Code](https://claude.com/claude-code).
+A system by Paint & Profits for building high-converting **example websites** for
+local service businesses (painters, roofers, HVAC, any contractor). It harvests
+the company's real brand — logo, colors, photos, phone, taglines, cities — asks
+you for optional extras, and builds a validated site on a fixed wireframe.
+Each client lives in **its own folder** so three websites never share one
+`crew-trucks.jpg`.
 
 <p align="center">
   <img src="docs/tpg-home.png" alt="Example build — TPG Paints & Stains homepage" width="720">
@@ -15,63 +16,68 @@ Runs inside [Claude Code](https://claude.com/claude-code).
 
 ## How to use it
 
-Open Claude Code and paste:
+In Cursor:
 
 ```
-Build a mockup site for <company-url>
+/instant-website-builder
+https://their-site.com
 ```
 
-That's the whole workflow. Optional extras on the next lines: a folder of photos,
-a Semrush PDF path, or notes. Full operator guide: [skill/SOP.md](skill/SOP.md).
+or a Google Business Profile / Maps link. The agent harvests, then **asks**
+for an optional info dump and extra photos (Drive, chat, or `skip`). Full
+operator guide: [skill/SOP.md](skill/SOP.md).
+
+In Claude Code the same flow is: `Build a mockup site for <url>`.
 
 ## What's in this repo
 
 | Folder | What it is |
 |---|---|
-| [`skill/`](skill/) | **The engine.** The Claude Code skill that runs every build. Live copy installed at `~/.claude/skills/mockup-site/` — this repo is the backup/source of truth. |
-| [`wireframe-handoff/`](wireframe-handoff/) | **The design DNA.** The annotated homepage wireframe (SVG + render), the Photo Direction deck (PDF/PPTX), and `photo_slots.json` — the 16 photo-slot specs every build follows. |
-| [`docs/`](docs/) | Screenshots and visual documentation. |
-| [`examples/tpg-paints-and-stains/`](examples/tpg-paints-and-stains/) | **The worked example.** Complete 5-page build for TPG Paints & Stains (Arizona painter): home, 3 area pages, exterior-painting service page, real harvested assets. |
+| [`skill/`](skill/) | **The engine.** Playbook, scripts, templates. Cursor slash skill also lives at `.cursor/skills/instant-website-builder/`. |
+| [`wireframe-handoff/`](wireframe-handoff/) | **The design DNA.** Annotated homepage wireframe + `photo_slots.json`. |
+| [`docs/`](docs/) | Screenshots. |
+| [`examples/tpg-paints-and-stains/`](examples/tpg-paints-and-stains/) | **The worked example** (quality bar — do not reuse its photos on other clients). |
+| [`builds/`](builds/) | Live client folders (gitignored). One slug per company. |
 
 ## Inside `skill/`
 
 | File | Purpose |
 |---|---|
-| `SKILL.md` | The playbook Claude follows — intake, 5-stage pipeline, hard rules |
-| `SOP.md` | Human operator guide: prep → kickoff → review checklist → delivery |
-| `scripts/harvest.py` | **URL scraper.** One command pulls contact info, socials, services, cities, taglines, brand colors, logo, and every real photo into `brief.json` |
-| `scripts/keyword_gap_dataforseo.py` | **Keyword gap puller.** DataForSEO API → keywords competitors rank for that the client doesn't (~$0.26/client). Needs `DATAFORSEO_LOGIN`/`PASSWORD` env vars |
-| `scripts/pdf_extract.py` | Zero-dependency Semrush PDF text extractor (fallback keyword source) |
-| `scripts/validate_site.py` | Pre-delivery validator: nesting, links, assets, anchors |
-| `scripts/example_gen_pages.py` | Area/service page generator (TPG worked example — copy + rewrite per client) |
-| `templates/home-wireframe.html` | **The master homepage template.** Self-contained build of the wireframe: all 18 sections, labeled photo slots, working forms, mobile layout. Every build starts by copying this |
-| `references/` | Wireframe SVG + photo slots (bundled), harvest guide, page anatomy, SEO mapping rules, API integration guide |
-| `assets/style.css` | Shared stylesheet for sub-pages |
+| `SKILL.md` | The playbook — isolate, harvest, optional dump, optional photos, build, QA |
+| `SOP.md` | Human operator guide |
+| `scripts/new_build.py` | Scaffolds `builds/<slug>/` (intake, photos, site) |
+| `scripts/harvest.py` | Website or GBP → `brief.json` + photos |
+| `scripts/photo_plan.py` | Photo-request names for Drive/chat |
+| `scripts/demo_photos.py` | Labeled SAMPLE fills when you skip extras |
+| `scripts/keyword_gap_dataforseo.py` | Keyword gap (~$0.26/client) |
+| `scripts/validate_site.py` | Nesting, links, assets, alt text |
+| `templates/` | Home wireframe + area + service page templates (replace in place when you have new designs) |
+| `references/build-layout.md` | Per-client folder convention |
 
-## The pipeline (what Claude does per build)
+## The pipeline (what the agent does per build)
 
-1. **Harvest** — `harvest.py` scrapes the site; Claude inspects every photo
-   (rejects watermarked/MLS images — copyright), chases gaps via web search
-2. **Brand** — colors from their CSS + logo (logo wins), mapped onto the template
-3. **SEO** — keyword gap via DataForSEO → Semrush connector → Semrush PDF → generic
-   local rules; head terms into titles/H1s, near-me phrasing into copy
-4. **Build** — homepage from the wireframe template + 3 area pages (each a genuinely
-   different local angle) + 1 flagship service page
-5. **QA + deliver** — validator must pass, served on localhost, screenshot proof
+1. **Isolate** — new folder for this company only
+2. **Harvest** — scrape site or GBP; inspect photos; chase gaps
+3. **Ask you** — optional info dump (`skip` is fine)
+4. **Ask you** — extra photos via Drive/chat, or skip with SAMPLE images
+5. **SEO** — keyword gap if available; titles and H1s from head terms
+6. **Build** — wireframe homepage + **every** service page + **every** area page
+7. **QA** — validator with alt-text check, localhost, screenshot
 
 ## Hard rules (why the mockups are safe to pitch)
 
+- One company, one folder — never mix client photos
 - Never ship watermarked or third-party photos (MLS/stock = copyright liability)
 - Never invent dollar prices — scope tiers only, labeled illustrative
-- Fabricated content stays labeled (sample reviews note, "— Design mockup." footer)
-- Real contact info everywhere — their actual phone, email, cities
-- Missing photos get honest labeled placeholders, never stock
+- Fabricated content stays labeled (sample reviews, "— Design mockup." footer)
+- Real contact info everywhere when we found it
+- SAMPLE photos (if you skipped extras) stay labeled as samples
 
 ## Costs
 
 | Thing | Cost |
 |---|---|
-| Build a mockup | Claude usage only |
+| Build a mockup | Model usage only |
 | Keyword gap (DataForSEO) | ~$0.26 per client (pay-as-you-go, $50 min deposit) |
 | Keyword gap (fallback) | Free — manual Semrush PDF export |
 

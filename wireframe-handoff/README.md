@@ -15,3 +15,7 @@ removed or reordered.
 
 A build-ready HTML implementation of this wireframe lives at
 [`../skill/templates/home-wireframe.html`](../skill/templates/home-wireframe.html).
+Area and service page templates: `skill/templates/area-page.html` and
+`skill/templates/service-page.html`. Replace those three files in place when
+new designs land. Each client build is isolated under `builds/<slug>/`
+(see `skill/references/build-layout.md`).

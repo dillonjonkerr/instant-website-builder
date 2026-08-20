@@ -7,11 +7,15 @@ copyrighted image) creates liability for the client. Budget real time on this st
 ## 0. Run the harvester first — one command does steps 1–2 and half of 5
 
 ```bash
-python3 scripts/harvest.py https://COMPANY.com <site-dir>/intake
+python3 scripts/harvest.py https://COMPANY.com <client-root>/00-intake
+# or a Google Business / Maps URL:
+python3 scripts/harvest.py "https://maps.app.goo.gl/..." <client-root>/00-intake
+python3 scripts/photo_plan.py <client-root>
+
 ```
 
 It fetches the homepage + up to 8 internal pages (services/areas/about/contact), and
-writes `<site-dir>/intake/`:
+writes `<client-root>/00-intake/`:
 
 - `brief.json` — name, trade guess, phones, emails, address, social links (incl. from
   JSON-LD `sameAs`), detected services, detected cities, taglines, brand-color hexes by
@@ -26,11 +30,14 @@ Then do the judgment work the script can't:
    if socials are missing; ask the user only if searching fails).
 2. **Visually inspect every photo in `photos/raw/`** — reject watermarks and
    duplicates per section 3 below, then CAST each keeper into a wireframe photo slot
-   (IMG-01 hero crew/truck, IMG-02 team, IMG-03 ladder action, IMG-04…09 service
-   cards, IMG-10 candid, IMG-11 dramatic, IMG-12 featured projects…). Slot specs
-   with framing/size/do-don'ts: `references/photo_slots.json`. Copy keepers into
-   `assets/` renamed by slot role (section 6). Slots marked "client photo required"
-   with no genuine photo get the `.noimg` placeholder — never stock.
+  (IMG-01 hero crew/truck, IMG-02 team, IMG-03 ladder action, IMG-04…09 service
+  cards, IMG-10 candid, IMG-11 dramatic, IMG-12 featured projects…). Slot specs
+  with framing/size/do-don'ts: `references/photo_slots.json`. Copy keepers into
+  `<client-root>/01-photos/client/` renamed by slot role, then into
+  `03-site/assets/images/` (section 6). Never copy photos from another company's
+  folder. Slots with no genuine photo: ask the operator (Drive/chat) or, if they
+  skip, labeled SAMPLE images from `scripts/demo_photos.py`. Hatched `.noimg`
+  placeholders are the fallback when even SAMPLE would be misleading (map embed).
 3. **Sanity-check detected cities/services** — the detectors are heuristic; drop
    anything that isn't a real place or service.
 4. Anything the user stated in chat **overrides** the harvest.
@@ -84,10 +91,11 @@ Read each downloaded image with the Read tool. Non-negotiable, because:
   Specialist"). Read them off the photo and use them verbatim in the hero/topbar.
 - **Crew photos humanize** — use one in the intro/about section with a caption.
 
-When there's no genuine photo for a slot (e.g. no interior shots exist), do NOT fill it
-with a stock image or an unrelated photo. Use the `.svc-ph.noimg` branded placeholder
-panel from style.css with a visible label like "Interior photo needed" — deliberately
-obvious so it can't ship by accident, and it reads as a to-do, not a bug.
+When there's no genuine photo for a slot after harvest + operator skip, fill it
+with a labeled SAMPLE board (`scripts/demo_photos.py`) so the pitch still looks
+complete. SAMPLE images must say they are samples in the bitmap and in alt text.
+Do not use another client's job photos. Do not pass unmarked stock off as their
+work. Watermarked MLS/Shutterstock still gets deleted, not "sampled over".
 
 ## 4. Socials & reviews
 
@@ -102,9 +110,9 @@ obvious so it can't ship by accident, and it reads as a to-do, not a bug.
 
 ## 5. Logo and colors
 
-- Check the logo PNG for a real alpha channel: `sips -g hasAlpha logo.png` — a white-box
-  logo on a dark nav looks broken. If it's white-background only, put it in a white
-  rounded chip (`.flogo` in the footer does this).
+- Check the logo PNG for a real alpha channel (Pillow: open it and look at mode;
+  macOS: `sips -g hasAlpha logo.png`). A white-box logo on a dark nav looks broken.
+  If it's white-background only, put it in a white rounded chip (`.flogo` in the footer).
 - Confirm brand colors from BOTH the site CSS frequency count and the logo itself (Read
   the logo, name its colors). If they conflict, the logo wins — it's on their trucks.
 - Map colors onto the stylesheet slots (see page-structure.md → Re-theming).
@@ -117,7 +125,7 @@ lift and web-tuned sharpening, downsizes, strips EXIF, and writes optimized JPEG
 (transparent logos pass through as PNG, untouched):
 
 ```bash
-python3 scripts/enhance_photos.py <site-dir>/intake/photos/raw <site-dir>/assets --hero <hero-file>
+python3 scripts/enhance_photos.py <client-root>/00-intake/photos/raw <client-root>/01-photos/client --hero <hero-file>
 ```
 
 Read the printed table + `enhance-report.json`: any image flagged `TOO_SMALL`
@@ -136,9 +144,18 @@ sips -s formatOptions 80 -Z 1500 crew.jpg --out crew.jpg                  # sect
 Rename files by ROLE, not source (`hero-home.jpg`, `crew-trucks.jpg`, `ba1-before.jpg`,
 `ba1-after.jpg`) so the HTML reads clearly.
 
-## 7. Images the user pastes into chat
+## 7. Extra photos from Drive or chat
 
-An image attached in the conversation is NOT on disk — you can see it but cannot use it
-in the site. Ask for the file path, or find it (`find ~/Downloads ~/Desktop -newermt ...`
-with a tight scope — never a whole-home find, it times out). If it can't be found, say
-which photo you still need and continue with what exists.
+Ask the operator using the names in `01-photos/photo-request.md`
+(`interior-painting`, `team`, `crew-trucks`, …). They can:
+
+1. Send a Google Drive folder (public / anyone-with-the-link), or
+2. Attach files in chat — **save them to this client's `01-photos/extra/`**
+   before using them in HTML (a preview in chat is not a file on disk), or
+3. Type `skip` — generate labeled SAMPLE photos with `scripts/demo_photos.py`.
+
+Never put those files in `skill/assets/` or another company's folder.
+
+An image attached in the conversation is NOT on the site until it exists as a
+file under this client tree. If a Drive link is private, say so and ask them
+to download into `01-photos/extra/`.

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<!--
+  AREA PAGE TEMPLATE — copy to 03-site/areas/<trade>-<city>-<st>.html
+  Paths assume this file lives in areas/ (one level under the site root).
+  1. Swap [Tokens] from 00-intake/brief.json + unique local-angle copy.
+  2. Every area page needs a genuinely different local angle (housing stock,
+     HOA rules, climate). Never city-swap one file.
+  3. Every <img> needs real alt text. Photos live in ../assets/images/.
+  New design templates from Dillon replace this file in place.
+-->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>[Trade] in [City], [ST] | [Secondary Keyword] | [Brand]</title>
+<meta name="description" content="[Trade] in [City], [ST]. [One-sentence local angle]. Licensed &amp; insured. Free estimates.">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<div class="ubar">
+  <div class="wrap">
+    <ul>
+      <li><i class="blip"></i> <b>Licensed, Bonded &amp; Insured</b></li>
+      <li>Free Estimates</li>
+    </ul>
+    <ul><li><b>[Tagline]</b> &mdash; Serving [Metro / State]</li></ul>
+  </div>
+</div>
+
+<nav class="nav">
+  <div class="wrap">
+    <a href="../index.html" class="nav-logo"><img src="../assets/logo.png" alt="[Company Name]"></a>
+    <div class="menu">
+      <div class="dd">
+        <a href="../index.html#services">Services</a>
+        <div class="dd-menu">
+          <!-- one <a> per built services/*.html — never link a page that does not exist -->
+          <a href="../services/[service-slug].html">[Service 1]<small>[one-liner]</small></a>
+        </div>
+      </div>
+      <div class="dd">
+        <a href="../index.html#areas">Areas</a>
+        <div class="dd-menu">
+          <a href="[this-file].html">[Trade] in [City]<small>[local-angle one-liner]</small></a>
+        </div>
+      </div>
+      <a href="../index.html#work">Projects</a>
+      <a href="../index.html#why">Why Us</a>
+      <a href="#faq">FAQ</a>
+    </div>
+    <div class="nav-right">
+      <a href="tel:[PhoneTel]" class="nav-ph"><small>Call or Text</small><strong>[PhoneDisplay]</strong></a>
+      <a href="#quote" class="btn btn-red">Free Quote</a>
+    </div>
+  </div>
+</nav>
+
+<div class="crumb"><div class="wrap">
+  <a href="../index.html">Home</a><span>/</span>
+  <a href="../index.html#areas">Service Areas</a><span>/</span>
+  <span>[Trade] in [City]</span>
+</div></div>
+
+<header class="subhero">
+  <img class="hero-img" src="../assets/images/[area-hero.jpg]" alt="[Descriptive alt: finished project in City, ST]">
+  <div class="hero-scrim"></div>
+  <div class="wrap">
+    <div class="hero-copy">
+      <h1>[Trade] In <em>[City], [ST]</em></h1>
+      <p class="sub">[2–3 sentences: near-me phrasing + THIS city's local angle. Not a city-swapped paragraph.]</p>
+      <ul class="hlist">
+        <li>[City-specific bullet 1]</li>
+        <li>[City-specific bullet 2]</li>
+        <li>[City-specific bullet 3]</li>
+      </ul>
+      <div class="hero-act">
+        <a href="#quote" class="btn btn-red">Get My Free Estimate</a>
+        <a href="tel:[PhoneTel]" class="btn btn-ghost">[PhoneDisplay]</a>
+      </div>
+    </div>
+    <div class="quote" id="quote">
+      <div class="quote-hd"><h2>Get In Touch With Us</h2><p>Enter your contact information below</p></div>
+      <form class="quote-bd" id="qform" novalidate>
+        <div class="frow">
+          <div class="fld"><label for="fn">First Name</label><input id="fn" type="text" required></div>
+          <div class="fld"><label for="ln">Last Name</label><input id="ln" type="text" required></div>
+        </div>
+        <div class="frow">
+          <div class="fld"><label for="ph">Phone</label><input id="ph" type="tel" required></div>
+          <div class="fld"><label for="em">Email</label><input id="em" type="email" required></div>
+        </div>
+        <div class="fld"><label for="sv">Select Your Service</label><select id="sv">[ServiceOptions]</select></div>
+        <div class="fld"><label for="ct">City</label><select id="ct"><option selected>[City]</option>[OtherCityOptions]</select></div>
+        <div class="fld"><label for="ds">Project Details</label><textarea id="ds"></textarea></div>
+        <button type="submit" class="btn btn-red btn-block">Get My Free Quote</button>
+        <p class="fine">By submitting you agree to be contacted about your project.</p>
+      </form>
+    </div>
+  </div>
+</header>
+
+<section class="sec">
+  <div class="wrap split">
+    <div class="prose">
+      <div class="eyebrow">[City], [ST]</div>
+      <h2>[Local-angle H2 — what makes this city different]</h2>
+      <p>[Paragraph 1: housing stock / rules / climate. Named neighborhoods. 80+ words.]</p>
+      <p>[Paragraph 2: how THIS company works here. Real process, not filler.]</p>
+      <h3>What [City] Homes Usually Need</h3>
+      <ul>
+        <li><b>[Need 1]</b> — [specific to this city]</li>
+        <li><b>[Need 2]</b> — [specific to this city]</li>
+        <li><b>[Need 3]</b> — [specific to this city]</li>
+        <li><b>[Need 4]</b> — [specific to this city]</li>
+      </ul>
+    </div>
+    <div class="ph">
+      <img src="../assets/images/[area-side.jpg]" alt="[Descriptive alt: job in City]">
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-gray">
+  <div class="wrap">
+    <div class="sec-head center">
+      <div class="eyebrow">Neighbourhoods We Serve</div>
+      <h2>[Trade] Across [City]</h2>
+    </div>
+    <div class="nb-grid">
+      <span class="nb">[Neighborhood 1]</span>
+      <span class="nb">[Neighborhood 2]</span>
+      <span class="nb">[Neighborhood 3]</span>
+      <span class="nb">[Neighborhood 4]</span>
+      <span class="nb">[Neighborhood 5]</span>
+      <span class="nb">[Neighborhood 6]</span>
+      <span class="nb">[Neighborhood 7]</span>
+      <span class="nb">[Neighborhood 8]</span>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head center">
+      <div class="eyebrow">Why [City] Chooses [Brand]</div>
+      <h2>What We Do Differently Here</h2>
+    </div>
+    <div class="lp-grid">
+      <div class="lp"><b>[Differentiator 1]</b><p>[City-specific, not generic.]</p></div>
+      <div class="lp"><b>[Differentiator 2]</b><p>[City-specific.]</p></div>
+      <div class="lp"><b>[Differentiator 3]</b><p>[City-specific.]</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="faq">
+  <div class="wrap">
+    <div class="sec-head center"><div class="eyebrow">Common Questions</div><h2>[City] [Trade] FAQ</h2></div>
+    <div class="faq">
+      <details class="qa" open><summary>[City-specific question 1]</summary><p>[80+ word expert answer naming this city.]</p></details>
+      <details class="qa"><summary>[City-specific question 2]</summary><p>[Answer.]</p></details>
+      <details class="qa"><summary>[City-specific question 3]</summary><p>[Answer.]</p></details>
+      <details class="qa"><summary>[City-specific question 4]</summary><p>[Answer.]</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-gray">
+  <div class="wrap">
+    <div class="sec-head center"><div class="eyebrow">Keep Looking</div><h2>Explore More</h2></div>
+    <div class="rel-grid">
+      <a class="rel" href="[other-area].html"><b>[Trade] in [Other City]</b><p>[Their local angle one-liner]</p></a>
+      <a class="rel" href="../services/[flagship].html"><b>[Flagship Service]</b><p>[one-liner]</p></a>
+      <a class="rel" href="../index.html"><b>Back to Home</b><p>Full [Brand] mockup</p></a>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <div><h2>Ready to start in [City]?</h2><p>Free estimate from a licensed local crew.</p></div>
+    <div class="cta-act">
+      <a href="#quote" class="btn btn-white">Get My Free Quote</a>
+      <a href="tel:[PhoneTel]" class="btn btn-ghost">[PhoneDisplay]</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <span class="flogo"><img src="../assets/logo.png" alt="[Company Name]"></span>
+        <p class="fabout">[One-paragraph company summary — real cities, real specialty.]</p>
+      </div>
+      <div><h4>Services</h4><div class="flist">
+        <a href="../services/[service-slug].html">[Service 1]</a>
+      </div></div>
+      <div><h4>Service Areas</h4><div class="flist">
+        <a href="[area-slug].html">[Trade] in [City]</a>
+      </div></div>
+      <div><h4>Get In Touch</h4>
+        <div class="fcon">
+          <a href="tel:[PhoneTel]"><span><b>[PhoneDisplay]</b></span></a>
+          <a href="mailto:[Email]"><span>[Email]</span></a>
+          <span><span>[Address]</span></span>
+        </div>
+      </div>
+    </div>
+    <div class="fbot">
+      <span>&copy; [Year] [Company Name]. All rights reserved. &mdash; Design mockup.</span>
+      <span>Designed &amp; managed by Paint &amp; Profits</span>
+    </div>
+  </div>
+</footer>
+
+<div class="callbar">
+  <a href="tel:[PhoneTel]" class="btn btn-navy">Call Now</a>
+  <a href="#quote" class="btn btn-red">Free Quote</a>
+</div>
+
+<script>
+document.getElementById('qform').addEventListener('submit', function(e){
+  e.preventDefault();
+  this.style.display = 'none';
+});
+</script>
+</body>
+</html>

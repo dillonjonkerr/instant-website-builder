@@ -1,7 +1,9 @@
 # Page Structure — the exact site anatomy
 
-Five pages minimum: **home + 3 area pages + 1 flagship-service page**. All share
-`assets/style.css` (bundled with this skill) so they stay visually identical.
+**Home + every service page + every area page.** All sub-pages share
+`assets/style.css` (copied into **this client's** `03-site/assets/`, never a
+shared folder across companies). Homepage is `index.html`. Area pages live in
+`areas/`. Service pages live in `services/`. Layout: `references/build-layout.md`.
 
 ## Home page = THE WIREFRAME (fixed for every site)
 
@@ -13,18 +15,21 @@ canonical wireframe (open it or `references/photo_slots.json` when unsure). Rule
 - **Additions are welcome, removals are not**: extra banners (financing, seasonal
   deals, limited-time offers), a before/after slider, whatever the client's material
   supports — slot extras between sections, never replace one.
+- **Every `<img>` has specific alt text** (what's in the photo, which service, which city).
+  SAMPLE photos must say they are samples. Validator: `--require-alt`.
 - Every `IMG-nn` below is a photo slot defined in `references/photo_slots.json`
   (subject, framing, min size, do/don'ts, stock-fallback policy). Match harvested
-  photos to slots by those specs. Slots marked "client photo required" (IMG-01, 02,
-  10, 12) get the `.noimg` placeholder if no genuine photo exists — never stock.
+  photos to slots by those specs. Prefer real client photos. If the operator skips
+  extras, labeled SAMPLE boards (`scripts/demo_photos.py`) fill the slot so the
+  pitch isn't empty — never another company's photos, never unmarked stock.
   Trades other than painting swap subjects, not structure (see IMG-16 roofing note).
 
 1. **Top offer bar** — thin, dark: their real perk ("0% APR financing available ·
    Satisfaction guaranteed") + "Call today · {phone}". Placeholder terms stay labeled.
 2. **Sticky nav** — logo left; `Home · Residential ▾ · Commercial ▾ · Past Work ·
    Areas ▾ · About · Contact`; right: phone button. Dropdowns only list pages that
-   actually exist in the build (Residential ▾ → service pages; Areas ▾ → the 3 area
-   pages, one-line descriptions). Drop the Commercial item if the client does no
+   actually exist in the build (Services ▾ → service pages; Areas ▾ → every area
+   page, one-line descriptions). Drop the Commercial item if the client does no
    commercial work; never link to a page that wasn't built.
 3. **Hero** (IMG-01: crew + wrapped truck bg, ~55% dark overlay) — kicker chip
    ("TRANSFORM YOUR {CITY} HOME"), H1 "Trusted House Painters in {City, ST} You Can
@@ -80,23 +85,33 @@ canonical wireframe (open it or `references/photo_slots.json` when unsure). Rule
     mockup." + "Designed & managed by Paint & Profits".
 19. **Mobile call bar** (`.callbar`) — fixed bottom Call Now / Free Quote (< 920px).
 
-## Area pages (3 per site)
+## Area pages (every harvested city, cap 8)
 
-Each area page must have a genuinely different angle — what makes painting (or roofing,
-etc.) in THAT city different: its housing stock, its rules, its climate quirk. TPG
+Each area page must have a genuinely different angle — what makes the trade in
+THAT city different: its housing stock, its rules, its climate quirk. TPG
 example: Scottsdale = HOA submittals; Arcadia = painted brick + mid-century ranches;
 Gilbert = chalking builder-grade stucco. If you can't name the local angle, research the
 city's housing stock before writing. Never city-swap one template — thin duplicates are
 SEO-useless and clients notice.
+
+Copy `templates/area-page.html` into `03-site/areas/<trade>-<city>-<st>.html`
+(asset paths are already `../assets/…`). Title formula:
+`{Trade} in {City}, {ST} | {Secondary keyword} | {Brand}`. Every `<img>` needs
+specific alt text.
 
 Structure: breadcrumb → subhero (H1 "Trade In {City}", city preselected in form) →
 trust strip → local-angle split (prose + photo) → neighbourhood grid (8 real
 neighbourhoods) → 3 "what we do differently here" cards → 4 city-specific FAQs →
 related-pages cards → CTA → footer.
 
-## Service page (1+ per site)
+## Service pages (every homepage service card, cap 8)
 
-Flagship service (the one with the most search volume / their specialty). Structure:
+Build a real HTML page for each service shown on the home cards — not one
+flagship with the rest linking to `#services`. Copy `templates/service-page.html`
+into `03-site/services/<service-slug>.html`.
+
+Flagship (highest search volume / their specialty) can go first; the others still
+get unique copy (substrates, FAQs, included scope). Structure:
 breadcrumb → subhero (service preselected in form) → trust → "why this fails / how we
 do it" prose split with included-scope checklist → substrate/variant grid (6 cards) →
 3 scope tiers (`.pricing`, labeled as illustrative, NEVER fake dollar prices) →
@@ -126,10 +141,8 @@ and rgba() shadows: `#B91C1C` (accent), `#F87171` (accent-light on dark), `#0F24
 
 ## Delivery checklist
 
-1. `python3 scripts/validate_site.py <site-dir>` → ALL PAGES OK
-2. Serve on localhost via `.claude/launch.json` (python3 -m http.server on a free
-   port, `--directory` at the site dir) — file:// pages can't be screenshotted and
-   cross-page links behave differently.
+1. `python3 scripts/validate_site.py <client-root>/03-site --require-alt` → ALL PAGES OK
+2. Serve on localhost (`python3 -m http.server <port> --directory <client-root>/03-site`) —
+   file:// pages can't be screenshotted and cross-page links behave differently.
 3. Screenshot the served home page top; confirm logo, colors, hero photo render.
-4. Send the HTML files to the user with SendUserFile and give them the localhost URLs
-   in a table.
+4. Give the operator the localhost URLs in a table (home, every area, every service).

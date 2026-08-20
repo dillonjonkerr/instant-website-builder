@@ -2,16 +2,11 @@
 """WORKED EXAMPLE — area + service page generator (TPG Paints & Stains, AZ).
 
 How to use this file for a new company:
-  1. Copy it into the company's build folder.
-  2. Update the constants (OUT, HOME, PHONE_*, CITY_OPTS) and the nav/footer.
-  3. REWRITE every content dict (AREAS, the service page) for the new company.
-     The TPG entries below show the quality bar: each area page has its own
-     local angle (HOA submittals in Scottsdale, painted brick in Arcadia,
-     chalk-testing builder stucco in Gilbert), its own neighbourhood list,
-     and its own FAQ answers. Do NOT city-swap one template — thin duplicate
-     pages are useless for SEO and read as spam to the client.
-  4. The helper functions (head/nav/crumb/form/subhero/faq/related/cta/footer)
-     are reusable as-is once the constants are set.
+  1. Do NOT generate into a shared folder. Scaffold with scripts/new_build.py.
+  2. This file is the TPG quality bar for area/service copy — rewrite every
+     content dict; never copy TPG photos or TPG sentences onto another client.
+  3. New builds copy templates/area-page.html and templates/service-page.html
+     into 03-site/areas/ and 03-site/services/.
 
 Relies on assets/style.css from this skill (same class names).
 """
